@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/height70">
+
+	<RelativeLayout
+		android:id="@+id/rl_lv_item_head"
+		android:layout_width="@dimen/width70"
+		android:layout_height="@dimen/height70">
+
+		<com.ace.member.view.RoundRectImageView
+			android:id="@+id/iv_lv_item_head"
+			android:layout_width="@dimen/width50"
+			android:layout_height="@dimen/height50"
+			android:layout_centerVertical="true"
+			android:layout_margin="@dimen/margin10"
+			/>
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/tv_lv_item_name"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/height30"
+		android:layout_marginTop="@dimen/margin8"
+		android:layout_toEndOf="@+id/rl_lv_item_head"
+		android:ellipsize="end"
+		android:gravity="center"
+		android:maxEms="10"
+		android:maxLines="1"
+		android:textColor="@color/clr_chat_tv_title"
+		android:textSize="@dimen/txtSize18"
+		android:textStyle="normal"
+		/>
+
+	<TextView
+		android:id="@+id/tv_lv_item_msg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/rl_lv_item_head"
+		android:layout_marginBottom="@dimen/margin10"
+		android:layout_toEndOf="@+id/rl_lv_item_head"
+		android:ellipsize="end"
+		android:maxEms="15"
+		android:singleLine="true"
+		android:textColor="@color/clr_chat_tv_hint"
+		android:textSize="@dimen/txtSize14"
+		android:textStyle="normal"/>
+
+	<TextView
+		android:id="@+id/tv_lv_item_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_alignTop="@+id/tv_lv_item_name"
+		android:layout_marginEnd="@dimen/margin10"
+		android:layout_marginTop="@dimen/margin5"
+		android:text="2017-09-14 12:55"
+		android:textColor="@color/clr_chat_tv_hint"
+		android:textSize="@dimen/txtSize12"
+		/>
+
+	<android.support.v7.widget.AppCompatImageView
+		android:id="@+id/iv_lv_item_mute"
+		android:layout_width="@dimen/width18"
+		android:layout_height="@dimen/height18"
+		android:layout_alignEnd="@+id/tv_lv_item_time"
+		android:layout_alignTop="@+id/tv_lv_item_msg"
+		android:visibility="gone"
+		app:srcCompat="@drawable/ic_friends_mute"/>
+
+	<View
+		android:id="@+id/view"
+		style="@style/v_horizontal_divider_line"
+		android:layout_alignParentBottom="true"
+		android:layout_marginEnd="@dimen/margin10"
+		android:layout_marginStart="@dimen/margin10"/>
+
+</RelativeLayout>
+

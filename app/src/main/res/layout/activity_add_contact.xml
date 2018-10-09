@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<include layout="@layout/view_friends_search"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="horizontal"
+		android:paddingBottom="@dimen/padding10"
+		android:paddingTop="@dimen/padding10">
+
+		<LinearLayout
+			android:id="@+id/ll_my_qr_code"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:layout_width="@dimen/width25"
+				android:layout_height="@dimen/height25"
+				android:layout_gravity="center_horizontal"
+				app:srcCompat="@drawable/ic_friends_qr_code"
+				/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="@dimen/margin3"
+				android:text="@string/my_qr_code"
+				android:textColor="@color/clr_chat_tv_title"
+				android:textSize="@dimen/txtSize14"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/scan_to_add_friend"
+				android:textColor="@color/clr_chat_tv_hint"
+				android:textSize="@dimen/txtSize13"/>
+		</LinearLayout>
+
+		<View
+			android:layout_width="@dimen/width1"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:background="@color/clr_divider_bg_gray"/>
+
+		<LinearLayout
+			android:id="@+id/ll_scan_qr_code"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:layout_width="@dimen/width25"
+				android:layout_height="@dimen/height25"
+				android:layout_gravity="center_horizontal"
+				app:srcCompat="@drawable/ic_scan_qr_code"
+				/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="@dimen/margin3"
+				android:text="@string/scan_qr_code"
+				android:textColor="@color/clr_chat_tv_title"
+				android:textSize="@dimen/txtSize14"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/scan_qr_to_add_friends"
+				android:textColor="@color/clr_chat_tv_hint"
+				android:textSize="@dimen/txtSize13"/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+	<ListView
+		android:id="@+id/lv_new_friends"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:divider="@null"
+		android:dividerHeight="0dp">
+	</ListView>
+
+</LinearLayout>
+
+

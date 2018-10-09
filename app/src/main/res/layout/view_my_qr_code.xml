@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/fl_my_qr_code"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/clr_bg_transparent_gray"
+             android:padding="@dimen/padding15">
+
+	<LinearLayout
+		android:id="@+id/ll_my_qr_code"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:background="@drawable/bg_rectangle_white"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:paddingTop="@dimen/padding10"
+		>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height60"
+			android:layout_marginStart="@dimen/margin10">
+
+			<com.ace.member.view.RoundRectImageView
+				android:id="@+id/iv_my_qr_code_head"
+				android:layout_width="@dimen/width50"
+				android:layout_height="@dimen/height50"
+				android:layout_marginBottom="@dimen/margin5"
+				android:layout_marginStart="@dimen/margin10"
+				android:layout_marginTop="@dimen/margin5"
+				app:srcCompat="@mipmap/ic_launcher"
+				/>
+
+			<TextView
+				android:id="@+id/tv_my_qr_code_name"
+				style="@style/tv_chat_title"
+				android:layout_marginStart="@dimen/margin10"
+				android:layout_marginTop="@dimen/margin10"
+				android:layout_toEndOf="@+id/iv_my_qr_code_head"
+				/>
+
+			<TextView
+				android:id="@+id/tv_my_qr_code_content"
+				style="@style/tv_chat_hint"
+				android:layout_below="@+id/tv_my_qr_code_name"
+				android:layout_marginStart="@dimen/margin10"
+				android:layout_marginTop="@dimen/margin3"
+				android:layout_toEndOf="@+id/iv_my_qr_code_head"
+				android:ellipsize="end"
+				android:maxLines="1"
+				/>
+		</RelativeLayout>
+
+		<com.ace.member.view.RatioLayout
+			xmlns:c="http://schemas.android.com/apk/res-auto"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			c:ratio="1.0">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv_my_qr_code"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"
+				/>
+		</com.ace.member.view.RatioLayout>
+
+		<TextView
+			style="@style/tv_chat_hint"
+			android:layout_margin="@dimen/margin10"
+			android:text="@string/scan_qr_code_add_me_as_a_friend"/>
+	</LinearLayout>
+</FrameLayout>

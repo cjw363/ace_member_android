@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<include layout="@layout/view_member_bank_info"/>
+
+			<include layout="@layout/view_company_bank_info"/>
+
+			<View style="@style/v_horizontal_divider_section"/>
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/currency"/>
+
+				<TextView
+					android:id="@+id/tv_currency"
+					style="@style/tv_common_content"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line1"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					android:id="@+id/tv_amount_info"
+					style="@style/tv_common_title"
+					android:text="@string/amount"/>
+
+				<EditText
+					android:id="@+id/et_deposit_amount"
+					style="@style/et_common"
+					android:hint="@string/amount"
+					android:inputType="numberDecimal"
+					android:maxLines="1"/>
+			</LinearLayout>
+
+
+			<View style="@style/v_horizontal_divider_line1"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/remark"/>
+
+				<EditText
+					android:id="@+id/et_remark"
+					style="@style/et_common"
+					android:hint="@string/remark"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<Button
+				android:id="@+id/btn_submit"
+				style="@style/btn_common"
+				android:layout_margin="@dimen/margin10"
+				android:text="@string/submit"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

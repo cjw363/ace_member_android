@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rl_chat_time"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="@dimen/padding3">
+
+	<TextView
+		android:id="@+id/tv_chat_time"
+		style="@style/tv_chat_hint"
+		android:layout_centerInParent="true"
+		android:textSize="@dimen/txtSize12"/>
+</RelativeLayout>

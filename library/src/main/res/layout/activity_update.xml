@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/update_background"
+	android:orientation="vertical"
+	>
+
+	<include layout="@layout/view_toolbar"/>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<ScrollView
+			android:id="@+id/scr_content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:scrollbarStyle="insideOverlay"
+			>
+
+			<TextView
+				android:id="@+id/tv_content"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="start|center"
+				android:paddingLeft="@dimen/padding10"
+				android:paddingRight="@dimen/padding10"
+				android:paddingTop="@dimen/padding5"
+				android:textSize="@dimen/txtSize14"/>
+		</ScrollView>
+
+		<LinearLayout
+			android:id="@+id/ll_update_progress"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:gravity="center_vertical"
+			android:orientation="vertical"
+			android:visibility="gone">
+
+			<ProgressBar
+				android:id="@+id/update_progress"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height3"
+				android:layout_marginBottom="@dimen/margin5"
+				android:layout_marginTop="@dimen/margin20"
+				android:layout_gravity="center"
+				android:layout_marginEnd="@dimen/margin30"
+				android:layout_marginStart="@dimen/margin30"
+				android:max="100"
+				android:progressDrawable="@drawable/progressbar_horizontal"/>
+
+			<TextView
+				android:id="@+id/tv_update_progress"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin20"
+				android:gravity="center"
+				android:textSize="@dimen/txtSize16"
+				android:textStyle="italic"/>
+		</LinearLayout>
+	</FrameLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_download"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/padding10"
+		android:layout_marginTop="@dimen/padding15"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btn_download"
+			style="@style/btn_common"
+			android:text="@string/download"/>
+
+	</LinearLayout>
+</LinearLayout>

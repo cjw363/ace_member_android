@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="title_error">Error</string>
+	<string name="result_converting_error">Result Converting Error</string>
+	<string name="result_parsing_error">Invalid Result</string>
+	<string name="session_time_out">Session Time Out</string>
+	<string name="not_supported_version">Not Supported Version</string>
+
+	<string name="loading">Loading</string>
+	<string name="wait_for_loading">Please Wait for Loading&#8230; &#160;&#160;&#160;&#160;</string>
+	<string name="checking_update">Checking for Update&#8230;</string>
+	<string name="new_update_available">New Version Found</string>
+	<string name="download_now">Download</string>
+	<string name="download_later">Later</string>
+	<string name="download_progress">Downloading:%1$d%%</string>
+	<string name="download_success">Download Success, Please Click to Install</string>
+
+	<string name="app_update_cancel">Cancel</string>
+	<string name="cancelled">Cancelled</string>
+	<string name="select">Select</string>
+
+	<string name="confirm">Confirm</string>
+	<string name="close">Close</string>
+	<string name="submit">Submit</string>
+	<string name="cancel">Cancel</string>
+	<string name="clear">Clear</string>
+	<string name="search">Search</string>
+	<string name="btn_return">Return</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="ok">OK</string>
+	<string name="done">Done</string>
+
+	<string name="waiting">Please Wait &#8230;</string>
+	<string name="click_too_fast">Click too Fast</string>
+	<string name="fatal_error">FATAL ERROR</string>
+
+	<string name="capture_title">Scan Barcode</string>
+	<string name="capture_tips">Put in the box and scan automatically</string>
+	<string name="scan_failed">Scan Failed</string>
+	<string name="request_camera_permission">Opening the camera requires permissions</string>
+
+	<string name="trading_password">Trading Password</string>
+
+	<string name="description"> </string>
+	<string name="delete">Delete</string>]
+	<string name="delete_member_bank_account">Delete Member Bank Account</string>
+	<string name="status">Status</string>
+
+	<!--下拉刷新-->
+	<string name="drop_dow_refresh">Drop Down Refresh</string>
+	<!--松开刷新数据-->
+	<string name="loosen_refresh_data">Release to Refresh</string>
+	<!--正在加载...-->
+	<string name="refresh_loading">Loading &#8230;</string>
+	<!--上次更新时间-->
+	<string name="last_update_time">Last Update Time：</string>
+	<!--查看更多-->
+	<string name="pull_up_load_more">Pull Up Load More</string>
+	<!--松开载入更多-->
+	<string name="loosen_load_more">Loosen Load More</string>
+	<string name="please_select">Please Select</string>
+	<!--释放载入更多-->
+	<string name="release_to_load_more"> Release to Load More</string>
+
+	<string name="mon">MON</string>
+	<string name="tue">TUE</string>
+	<string name="wed">WED</string>
+	<string name="thu">THU</string>
+	<string name="fri">FRI</string>
+	<string name="set">SAT</string>
+	<string name="sun">SUN</string>
+
+	<string name="Monday">Monday</string>
+	<string name="Tuesday">Tuesday</string>
+	<string name="Wednesday">Wednesday</string>
+	<string name="Thursday">Thursday</string>
+	<string name="Friday">Friday</string>
+	<string name="Saturday">Saturday</string>
+	<string name="Sunday">Sunday</string>
+
+	<string name="january">January</string>
+	<string name="february">February</string>
+	<string name="march">March</string>
+	<string name="april">April</string>
+	<string name="may">May</string>
+	<string name="june">June</string>
+	<string name="july">July</string>
+	<string name="august">August</string>
+	<string name="september">September</string>
+	<string name="october">October</string>
+	<string name="november">November</string>
+	<string name="december">December</string>
+
+	<string name="china">China</string>
+	<string name="thailand">Thailand</string>
+	<string name="vietnam">Vietnam</string>
+	<string name="cambodia">Cambodia</string>
+
+	<string name="nation_cambodians">Cambodians</string>
+	<string name="nation_vietnamese">Vietnamese</string>
+	<string name="nation_chinese">Chinese</string>
+	<string name="nation_thais">Thais</string>
+	<string name="nation_malaysians">Malaysians</string>
+	<string name="nation_indonesians">Indonesians</string>
+	<string name="nation_french_citizens">French citizens</string>
+
+	<!--Exchange-->
+	<string name="invalid_exchange_currency">Invalid Exchange Currency</string>
+	<string name="invalid_amount">Invalid Amount</string>
+	<string name="required">Required</string>
+
+	<string name="no_permission">No Permission</string>
+	<string name="invalid_device_id">Invalid Device ID</string>
+	<string name="fingerprint_not_support">Below Android 6.0  not Support</string>
+	<string name="fingerprint_hardware_not_support">Hardware not Support</string>
+	<string name="has_no_fingerprint">The device has no fingerprints, Please go to System > Settings add a fingerprint</string>
+	<string name="try_again">Try Again</string>
+	<string name="verify_fingerprint">Please Verify Your Fingerprint</string>
+	<string name="confirm_to_use_fingerprint">Replace Gesture Login with Fingerprint? </string>
+
+	<string name="download">Download</string>
+	<string name="new_version">New Version</string>
+
+	<string name="confirm_to_exit">Are You Sure to Exit?</string>
+	<string name="success">Success</string>
+	<string name="fail">Fail</string>
+
+	//使用msg_xxx的方式，不使用msg_xxx_说明文字的方式，这样当数字一样时容易发现
+	<string name="msg_101">Invalid</string>
+	<string name="msg_102">Session timeout</string>
+	<string name="msg_103">Submit Repeat</string>
+	<string name="msg_104">Not Supported Version</string>
+	<string name="msg_200">No Privilege</string>
+
+	<string name="msg_1000">Your Account is not Active.</string>
+	<string name="msg_1002">Login fail, wrong phone or password.</string>
+	<string name="msg_1004">Gesture password expired, please login and reset gesture password.</string>
+	<string name="msg_1006">Invalid Password</string>
+	<string name="msg_1007">Invalid New Password</string>
+	<string name="msg_1008">New Password too Simple</string>
+
+	<string name="network_error">Network Error</string>
+	<string name="connect_timeout">Connect Timeout</string>
+
+
+	<string name="msg_1910">Invalid Number</string>
+	<string name="msg_1911">Invalid Number (Too Many Stars)</string>
+	<string name="msg_1912">Details Mismatch</string>
+	<string name="msg_1913">Invalid Type/Sub Type</string>
+	<string name="msg_1914">Wrong Times</string>
+	<string name="msg_1915">Over Special Max Times</string>
+	<string name="msg_1916">Betting Amount Mismatch</string>
+	<string name="msg_1917">Wrong Detail Number</string>
+	<string name="msg_1918">Over Multiple Max Numbers</string>
+
+</resources>

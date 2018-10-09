@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null">
+
+	<LinearLayout
+		android:id="@+id/container_picker"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentStart="true"
+		android:background="#fff"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:id="@+id/rl_title"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height45"
+			android:layout_marginEnd="@dimen/margin5"
+			android:layout_marginStart="@dimen/margin5">
+
+			<FrameLayout
+				android:id="@+id/fl_cancel"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:paddingEnd="@dimen/padding16"
+				android:paddingStart="@dimen/padding10">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:layout_width="@dimen/width15"
+					android:layout_height="@dimen/height15"
+					android:layout_gravity="center"
+					app:srcCompat="@drawable/ic_fork_black"/>
+			</FrameLayout>
+
+			<TextView
+				android:text="@string/filter"
+				android:textSize="@dimen/txtSize20"
+				android:textColor="@color/clr_common_title"
+				android:layout_centerInParent="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<FrameLayout
+				android:id="@+id/fl_confirm"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:paddingEnd="@dimen/padding10"
+				android:paddingStart="@dimen/padding10">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:layout_width="@dimen/width18"
+					android:layout_height="@dimen/height18"
+					android:layout_gravity="center"
+					app:srcCompat="@drawable/ic_confirm"/>
+			</FrameLayout>
+		</RelativeLayout>
+
+		<View style="@style/v_horizontal_divider_line"/>
+
+		<LinearLayout
+			android:id="@+id/ll_currency"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height80"
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:dividerPadding="@dimen/padding10"/>
+
+		<View style="@style/v_horizontal_divider_line"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height60"
+			android:focusableInTouchMode="true"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tv_start"
+				android:layout_width="@dimen/width0"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="@dimen/margin5"
+				android:layout_marginRight="@dimen/margin5"
+				android:layout_weight="2"
+				android:background="@drawable/sel_tv_click_bg_line"
+				android:gravity="center_horizontal|bottom"
+				android:paddingBottom="@dimen/padding5"
+				android:text="@string/start"
+				android:textColor="@drawable/sel_tv_color"
+				android:textSize="@dimen/txtSize18"/>
+
+			<TextView
+				android:layout_width="@dimen/width0"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center_horizontal|bottom"
+				android:paddingBottom="@dimen/padding5"
+				android:text="@string/to"
+				android:textColor="@color/clr_common_content"
+				android:textSize="@dimen/txtSize20"/>
+
+			<TextView
+				android:id="@+id/tv_end"
+				android:layout_width="@dimen/width0"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="@dimen/margin5"
+				android:layout_marginRight="@dimen/margin5"
+				android:layout_weight="2"
+				android:background="@drawable/sel_tv_click_bg_line"
+				android:gravity="center_horizontal|bottom"
+				android:paddingBottom="@dimen/padding5"
+				android:text="@string/end_date"
+				android:textColor="@drawable/sel_tv_color"
+				android:textSize="@dimen/txtSize18"/>
+		</LinearLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height50">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv_clear"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="@dimen/margin5"
+				app:srcCompat="@drawable/ic_delete_can"/>
+
+		</RelativeLayout>
+
+		<View style="@style/v_horizontal_divider_line"/>
+
+		<Space
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height40"/>
+
+		<FrameLayout
+			android:id="@+id/fl_date_picker"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height150"
+			android:background="#fff"
+			android:orientation="horizontal"/>
+
+		<Space
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height40"/>
+	</LinearLayout>
+
+</RelativeLayout>

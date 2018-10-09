@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+		<TextView
+			android:id="@+id/tv_gesture_info"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginTop="@dimen/margin35"
+			android:textColor="@color/clr_common_content_invalid"
+			android:text="@string/enter_new_pattern_password"
+			android:textSize="@dimen/txtSize14"/>
+
+		<com.ace.member.gesture_lock.LockPatternView
+			android:layout_below="@+id/tv_gesture_info"
+			android:id="@+id/lock_pattern"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:padding="@dimen/padding30"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/lock_pattern"
+			android:gravity="center">
+
+			<Button
+				android:id="@+id/btn_cancel"
+				style="@style/btn_common"
+				android:layout_width="@dimen/width130"
+				android:layout_height="wrap_content"
+				android:text="@string/cancel"
+				android:onClick="onClick"/>
+
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

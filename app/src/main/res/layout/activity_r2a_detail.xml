@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<com.og.utils.SlidingLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin30"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="@dimen/width32"
+						android:layout_height="@dimen/height32"
+						app:srcCompat="@drawable/ic_a2c"/>
+
+					<TextView
+						android:id="@+id/tv_fc_title"
+						style="@style/tv_order_detail_title"
+						tools:text="@string/receive_to_acct"/>
+
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/tv_r2a_amount"
+					style="@style/tv_order_detail_total"
+					tools:text="12 USD"/>
+
+
+				<View style="@style/v_horizontal_divider_line2"/>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/sender"/>
+
+					<TextView
+						android:id="@+id/tv_r2a_sender"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/source"/>
+
+					<TextView
+						android:id="@+id/tv_r2a_source"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_accept_code"
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/accept_code"/>
+
+					<TextView
+						android:id="@+id/tv_r2a_accept_code"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_remark"
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/remark"/>
+
+					<TextView
+						android:id="@+id/tv_r2a_remark"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<View style="@style/v_horizontal_divider_line2"/>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/time"/>
+
+					<TextView
+						android:id="@+id/tv_r2a_time"
+						style="@style/tv_order_detail_content_right"
+						tools:text="2017-01-01"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/status"/>
+
+					<TextView
+						android:id="@+id/tv_r2a_status"
+						style="@style/tv_order_detail_content_right"
+						android:text="@string/completed"
+						android:textColor="@color/color_completed"/>
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</com.og.utils.SlidingLayout>
+
+</LinearLayout>

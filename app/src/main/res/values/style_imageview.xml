@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<style name="iv_arrow_right">
+		<item name="android:layout_width">@dimen/width16</item>
+		<item name="android:layout_height">@dimen/height16</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:layout_marginRight">@dimen/margin15</item>
+	</style>
+</resources>

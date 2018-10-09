@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:descendantFocusability="blocksDescendants"
+	android:orientation="vertical"
+	>
+
+	<LinearLayout
+		android:id="@+id/ll_date"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/clr_primary_separator"
+		android:orientation="horizontal"
+		android:paddingBottom="@dimen/padding6"
+		android:paddingEnd="@dimen/padding15"
+		android:paddingStart="@dimen/padding15"
+		android:paddingTop="@dimen/padding6">
+
+		<TextView
+			android:id="@+id/tv_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="end"
+			android:textColor="@color/clr_primary_separator_title"
+			android:textSize="@dimen/txtSize16"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_content_1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingLeft="@dimen/padding15"
+		android:paddingRight="@dimen/padding15"
+		android:paddingTop="@dimen/padding10">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/exchange"
+			android:textColor="@color/clr_common_title"
+			android:textSize="@dimen/txtSize16"
+			/>
+
+		<TextView
+			android:id="@+id/tv_exchange_history_list_item_time"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="right"
+			android:textColor="@color/clr_common_content"
+			android:textSize="@dimen/txtSize16"
+			/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_content_2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingBottom="@dimen/padding10"
+		android:paddingLeft="@dimen/padding15"
+		android:paddingRight="@dimen/padding15">
+
+		<TextView
+			android:id="@+id/tv_source_amount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/clr_common_content"
+			android:textSize="@dimen/txtSize16"
+			/>
+
+		<TextView
+			android:id="@+id/tv_target_amount"
+			android:layout_width="@dimen/width0"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="right"
+			android:textColor="@color/colorPrimary"
+			android:textSize="@dimen/txtSize16"
+			/>
+	</LinearLayout>
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+</LinearLayout>

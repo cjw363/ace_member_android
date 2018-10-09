@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/lotto_game_icon_style"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="@dimen/padding10">
+
+	<android.support.v7.widget.AppCompatImageView
+		android:id="@+id/iv_biller"
+		android:layout_width="@dimen/width50"
+		android:layout_height="@dimen/height50"
+		tools:src="@drawable/ic_partner_common"/>
+
+	<TextView
+		android:id="@+id/tv_biller_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin10"
+		android:textColor="@color/clr_common_title"
+		android:textSize="@dimen/txtSize16"
+		tools:text="8888 Samrithisak (lan tv)"/>
+</LinearLayout>

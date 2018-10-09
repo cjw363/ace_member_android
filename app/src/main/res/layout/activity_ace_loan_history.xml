@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<LinearLayout
+		android:id="@+id/ll_condition"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height45"
+			android:background="@color/white">
+			<TextView
+				android:id="@+id/tv_condition"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height30"
+				android:layout_centerHorizontal="true"
+				android:layout_centerInParent="true"
+				android:layout_marginLeft="@dimen/margin10"
+				android:layout_marginRight="@dimen/margin10"
+				android:background="@drawable/bg_rectangle_gray"
+				android:gravity="center"
+				android:textColor="@color/clr_common_title"
+				android:textSize="@dimen/txtSize16"/>
+
+			<LinearLayout
+				android:id="@+id/ll_close"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				android:gravity="center">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:layout_width="@dimen/width20"
+					android:layout_height="@dimen/height20"
+					android:layout_marginLeft="@dimen/margin10"
+					android:layout_marginRight="@dimen/margin20"
+					app:srcCompat="@drawable/ic_clear_input"/>
+			</LinearLayout>
+		</RelativeLayout>
+
+		<View style="@style/v_horizontal_divider_section"/>
+	</LinearLayout>
+
+	<com.og.component.CustomSlidingRefreshListView
+		android:id="@+id/lv_loan"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:cacheColorHint="@color/transparent"
+		android:divider="@null"
+		android:listSelector="@color/transparent"
+		android:scrollbars="none"/>
+</LinearLayout>

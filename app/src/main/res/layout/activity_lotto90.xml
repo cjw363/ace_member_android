@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/ll_main_lotto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_lotto_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height125"
+		android:background="@color/clr_lotto_head"
+		android:orientation="vertical"
+		>
+
+		<android.support.v7.widget.AppCompatImageView
+			android:layout_width="@dimen/width45"
+			android:layout_height="@dimen/height45"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/padding5"
+			app:srcCompat="@drawable/ic_outstanding"/>
+
+		<TextView
+			android:id="@+id/tv_outstanding_amount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/padding10"
+			android:text="0 USD"
+			android:textColor="@color/white"
+			android:textSize="@dimen/txtSize26"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/padding5"
+			android:paddingBottom="@dimen/padding10"
+			android:text="@string/outstanding"
+			android:textColor="@color/white"
+			android:textSize="@dimen/txtSize12"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height32"
+		android:background="@color/white"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:paddingLeft="@dimen/padding10"
+		android:paddingRight="@dimen/padding10"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/balance"
+			android:textColor="@color/clr_lotto_tv_balance"
+			android:textSize="@dimen/txtSize14"/>
+
+		<TextView
+			android:id="@+id/tv_balance"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:textColor="@color/clr_lotto_tv_balance"
+			android:textSize="@dimen/txtSize14"/>
+	</LinearLayout>
+
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/height32"
+		android:gravity="center_vertical"
+		android:paddingLeft="@dimen/padding10"
+		android:paddingRight="@dimen/padding10"
+		android:text="@string/ticket"
+		android:textColor="@color/clr_lotto_tv"
+		android:textSize="@dimen/txtSize14"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/padding10">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height100"
+			android:layout_marginTop="@dimen/margin25"
+			android:orientation="horizontal"
+			android:paddingBottom="@dimen/padding20"
+			>
+
+			<LinearLayout
+				android:id="@+id/menu_single"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/height36">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						app:srcCompat="@drawable/ic_single"/>
+				</LinearLayout>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin14"
+					android:text="@string/single"
+					android:textSize="@dimen/txtSize14"
+					android:textColor="@color/clr_lotto_tv_balance"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/menu_multiple"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/height36">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						app:srcCompat="@drawable/ic_multiple"/>
+				</LinearLayout>
+
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin14"
+					android:text="@string/multiple"					android:textSize="@dimen/txtSize14"
+
+					android:textColor="@color/clr_lotto_tv_balance"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/menu_special"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/height36">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						app:srcCompat="@drawable/ic_special"/>
+				</LinearLayout>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin14"
+					android:text="@string/special"					android:textSize="@dimen/txtSize14"
+
+					android:textColor="@color/clr_lotto_tv_balance"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height32"
+			android:background="@color/clr_lotto_bg"
+			android:gravity="center_vertical"
+			android:paddingLeft="@dimen/padding10"
+			android:paddingRight="@dimen/padding10"
+			android:text="@string/record"
+			android:textColor="@color/clr_lotto_tv"
+			android:textSize="@dimen/txtSize14"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:paddingBottom="@dimen/padding10"
+			android:paddingTop="@dimen/padding25">
+
+			<LinearLayout
+				android:id="@+id/menu_bet_list"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/height36">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="@dimen/width30"
+						android:layout_height="@dimen/height30"
+						android:layout_gravity="center"
+						app:srcCompat="@drawable/ic_bet_list"/>
+				</LinearLayout>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin14"
+					android:text="@string/bet_list"					android:textSize="@dimen/txtSize14"
+
+					android:textColor="@color/clr_lotto_tv_balance"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/menu_win_report"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/height36">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="@dimen/width30"
+						android:layout_height="@dimen/height30"
+						android:layout_gravity="center"
+						app:srcCompat="@drawable/ic_win_report"/>
+				</LinearLayout>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin14"
+					android:text="@string/win_report"					android:textSize="@dimen/txtSize14"
+
+					android:textColor="@color/clr_lotto_tv_balance"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/menu_result"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/height36">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="@dimen/width30"
+						android:layout_height="@dimen/height30"
+						android:layout_gravity="center"
+						app:srcCompat="@drawable/ic_result"/>
+				</LinearLayout>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin14"
+					android:text="@string/result"					android:textSize="@dimen/txtSize14"
+
+					android:textColor="@color/clr_lotto_tv_balance"/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+	<!-- 当进行屏幕自适应处理时，若在library下的dimens.xml文件同一个配置无法适应多个界面时，则单独在此配置-->
+
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="fab_margin">16dp</dimen>
+
+	<dimen name="list_item_padding">8dp</dimen>
+	<dimen name="padding22">22dp</dimen>
+	<dimen name="height45">45dp</dimen>
+	<dimen name="height16">16dp</dimen>
+
+
+</resources>

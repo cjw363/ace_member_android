@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<com.og.utils.SlidingLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin20"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/iv_loan"
+						android:layout_width="@dimen/width48"
+						android:layout_height="@dimen/height48"
+						android:layout_gravity="center"
+						app:srcCompat="@drawable/ic_samrithisak_orig"/>
+
+					<TextView
+						android:id="@+id/tv_type_title"
+						style="@style/tv_order_detail_title"
+						android:text="@string/_8888_samrithisak"/>
+				</LinearLayout>
+
+				<TextView
+					style="@style/tv_order_detail_total"
+					tools:text="1,000.00 USD"/>
+
+				<View style="@style/v_horizontal_divider_line2"/>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/type"/>
+
+					<TextView
+						android:id="@+id/tv_amount"
+						style="@style/tv_order_detail_content_right"
+						tools:text="USD 1,000.00"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/service_charge"/>
+
+					<TextView
+						android:id="@+id/tv_number"
+						style="@style/tv_order_detail_content_right"
+						tools:text="USD 100.00"/>
+				</LinearLayout>
+
+				<View style="@style/v_horizontal_divider_line2"/>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/time"/>
+
+					<TextView
+						android:id="@+id/tv_time"
+						style="@style/tv_order_detail_content_right"
+						tools:text="2017-01-01"/>
+				</LinearLayout>
+
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/status"/>
+
+					<TextView
+						android:id="@+id/tv_status"
+						style="@style/tv_order_detail_content_right"
+						tools:text="Complete"/>
+				</LinearLayout>
+
+				<Button
+					android:id="@+id/btn_done"
+					style="@style/btn_common"
+					android:layout_margin="@dimen/margin10"
+					android:text="@string/done"
+					android:visibility="gone"/>
+			</LinearLayout>
+
+		</ScrollView>
+	</com.og.utils.SlidingLayout>
+</LinearLayout>

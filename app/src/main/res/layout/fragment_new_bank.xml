@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tool="http://schemas.android.com/tools"
+	android:id="@+id/content"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/bg_rectangle_white"
+	android:padding="@dimen/padding10">
+
+	<RelativeLayout
+		android:id="@+id/rl_bank"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone">
+
+		<RelativeLayout
+			android:id="@+id/rl_bank_info"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height150"
+			android:gravity="center">
+
+			<FrameLayout
+				android:id="@+id/fl_bank"
+				android:layout_width="@dimen/width60"
+				android:layout_height="@dimen/height60"
+				android:layout_marginLeft="@dimen/margin10"
+				android:background="@drawable/style_circle_white">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_bank"
+					android:layout_width="@dimen/width40"
+					android:layout_height="@dimen/height40"
+					android:layout_gravity="center"
+					app:srcCompat="@drawable/ic_bank_aba"/>
+			</FrameLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height60"
+				android:layout_marginLeft="@dimen/margin10"
+				android:layout_toRightOf="@+id/fl_bank"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/tv_bank"
+					android:layout_width="wrap_content"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:textColor="@color/clr_common_title"
+					android:textSize="@dimen/txtSize18"
+					tool:text="@string/bank"/>
+
+				<TextView
+					android:id="@+id/tv_bank_account_name"
+					android:layout_width="wrap_content"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:textColor="@color/clr_common_title"
+					android:textSize="@dimen/txtSize18"
+					tool:text="@string/bank_account_name"/>
+			</LinearLayout>
+
+			<EditText
+				android:id="@+id/et_bank_account_no"
+				style="@style/et_common"
+				android:layout_below="@id/fl_bank"
+				android:layout_marginStart="@dimen/margin15"
+				android:layout_marginTop="@dimen/margin15"
+				android:background="@drawable/et_style1"
+				android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+				android:hint="@string/bank_account_no"
+				android:inputType="number|textCapCharacters"
+				android:maxLength="20"
+				android:maxLines="1"
+				android:minHeight="@dimen/height40"
+				android:textColor="@color/clr_common_title"
+				android:textColorHint="@color/clr_common_content_hint"
+				android:textSize="@dimen/txtSize18"/>
+		</RelativeLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/rl_bank_info"
+			android:layout_marginTop="@dimen/margin15"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/btn_confirm"
+				style="@style/btn_common"
+				android:layout_weight="1"
+				android:layout_marginRight="@dimen/margin8"
+				android:text="@string/confirm"/>
+
+			<Button
+				android:id="@+id/btn_cancel"
+				style="@style/btn_common_negative"
+				android:layout_marginLeft="@dimen/margin8"
+				android:layout_weight="1"
+				android:text="@string/cancel"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/rl_bank_list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:visibility="visible">
+
+		<GridView
+			android:id="@+id/gv_bank"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:gravity="center"
+			android:numColumns="3"
+			android:scrollbars="none"
+			android:stretchMode="columnWidth"/>
+
+		<TextView
+			android:id="@+id/tv_no_bank"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true"
+			android:gravity="center"
+			android:text="@string/no_bank"
+			android:textColor="@color/clr_no_data"
+			android:textSize="@dimen/txtSize24"/>
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	>
+	<include
+		android:id="@+id/il_toolbar"
+		layout="@layout/view_toolbar"/>
+
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/il_toolbar"
+		android:scrollbars="none"
+		android:fillViewport="true"
+		>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="none"
+		>
+
+		<ImageView
+			android:id="@+id/iv_ace"
+			android:layout_marginTop="@dimen/margin20"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_ace"
+			/>
+
+		<TextView
+			android:id="@+id/tv_about_us"
+			android:layout_below="@+id/iv_ace"
+			android:layout_marginTop="@dimen/margin10"
+			android:text="@string/about_us"
+			android:padding="@dimen/margin15"
+			android:lineSpacingExtra="@dimen/margin3"
+			android:gravity="left"
+			android:textSize="@dimen/txtSize15"
+			android:textColor="@color/clr_common_content"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			/>
+
+		<TextView
+			android:id="@+id/tv_hotline"
+			android:layout_below="@+id/tv_about_us"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/margin15"
+			android:gravity="left|center"
+			android:layout_marginTop="@dimen/margin10"
+			android:textSize="@dimen/txtSize13"
+			android:textColor="@color/clr_common_content"
+			android:text="@string/hot_line"/>
+
+		<TextView
+			android:id="@+id/tv_phone"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="@dimen/txtSize13"
+			android:layout_marginLeft="@dimen/margin15"
+			android:textColor="@color/clr_common_content"
+			android:text="@string/hot_line_phone"
+			android:layout_below="@+id/tv_hotline"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"/>
+
+		<TextView
+			android:id="@+id/tv_office_website"
+			android:layout_below="@+id/tv_phone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/margin15"
+			android:layout_marginTop="@dimen/margin10"
+			android:textSize="@dimen/txtSize13"
+			android:textColor="@color/clr_common_title"
+			android:text="@string/office_website"/>
+
+		<TextView
+			android:id="@+id/tv_website"
+			android:layout_below="@+id/tv_office_website"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/margin15"
+			android:textColorLink="@color/clr_about_web"
+			android:autoLink="all"
+			android:textSize="@dimen/txtSize13"
+			android:textColor="@color/clr_about_tv"
+			android:text="@string/website"/>
+
+		<TextView
+			android:id="@+id/tv_head_office"
+			android:layout_below="@+id/tv_website"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="@dimen/margin10"
+			android:layout_marginLeft="@dimen/padding15"
+			android:textSize="@dimen/txtSize13"
+			android:textColor="@color/clr_common_title"
+			android:text="@string/head_office1"/>
+
+		<TextView
+			android:id="@+id/tv_address"
+			android:layout_below="@+id/tv_head_office"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/margin20"
+			android:gravity="left"
+			android:layout_marginLeft="@dimen/padding15"
+			android:layout_marginRight="@dimen/padding10"
+			android:textSize="@dimen/txtSize13"
+			android:textColor="@color/clr_common_content"
+			android:text="@string/head_office_address"/>
+
+		<TextView
+			android:id="@+id/tv_copy_right"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:gravity="center"
+			android:textSize="@dimen/txtSize8"
+			android:textColor="@color/clr_common_content"
+			android:layout_marginBottom="@dimen/margin3"
+			android:text="@string/copyright"/>
+
+
+	</RelativeLayout>
+
+
+	</ScrollView>
+
+
+
+</RelativeLayout>

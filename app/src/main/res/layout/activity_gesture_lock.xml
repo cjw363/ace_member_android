@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+		<TextView
+			android:id="@+id/tv_gesture_info"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginTop="@dimen/margin35"
+			android:textColor="@color/clr_error_red"
+			android:textSize="@dimen/txtSize14"/>
+
+		<com.ace.member.gesture_lock.LockPatternView
+			android:layout_below="@+id/tv_gesture_info"
+			android:id="@+id/lock_pattern"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:padding="@dimen/padding30"/>
+
+		<TextView
+			android:id="@+id/tv_forgot_gesture_pwd"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/lock_pattern"
+			android:gravity="center"
+			android:text="@string/ask_forgot_gesture_password"
+			android:textColor="@color/clr_common_content_invalid"
+			android:textSize="@dimen/txtSize14"
+			android:padding="@dimen/padding10"
+			android:visibility="visible"/>
+
+		<TextView
+			android:id="@+id/tv_version"
+			style="@style/tv_version"
+			android:layout_width="match_parent"
+			android:layout_alignParentBottom="true"
+			android:textColor="@color/clr_version_hint"
+			android:layout_marginBottom="@dimen/margin5"
+			android:gravity="center"/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="@dimen/margin5"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<FrameLayout
+			android:id="@+id/fl"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginEnd="@dimen/margin10"
+			android:minHeight="@dimen/height45"
+			android:paddingEnd="0dp"
+			android:paddingStart="@dimen/padding10">
+
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv"
+				android:layout_width="@dimen/width32"
+				android:layout_height="@dimen/height32"
+				android:layout_gravity="center|end"
+				app:srcCompat="@drawable/ic_cambodia"/>
+		</FrameLayout>
+
+		<TextView
+			android:id="@+id/tv1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center_vertical|start"
+			android:minHeight="@dimen/height45"
+			android:minWidth="@dimen/width100"
+			android:textColor="@color/clr_common_title"
+			android:textSize="@dimen/txtSize20"
+			tools:text="Cambodia"/>
+
+		<TextView
+			android:id="@+id/tv2"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginStart="@dimen/padding10"
+			android:layout_weight="1"
+			android:gravity="center|start"
+			android:minHeight="@dimen/height45"
+			android:textColor="@color/clr_common_title"
+			android:textSize="@dimen/txtSize20"
+			tools:text="@string/country_code_855"/>
+	</LinearLayout>
+
+	<View
+		android:id="@+id/v_divider"
+		style="@style/v_horizontal_divider_line"
+		android:layout_gravity="bottom"/>
+</FrameLayout>

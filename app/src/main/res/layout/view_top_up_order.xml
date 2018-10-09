@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/tv_date_title"
+		style="@style/tv_date_title"
+		tools:text="2017-09"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingBottom="@dimen/padding10"
+		android:paddingEnd="@dimen/padding15"
+		android:paddingStart="@dimen/padding15"
+		android:paddingTop="@dimen/padding10">
+
+		<TextView
+			android:id="@+id/tv_phone_or_pincode"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textColor="@color/clr_common_content"
+			android:textSize="@dimen/txtSize18"
+			tools:text="1881418"/>
+
+		<TextView
+			android:id="@+id/tv_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/tv_phone_or_pincode"
+			android:layout_marginTop="@dimen/margin5"
+			android:textColor="@color/clr_list_time"
+			android:textSize="@dimen/txtSize14"
+			tools:text="01-01 10:10"/>
+
+		<TextView
+			android:id="@+id/tv_status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:text="@string/completed"
+			android:textColor="@color/color_completed"
+			android:textSize="@dimen/txtSize16"/>
+
+		<TextView
+			android:id="@+id/tv_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/tv_time"
+			android:layout_alignParentEnd="true"
+			android:layout_marginTop="@dimen/margin3"
+			android:textColor="@color/clr_amount_red"
+			android:textSize="@dimen/txtSize20"
+			tools:text="-100000 USD"/>
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height0.5"
+		android:background="@color/clr_list_item_divider"/>
+</LinearLayout>

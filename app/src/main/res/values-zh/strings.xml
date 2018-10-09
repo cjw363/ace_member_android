@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">ACE Member</string>
+	<string name="login_title">ACE Member</string>
+
+	<string name="version">版本</string>
+	<string name="version_name"><xliff:g>%s</xliff:g> [<xliff:g>%s</xliff:g>]</string>
+	<string name="login">登录</string>
+	<string name="account">账号</string>
+	<string name="password">密码</string>
+	<string name="date">日期</string>
+	<string name="back">返回</string>
+
+	<!--reset password-->
+	<string name="reset_password">重设密码</string>
+	<string name="new_password">新密码</string>
+	<string name="trading_password_required">交易密码必填</string>
+	<string name="new_password_required">新密码必填</string>
+	<string name="confirm_password">确认密码</string>
+	<string name="confirm_password_required">确认密码必填</string>
+	<string name="invalid_confirm_password">无效的确认密码</string>
+	<string name="your_password">你的密码</string>
+	<string name="your_trading_password">你的交易密码</string>
+	<string name="new_trading_password">新交易密码</string>
+	<string name="confirm_trading_password">确认新交易密码</string>
+	<string name="title_note">注意:</string>
+	<string name="reset_password_rules">\n
+		1. 新密码不能和旧密码一样；\n
+		2. 新密码至少由一个字母和一个数字构成，且至少有八位；\n
+		3. 新密码不能过于简单，比如：aaaa1111；\n
+	</string>
+	<string name="trading_pwd_rules">\n
+		1. 交易密码只能由六个数字组成；\n
+	</string>
+
+	<string name="transfer_rules">
+注意:\n
+1. 系统将收取转账金额的0.012作为转让费(最小转让费: 0.25 USD);\n
+	</string>
+
+	<string name="password_rules">\n
+		1. 密码至少由一个字母和一个数字构成，且至少有八位；\n
+		2. 密码不能过于简单，比如：aaaa1111；\n
+	</string>
+
+	<string name="pwd_too_simple">密码太简单</string>
+
+	<!-- gesture lock -->
+	<string name="enter_pattern_password">输入手势密码</string>
+	<string name="enter_new_pattern_password">输入新的手势密码</string>
+	<string name="confirm_pattern_password">确认手势密码</string>
+	<string name="try_again">再试一次</string>
+	<string name="gesture_lock_forbidden">密码被锁，请30秒后再试</string>
+	<string name="gesture_lock_forbidden_time_left"><xliff:g>%d</xliff:g> 秒后再试</string>
+	<string name="gesture_invalid_pattern">无效的,还有 <xliff:g>%d</xliff:g> 机会</string>
+	<string name="gesture_pattern_not_long_enough">手势密码长度不够请重新输入</string>
+	<string name="gesture_password_inactive">手势密码无效</string>
+	<string name="lockpattern_recording_incorrect_too_short">至少四个点，请重新输入</string>
+	<string name="lockpattern_error">无效的手势</string>
+
+	<!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_start">手势开始</string>
+	<!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_cleared">收拾清理</string>
+	<!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_cell_added">添加</string>
+	<!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_detected">手势完成</string>
+
+	<string name="ask_forgot_gesture_password">忘记手势密码?</string>
+	<string name="install_google_services">请安装谷歌服务</string>
+
+	<!--Login-->
+	<string name="phone_required">手机号码必填</string>
+	<string name="password_required">密码必填</string>
+	<string name="register">注册</string>
+	<string name="forgot_password">忘记密码</string>
+	<string name="ask_forgot_password">忘记密码?</string>
+	<string name="member_system">会员系统</string>
+	<string name="login_password">登录密码</string>
+
+	<!-- settings -->
+	<string name="about">关于</string>
+	<string name="gesture_password">手势密码</string>
+	<string name="confirm_to_set_gesture_password">设置手势密码?</string>
+	<string name="settings_reset_gesture_password">重设手势密码</string>
+	<string name="set_gesture_password">设置手势密码</string>
+	<string name="settings_fingerprint_login">指纹登录</string>
+	<string name="settings_fingerprint_pay">指纹支付</string>
+	<string name="logout">退出</string>
+	<string name="forgot_gesture_password">忘记手势密码</string>
+	<string name="invalid_trading_password">交易密码无效</string>
+	<string name="about_us">Asia Wei Luy是一家移动支付服务提供商，可以让我们的客户（个人和企业）在柬埔寨境内，通过任何手机，以低成本进行存取款或者给他人转账。 此外，作为领先的移动支付提供商，Asia Wei Luy允许客户随时随地进行支付操作，像账单支付，手机充值和贷款服务等。</string>
+	<string name="head_office">总部</string>
+	<string name="head_office1">总部:</string>
+	<string name="head_office_address">#45&#8211;47, Street Koh Pich, Sangkat Tole Bassac, Khan Chamkarmon, Phnom Penh</string>
+	<string name="copyright">Copyright © 2017 Asia Wei Luy Co., Ltd. All rights reserved.</string>
+	<string name="system_language">系统语言</string>
+	<string name="office_website">网址:</string>
+	<string name="waiting_for_verifying">等待验证你的身份信息。</string>
+	<string name="to_verify_certificate">请您去验证身份信息</string>
+
+	<!--Me-->
+	<string name="statement">报表</string>
+	<string name="transaction">交易</string>
+	<string name="log">日志</string>
+	<string name="payment_history">付款记录</string>
+	<string name="service_point">服务网点</string>
+	<string name="suspended">Suspended</string>
+	<string name="inactive">无效</string>
+	<string name="active">已激活</string>
+
+	<!--Main-->
+	<string name="double_click_to_exit_the_program">再按一次将退出程序.</string>
+	<string name="home">主页</string>
+	<string name="friends">通讯录</string>
+	<string name="service">服务</string>
+	<string name="me">我</string>
+	<string name="scan">扫码</string>
+	<string name="money">资产</string>
+	<string name="transfer">转账</string>
+	<string name="transfer_out">转出</string>
+	<string name="transfer_out_a2c">转出 (A2C)</string>
+	<string name="transfer_in">转入</string>
+	<string name="transfer_history">转账历史</string>
+	<string name="top_up">充值</string>
+	<string name="top_up_show_pin_code">Top Up (Show Pin-code)</string>
+	<string name="top_up_send_sms">Top Up (Send SMS)</string>
+	<string name="exchange">兑换</string>
+	<string name="exchange_success">兑换成功</string>
+	<string name="a2c_receive">A2C收款</string>
+	<string name="history">历史</string>
+	<string name="balance">余额</string>
+	<string name="currency">货币</string>
+	<string name="deposit">存款</string>
+	<string name="withdraw">取款</string>
+	<string name="withdraw_cancelled">取消取款</string>
+	<string name="withdraw_detail">取款明细</string>
+	<string name="record">记录</string>
+	<string name="sure_logout">你确定要退出当前账号?</string>
+	<string name="language">语言</string>
+	<string name="id_certificate">身份认证</string>
+	<string name="to_member">To Member</string>
+	<string name="to_non_member">To Non-Member</string>
+	<string name="to_merchant">To Merchant</string>
+	<string name="to_partner">To Partner</string>
+	<string name="to_set_trading">请设置交易密码</string>
+	<string name="source_phone">Source Phone</string>
+	<string name="target_phone">Target Phone</string>
+	<string name="input_amount">输入金额</string>
+	<string name="input_remark">备注</string>
+	<string name="fee">费用</string>
+	<string name="delete_bank">删除银行账号</string>
+	<string name="msg_gesture_dlg_tip">继续将替换指纹登录</string>
+	<string name="member">会员</string>
+	<string name="non_member">非会员</string>
+
+	<!--friends-->
+	<string name="add_contact">添加朋友</string>
+	<string name="new_friends">新的朋友</string>
+	<string name="accepted">已接受</string>
+	<string name="rejected">已拒绝</string>
+	<string name="accept">接受</string>
+	<string name="contact_information">联系人资料</string>
+	<string name="add">添加</string>
+	<string name="chat">聊天</string>
+	<string name="chat_info">聊天信息</string>
+	<string name="send">发送</string>
+	<string name="photo">相册</string>
+	<string name="photograph">相机</string>
+	<string name="contact_list">通讯录</string>
+	<string name="send_message">发消息</string>
+	<string name="group_chat">聊天群</string>
+	<string name="create_chat_group">发起群聊</string>
+	<string name="select_contacts">请选择联系人</string>
+	<string name="hold_to_talk">按住说话</string>
+	<string name="release_end">松开结束</string>
+	<string name="slide_up_cancel_send">手指上滑,取消发送</string>
+	<string name="release_cancel_send">松开手指,取消发送</string>
+	<string name="record_require_permissions">录音功能需要打开权限</string>
+	<string name="attention_non_friend">注意,非好友关系!</string>
+	<string name="send_temp_msg">发送临时消息</string>
+	<string name="no_contacts_found">没有找到联系人</string>
+	<string name="system_message">系统通知</string>
+	<string name="payment_message">付款提醒</string>
+	<string name="trading_message">交易提醒</string>
+	<string name="official_account">官方账号</string>
+	<string name="my_qr_code">我的二维码</string>
+	<string name="scan_qr_code">扫描二维码</string>
+	<string name="scan_to_add_friend">扫描二维码加我为好友</string>
+	<string name="scan_qr_to_add_friends">扫描二维码添加好友</string>
+	<string name="friends_request">好友申请</string>
+	<string name="people_you_may_know">你可能认识的人</string>
+	<string name="added">已添加</string>
+	<string name="no_more_results">没有更多结果</string>
+	<string name="contacts">联系人</string>
+	<string name="read_contacts_require_permissions">读取手机联系人需要权限</string>
+	<string name="profile">简介</string>
+	<string name="ignore">忽略</string>
+	<string name="real_name">真实姓名</string>
+	<string name="area">区域</string>
+	<string name="be_rejected">被拒绝</string>
+	<string name="Yesterday">昨天</string>
+	<string name="scan_qr_code_add_me_as_a_friend">扫描二维码加我为好友</string>
+	<string name="add_type">添加方式</string>
+	<string name="scan_my_qr_code">扫描我的二维码</string>
+	<string name="search_via_phone">搜索手机号码</string>
+	<string name="search_my_phone">搜索我的手机号码</string>
+	<string name="note_information">备注信息</string>
+	<string name="request_sent">请求已发送</string>
+
+	<!--maps-->
+	<string name="agent_count">代理商</string>
+	<string name="branch_count">分行 (<xliff:g>%d</xliff:g>)</string>
+	<string name="agent">代理商</string>
+	<string name="head_quarter">总部</string>
+	<string name="bank_code">银行编号</string>
+	<string name="bank_account_no">银行账号</string>
+	<string name="bank_account_name">银行账号</string>
+	<string name="bank_transaction_name">银行业务名称</string>
+	<string name="bank_transaction_time">银行交易时间</string>
+	<string name="type">类型</string>
+	<string name="amount">金额</string>
+	<string name="status">状态</string>
+	<string name="electricity">电费</string>
+	<string name="water_supply">水费</string>
+	<string name="lotto">彩票</string>
+	<string name="lottery">彩票</string>
+	<string name="lottery_prize">彩票奖金</string>
+	<string name="scratch">刮刮乐</string>
+	<string name="scratch_card">刮刮乐</string>
+	<string name="scratch_card_prize">刮刮乐奖金</string>
+	<string name="kh_express">KH Express</string>
+	<string name="bank">银行</string>
+	<string name="phone">手机号码</string>
+	<string name="remark">备注</string>
+	<string name="invalid_bank_account_no">无效的银行账号</string>
+	<string name="withdraw_fee">取款费用</string>
+	<string name="no_balance">无余额</string>
+	<string name="money_type">Money Type</string>
+	<string name="cash">现金</string>
+	<string name="balance_usd">USD 余额</string>
+	<string name="balance_khr">KHR 余额</string>
+	<string name="balance_thb">THB 余额</string>
+	<string name="balance_vnd">VND 余额</string>
+	<string name="customer_service">客服</string>
+	<string name="need_bank_account">需要银行账户</string>
+	<string name="no_data">没有数据</string>
+	<string name="hotline">热线</string>
+
+	<!--Exchange Currency-->
+	<string name="source_currency">原始货币 :</string>
+	<string name="target_currency">目标货币</string>
+	<string name="source_amount">原始金额</string>
+	<string name="exchange_rate">汇率</string>
+	<string name="target_amount">目标金额</string>
+	<string name="exchange_detail">兑换详情</string>
+
+	<string name="next">下一个</string>
+	<string name="sell_price">卖出价</string>
+	<string name="buy_price">买入价</string>
+	<string name="member_bank_account">会员银行账户</string>
+	<string name="company_bank_account">公司银行账户</string>
+
+	<string name="system_update">系统更新</string>
+	<string name="select_bank">选择银行</string>
+	<string name="invalid_currency">无效的货币</string>
+	<string name="no_bank">没有银行</string>
+	<string name="check_update">检查更新</string>
+	<string name="receive_to_acct">收账</string>
+	<string name="target">目标对象</string>
+
+	<!--Register-->
+	<string name="verify_phone_number">验证电话号码</string>
+	<string name="verification_code">验证码</string>
+	<string name="verification_sent">已经发送验证码到</string>
+	<string name="wrong_code">验证码失效或错误</string>
+	<string name="duplicated">该号码已经被注册</string>
+	<string name="next_resend_time"><xliff:g>%d</xliff:g>s 重新发送</string>
+	<string name="resend">重新发送</string>
+
+	<!--Forgot Password-->
+	<string name="give_up_password_reset">放弃密码重置吗？</string>
+
+	<string name="new_bank_account">添加銀行账号</string>
+	<string name="save">Save</string>
+	<string name="need_update">需要更新</string>
+	<string name="latest_version">Latest Version</string>
+	<string name="phone_number">手机号码</string>
+	<string name="please_input_phone">请输入电话号码</string>
+	<string name="please_input_login_password">请输入登录密码</string>
+	<string name="forgot_trading_password_query">忘记交易密码?</string>
+	<string name="invalid_phone">号码不正确</string>
+	<string name="please_set_trading_password">请先设置交易密码</string>
+
+	<string name="over_one_time_limit">超过单次的限制</string>
+	<string name="over_daily_limit">超过每天的限制</string>
+	<string name="over_one_day_bank_transfer_limit">超过每天银行转账限制</string>
+	<string name="no_more">No more</string>
+	<string name="time">Time</string>
+	<string name="invalid_pwd_for_chance_left">密码不正确,今天剩下 %s 次机会</string>
+	<string name="invalid_pwd_for_chances_left">密码不正确,今天剩下 %s 次机会</string>
+	<string name="trading_pwd_is_lock">交易密码已锁定</string>
+	<string name="inactive_trading_password">交易密码不可用</string>
+	<string name="require_reset_trading_password">请重置交易密码</string>
+	<string name="require_verify_certificate_first">请先验证身份</string>
+	<string name="input_accept_code">请输入接收码</string>
+
+	<string name="receive_money">收钱</string>
+	<string name="receive_money_success">收钱成功</string>
+	<string name="deposit_cash">Deposit Cash</string>
+	<string name="deposit_cash_success">Deposit Cash Success</string>
+	<string name="withdraw_cash_confirm">Withdraw Cash Confirm</string>
+	<string name="withdraw_cash">Withdraw Cash</string>
+
+	<string name="ask_switch_on_fingerprint_login">是否开启指纹登录? </string>
+	<string name="area_code_type">Area Code Type</string>
+	<string name="currency_type">Currency Type</string>
+	<string name="please_select_currency">Please Select Currency</string>
+	<string name="receive_to_phone_number">收款到电话号码</string>
+
+	<string name="finish_trading_password_setting">请先完成交易密码设置</string>
+
+	<!--Statement-->
+	<string name="beginning">期初余额</string>
+	<string name="filter">筛选</string>
+	<string name="payment">支出</string>
+	<string name="transfer_fee">转账费用</string>
+	<string name="loan">贷款</string>
+	<string name="return_loan">返还贷款</string>
+	<string name="all">全部</string>
+	<string name="service_charge">服务费</string>
+	<string name="loan_service_charge_partner">合作方贷款服务费</string>
+	<string name="bank_fee">银行手续费</string>
+	<string name="start">开始日期</string>
+	<string name="end_date">结束日期</string>
+	<string name="to">~</string>
+	<string name="please_select_a_valid_date">请选择日期</string>
+
+	<!--Transaction-->
+	<string name="attention">Attention</string>
+	<string name="total">合计</string>
+	<string name="transaction_detail">交易明细</string>
+	<string name="id_type">证件类型</string>
+	<string name="id_number">证件号码</string>
+	<string name="id">ID</string>
+	<string name="done">完成</string>
+	<string name="not_enough_storage_space">存储空间不足</string>
+	<string name="accept_code">Accept Code</string>
+	<string name="please_select_id_type">请选择证件类型</string>
+	<string name="please_select_sex">请选择性别</string>
+	<string name="please_select_nationality">请选择国籍</string>
+	<string name="please_select_birthday">请选择生日</string>
+	<string name="please_take_picture">请拍照</string>
+	<string name="task_error">任务出错</string>
+	<string name="no_task">没有任务</string>
+	<string name="task">任务</string>
+	<string name="invalid_id_number">无效的ID号码</string>
+	<string name="certification_is_pending">认证待处理</string>
+	<string name="certification_is_accepted">已通过认证</string>
+	<string name="certification_is_rejected">认证被拒绝</string>
+	<string name="certificate_type_id">身份证</string>
+	<string name="passport">护照</string>
+	<string name="drive_license">驾照</string>
+	<string name="family_book">户口本</string>
+
+	<string name="recent_order">最近订单</string>
+	<string name="top_up_way">充值方式</string>
+	<string name="order_detail">订单详情</string>
+	<string name="price_with_amount">价格:%s</string>
+	<string name="no_phone_company">没有电话公司</string>
+	<string name="face_value">面值</string>
+	<string name="sn">序列号</string>
+	<string name="pincode">充值密码</string>
+	<string name="show_pincode">展示充值密码</string>
+	<string name="face_values">面值 %s</string>
+	<string name="country_codes">+%s</string>
+	<string name="send_sms">发送短信</string>
+	<string name="directly_top_up">直接充值</string>
+	<string name="phone_company">电话公司</string>
+	<string name="no_face_value">没有面值</string>
+	<string name="invalid_country_code">无效的国家码</string>
+	<string name="please_select_face_value">请选择面值</string>
+
+	<string name="error">错误</string>
+
+	<string name="receive_success">Receive Success</string>
+	<string name="number">编号</string>
+	<string name="name">姓名</string>
+	<string name="commission">佣金</string>
+
+	<string name="take_picture">拍照</string>
+	<string name="select_from_album">从相册选择</string>
+	<string name="invalid_camera">相机不可用</string>
+	<string name="please_select_type">请选择类型</string>
+	<string name="invalid_consumer_number">无效的消费者编号</string>
+	<string name="invalid_consumer_name">无效的消费者名字</string>
+	<string name="need_attachment">需要附件</string>
+	<string name="invalid_bill_number">无效 <xliff:g>%s</xliff:g></string>
+
+	<string name="invalid_fee">无效的佣金</string>
+
+	<string name="tap_to_view_payment_code">点击查看付款码</string>
+	<string name="tap_to_view_deposit_code">Tap to view deposit code</string>
+	<string name="tap_to_view_withdraw_code">Tap to view withdraw code</string>
+	<string name="transfer_success">Transfer Success</string>
+
+	<string name="water">水</string>
+	<string name="consumer">顾客</string>
+	<string name="source">来源</string>
+	<string name="amount_khr">金额 (KHR)</string>
+	<string name="amount_khr_format">%s KHR</string>
+	<string name="detail">详情</string>
+	<string name="pending">待处理</string>
+	<string name="completed">完成</string>
+	<string name="sender">发送人</string>
+	<string name="receiver">收款人</string>
+	<string name="recertify">重新验证</string>
+	<string name="uploading">上传中</string>
+	<string name="bill_amount">账单金额</string>
+	<string name="invalid_pincode">无效的充值密码</string>
+	<string name="recent">Recent</string>
+	<string name="transfer_detail">Transfer Detail</string>
+
+	<string name="invalid_accept_code">Invalid Accept Code</string>
+	<string name="register_agreement"><Data><![CDATA[I agree with <font color="#29a3f0">the Terms of Service</font> and <font color="#29a3f0">the Privacy Policy</font>]]></Data></string>
+	<string name="invalid_token">无效的令牌</string>
+
+	<string name="loan_partner">贷款 (合作方)</string>
+	<string name="return_loan_partner">返还贷款 (合作方)</string>
+	<string name="pay_wsa">支付水费</string>
+	<string name="pay_edc">支付电费</string>
+	<string name="source_account">来源账户</string>
+	<string name="target_account">目标账户</string>
+	<string name="deposit_detail">存款详情</string>
+
+	<string name="receive_to_account">Receive To Account</string>
+	<string name="compensation">Compensation</string>
+	<string name="pay_wsa_fee">Pay WSA Fee</string>
+	<string name="pay_edc_fee">Pay EDC Fee</string>
+
+	<string name="withdraw_via_bank">取款 (via 银行)</string>
+	<string name="withdraw_via_agent">取款 (via 代理)</string>
+	<string name="withdraw_via_branch">取款 (via 分行)</string>
+	<string name="deposit_via_bank">存款 (via 银行)</string>
+	<string name="deposit_via_agent">存款 (via 代理)</string>
+	<string name="deposit_via_branch">存款 (via 分行)</string>
+	<string name="reject_reason">拒绝理由: </string>
+	<string name="bill_payment">账单支付</string>
+	<string name="currency_exchange">货币兑换</string>
+	<string name="phone_top_up">电话充值</string>
+	<string name="pay_partner_bill">支付合作方账单</string>
+	<string name="pay_partner_bill_fee">支付合作方账单费用</string>
+	<string name="partner_bill_return">返回合作方账单</string>
+	<string name="api_pay">API 支付</string>
+
+	<string name="edc_type_1_phnom_penh_kandal">Phnom Penh &amp; Kandal</string>
+	<string name="edc_type_2_battambang">Battambang</string>
+	<string name="edc_type_3_siem_reap">Siem Reap</string>
+	<string name="edc_type_4_sihanoukville">Sihanoukville</string>
+	<string name="edc_type_5_ang_ta_som">And Ta Som</string>
+	<string name="edc_type_6_banteay_meanchey">Banteay Meanchey</string>
+	<string name="edc_type_7_bavat">Bavat</string>
+	<string name="edc_type_8_chipoul">Chipoul</string>
+	<string name="edc_type_9_kampong_cham">Kampong Cham</string>
+	<string name="edc_type_10_kampong_rou">Kampong Rou</string>
+	<string name="edc_type_11_kampong_speu">Kampong Speu</string>
+	<string name="edc_type_12_kampong_sralao">Kampong Sralao</string>
+	<string name="edc_type_13_kao_seyma">Kao Seyma</string>
+	<string name="edc_type_14_kratie">Kratie</string>
+	<string name="edc_type_15_memot">Memot</string>
+	<string name="edc_type_16_mongkul_borey">Mongkul Borey</string>
+	<string name="edc_type_17_ponhea_krek">Ponhea Krek</string>
+	<string name="edc_type_18_prey_veng">Prey Veng</string>
+	<string name="edc_type_19_rattanakiri">Rattanakiri</string>
+	<string name="edc_type_20_senmonorom">Senmonorom</string>
+	<string name="edc_type_21_snuol">Snuol</string>
+	<string name="edc_type_22_steung_treng">Steung Treng</string>
+	<string name="edc_type_23_svay_rieng">Svay Rieng</string>
+	<string name="edc_type_24_takeo">Takeo</string>
+
+	<string name="wsa_type_1_ppwsa">PPWSA</string>
+	<string name="wsa_type_2_srwsa">SRWSA</string>
+	<string name="consumer1">Consumer#</string>
+	<string name="bill_no">账单编号</string>
+	<string name="client_id">客户ID</string>
+	<string name="invalid_bill_no">无效的账单编号</string>
+	<string name="invalid_client_id">无效的客户ID</string>
+
+	<string name="finance">Finance</string>
+	<string name="insurance">Insurance</string>
+	<string name="internet_and_tv">Internet &#038; TV</string>
+	<string name="others">Others</string>
+	<string name="partner_biller">合作账单公司</string>
+	<string name="samrithisak_loan">Samrithisak 贷款</string>
+	<string name="minimal_amount">最小金额</string>
+	<string name="service_charge_rate">服务费率</string>
+	<string name="no_partner_company">No Partner Company</string>
+	<string name="calculate_fee_rule">Fee: <xliff:g>%s</xliff:g></string>
+	<string name="title">Title</string>
+	<string name="select_title">Select Title</string>
+	<string name="amount_limit">Amount limit [0,<xliff:g>%s</xliff:g>]</string>
+	<string name="bill_id">Bill ID</string>
+	<string name="bill_number_length">Invalid <xliff:g>%s</xliff:g> length (<xliff:g>%s</xliff:g>)</string>
+	<string name="over_max_balance_limit">超过最大余额</string>
+	<string name="usd_balance_not_enough">美元账户余额不足</string>
+	<string name="credit">额度</string>
+	<string name="over_partner_total_loan_limit">超过 Partner 的贷款总额限制</string>
+	<string name="current_loan">当前贷款</string>
+	<string name="to_be_repaid">待还款</string>
+	<string name="bill_date">账单日期</string>
+	<string name="due_date">还款日期</string>
+	<string name="config">配置</string>
+	<string name="address1">Address:</string>
+	<string name="samrithisak_head_office_address">No.502G,502H, Monivong Blvd, Sangkat Tonle Basac, Khan Chamkar Mon, Phnom Penh.</string>
+	<string name="no_loan_credit">No loan credit yet, please contact Samrithisak to apply.</string>
+	<string name="over_due">超期</string>
+	<string name="fixed">固定值</string>
+	<string name="percent">百分比</string>
+	<string name="select_biller_error">Select Biller Error</string>
+	<string name="get_more">查看更多账单</string>
+	<string name="partner">合作公司</string>
+	<string name="partner_company">合作公司</string>
+	<string name="biller">Biller</string>
+	<string name="biller_company">开单公司</string>
+	<string name="amount_usd">金额 (USD)</string>
+	<string name="related_transaction">关联交易</string>
+	<string name="level">等级</string>
+	<string name="over_member_count_limit">超过会员数量限制</string>
+	<string name="over_credit">超过额度</string>
+	<string name="over_max_loan">超过最大贷款金额</string>
+	<string name="less_than_min_loan">小于最小贷款金额</string>
+	<string name="need_greater_than_service_charge">需要大于贷款服务费</string>
+
+	<string name="all_currency">All Currency</string>
+	<string name="rule">Rule</string>
+	<string name="sex">性别</string>
+	<string name="nationality">国籍</string>
+	<string name="birthday">生日</string>
+	<string name="male">男</string>
+	<string name="female">女</string>
+	<string name="credit_with_currency">额度 %1$s %2$s</string>
+	<string name="day_service_charge_rate">日利率: <xliff:g>%s</xliff:g></string>
+	<string name="ace_loan">ACE 贷款</string>
+	<string name="salary_loan">薪酬贷款</string>
+	<string name="salary_loan_return">薪酬贷款还款</string>
+	<string name="salary_loan_service_charge">薪酬贷款服务费</string>
+	<string name="select_date">选择日期</string>
+	<string name="repay_plan">还款计划</string>
+	<string name="repay_day">还款日期</string>
+	<string name="loan_time">贷款时间</string>
+	<string name="due_date_info">系统会在你下次发放工资时自动还款,到期日 <xliff:g>%s</xliff:g></string>
+	<string name="service_charge_info">服务费率 %1$s, 最小服务费 %2$s USD</string>
+	<string name="service_charge_info2">服务费率 %1$s, 最小金额 %2$s USD</string>
+	<string name="choose_term">选择分期</string>
+	<string name="capital_interest_total"><xliff:g>%s</xliff:g> (本金) + <xliff:g>%s</xliff:g> (利息) = <xliff:g>%s</xliff:g></string>
+	<string name="loan_limit">贷款限制 [<xliff:g>%s</xliff:g>,<xliff:g>%s</xliff:g>]</string>
+	<string name="repay_error">分期错误</string>
+	<string name="available_credit">可贷额度</string>
+	<string name="please_choose_term">请选择分期</string>
+	<string name="input_multiple_amount">Please input multiple of %1$s</string>
+	<string name="loan_date">贷款日期</string>
+	<string name="plan_total">计划还款汇总</string>
+	<string name="staging_detail">分期详细</string>
+	<string name="repay_now">提前还款</string>
+	<string name="finished">完成</string>
+	<string name="contain_interest">含利息</string>
+	<string name="capital_interest"><xliff:g>%s</xliff:g> (本金) + <xliff:g>%s</xliff:g> (利息)</string>
+	<string name="bill_payment_rule_description">金额*百分比(<xliff:g>%s</xliff:g>) 或 固定值(<xliff:g>%s</xliff:g>)</string>
+	<string name="input_amount_times">录入金额必须是<xliff:g>%s</xliff:g>的倍数</string>
+	<string name="post_process">后续处理</string>
+	<string name="repay_plan_total">计划还款总额</string>
+	<string name="interest_amount">包含利息<xliff:g>%s</xliff:g></string>
+	<string name="current_repay_amount">当前汇款金额</string>
+	<string name="interest">利息</string>
+	<string name="plan_date">还款时间</string>
+	<string name="undone">未完成</string>
+	<string name="repay_plan_detail">还款详细</string>
+	<string name="repay">计划</string>
+	<string name="stage">第<xliff:g>%s</xliff:g>期</string>
+	<string name="term_x_month">分<xliff:g>%s</xliff:g>个月</string>
+	<string name="term_x_months">分<xliff:g>%s</xliff:g>个月</string>
+	<string name="bill_payment_fee_rule"><xliff:g>%s</xliff:g>, 费用为: <xliff:g>%s</xliff:g></string>
+	<string name="transfer_to_member">Transfer To Member</string>
+	<string name="transfer_to_non_member">Transfer To Non-Member</string>
+	<string name="transfer_to_partner">Transfer To Partner</string>
+	<string name="batch_repay">批量支付</string>
+	<string name="bill_number">单 <xliff:g>%s</xliff:g></string>
+	<string name="please_choose_prepayment_data">请选择还款单</string>
+	<string name="loan_history">贷款历史</string>
+	<string name="running">进行中</string>
+	<string name="paid_off">已付清</string>
+	<string name="loan_amount">贷款</string>
+	<string name="reimbusement_complete">还款完成</string>
+	<string name="loan_history_detail">借款详细</string>
+	<string name="loan_n">借款 <xliff:g>%s</xliff:g></string>
+	<string name="loan_detail">贷款详细</string>
+	<string name="safe_keyboard">安全键盘</string>
+	<string name="input_type">Input Type</string>
+	<string name="by_hand">手工录入</string>
+	<string name="qr_code">二维码录入</string>
+	<string name="length_limit">长度 (<xliff:g>%s</xliff:g>)</string>
+	<string name="split_amount">分档金额</string>
+	<string name="over_max_loan_limit">贷款超过会员限制 [<xliff:g>%s</xliff:g>, <xliff:g>%s</xliff:g>]</string>
+	<string name="ticket_id">票据号</string>
+	<string name="service_charge_not_match">服务费用不匹配</string>
+	<string name="over_loan_amount">超过贷款金额</string>
+	<string name="term">期数</string>
+	<string name="x_month">分<xliff:g>%s</xliff:g>个月</string>
+	<string name="x_months">分<xliff:g>%s</xliff:g>个月</string>
+	<string name="select_term">选择期数</string>
+	<string name="repay_total">还款总额</string>
+	<string name="clear_chat_history">清除聊天记录</string>
+	<string name="mute_notifications">消息免打扰</string>
+	<string name="choose_friends">选择好友</string>
+
+	<string name="function_pause_format">%1$s功能 (%2$s) 暂停</string>
+	<string name="format_twice">%1$s %2$s</string>
+	<string name="over_available_credit">超过可用额度</string>
+	<string name="red_packet">红包</string>
+	<string name="config_error">配置错误</string>
+
+	<string name="msg_1001">Your account has been logged in elsewhere, Please login again</string>
+	<string name="login_again2">Your account has been logged in elsewhere, confirm to login?</string>
+	<string name="msg_1706">无效的账号</string>
+	<string name="msg_1707">无效的安全码</string>
+	<string name="msg_1708">找不到该会员</string>
+	<string name="msg_1709">余额不足</string>
+	<string name="msg_1710">银行已存在</string>
+	<string name="msg_1711">超出每日限制</string>
+	<string name="msg_1714">超出现金转账余额</string>
+	<string name="msg_1715">超出每天的现金转账限制</string>
+	<string name="msg_1721">接收者必须是会员</string>
+	<string name="msg_1722">不可以转账给自己</string>
+	<string name="msg_1723">超出最大余额</string>
+	<string name="msg_1836">超出最大的贷款限制</string>
+	<string name="msg_1837">配置已失效</string>
+	<string name="msg_1838">超过贷款额度</string>
+
+	<string name="balance_flow">余额变动</string>
+	<string name="pay">付款</string>
+	<string name="set_amount">设置金额</string>
+	<string name="save_image">保存图片</string>
+	<string name="remove_amount">清除金额</string>
+
+	<!---Lotto-->
+	<string name="shanghai_lotto">Shanghai - Lotto</string>
+	<string name="lotto_90">Lotto 90</string>
+	<string name="outstanding">Outstanding</string>
+	<string name="ticket">Ticket</string>
+	<string name="single">Single</string>
+	<string name="multiple">Multiple</string>
+	<string name="special">特殊</string>
+	<string name="bet_list">Bet List</string>
+	<string name="win_report">Win Report</string>
+	<string name="result">结果</string>
+
+	<string name="lotto_90_multiple">Lotto 90 - Multiple</string>
+	<string name="lotto_90_single">Lotto 90 - Single</string>
+	<string name="time_left">剩余时间</string>
+	<string name="manual">手动</string>
+	<string name="random">随机</string>
+	<string name="random_1">随机 1</string>
+	<string name="random_5">随机 5</string>
+	<string name="total_amount_1">金额:</string>
+	<string name="pleas_select_number">Number Over Limit 6 to <xliff:g>%s</xliff:g></string>
+	<string name="closed">关闭</string>
+	<string name="game_is_closed">游戏关闭</string>
+	<string name="please_select_number">请选择号码</string>
+	<string name="please_betting">请投注</string>
+	<string name="bet_more_10_group">最多选择10组号码</string>
+	<string name="most_select_number">最多选择5个号码</string>
+	<string name="please_choose_five_number">请选择5个号码</string>
+	<string name="betting_success">投注成功</string>
+	<string name="betting_amount">投注金额:</string>
+	<string name="buy_again">再买一次</string>
+	<string name="buy_ticket_special">特殊 (<xliff:g>%s</xliff:g>)</string>
+	<string name="times">Times</string>
+	<string name="most_select_1_number">Most Choose 1 Number</string>
+	<string name="please_enter_times">Please Enter Times</string>
+	<string name="max_times">Times limit [1,<xliff:g>%s</xliff:g>]</string>
+	<string name="out_of_bet_credit">Out Of Bet Credit</string>
+
+	<!-- 优惠券-->
+	<string name="coupon">优惠券</string>
+	<string name="no_coupon">没有优惠券</string>
+	<string name="coupon_due_date">%s 到期</string>
+	<string name="free_withdraw_fee">免手续费</string>
+	<array name="coupon_titles">
+		<item>可用</item>
+		<item>不可用</item>
+	</array>
+
+	<string name="bracket">[%s]</string>
+	<string name="vietnam">Vietnam</string>
+	<string name="cambodia">Cambodia</string>
+	<string name="china">China</string>
+	<string name="thailand">Thailand</string>
+
+	<string name="update_portrait">编辑头像</string>
+	<string name="please_select_image">请选择图片</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/shape_corner_radius"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/blend_dialog_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="left|center_vertical"
+		android:padding="@dimen/padding16"
+		android:textColor="@color/clr_blend_item_theme"
+		android:textSize="@dimen/txtSize20"
+		android:textStyle="normal"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height2"
+		android:background="@color/clr_blend_item_theme"/>
+
+	<LinearLayout
+		android:id="@+id/blend_dialog_preview"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height242"
+		android:background="@null"
+		android:gravity="center">
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/blend_holo_progressbar_circle"/>
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/blend_dialog_next_view"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height242"
+		android:cacheColorHint="@color/black"
+		android:divider="@color/clr_blend_item_divider"
+		android:dividerHeight="@dimen/height0.5"
+		android:fadingEdge="none"
+		android:listSelector="@android:color/transparent"
+		android:visibility="gone"/>
+
+	<View
+		android:id="@+id/blend_dialog_divider"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height1"
+		android:background="@color/clr_blend_item_divider"/>
+
+	<TextView
+		android:id="@+id/blend_dialog_cancle_btn"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height48"
+		android:background="@drawable/blend_view_bg_default"
+		android:gravity="center"
+		android:textColor="@color/clr_light_black"
+		android:textSize="@dimen/txtSize16"/>
+
+</LinearLayout>

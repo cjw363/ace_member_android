@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/clr_app_bg"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:id="@+id/sv_loan"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height150"
+				android:background="@color/white"
+				android:gravity="center">
+
+				<TextView
+					android:id="@+id/tv_title"
+					style="@style/tv_item_title"
+					android:layout_centerHorizontal="true"
+					android:text="@string/repay_total"
+					android:textColor="@color/clr_about_tv"/>
+
+				<TextView
+					android:id="@+id/tv_amount"
+					style="@style/tv_item_title"
+					android:layout_below="@+id/tv_title"
+					android:layout_centerHorizontal="true"
+					android:text="@string/zero_with_usd"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:layout_marginTop="@dimen/margin10"
+					android:textColor="@color/clr_round_progress"
+					android:textSize="@dimen/txtSize30"/>
+
+				<!--<TextView-->
+					<!--android:id="@+id/tv_interest_total"-->
+					<!--style="@style/tv_item_title"-->
+					<!--android:layout_below="@+id/tv_amount"-->
+					<!--android:layout_centerHorizontal="true"-->
+					<!--android:layout_marginTop="@dimen/margin10"-->
+					<!--android:textColor="@color/clr_tv_time"/>-->
+			</RelativeLayout>
+
+			<com.og.utils.ListViewForScrollView
+				android:id="@+id/lv_detail"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:divider="@null"
+				android:scrollbars="none"/>
+
+			<Button
+				android:id="@+id/btn_submit"
+				style="@style/btn_common"
+				android:layout_marginBottom="@dimen/margin15"
+				android:layout_marginTop="@dimen/margin30"
+				android:text="@string/submit"/>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

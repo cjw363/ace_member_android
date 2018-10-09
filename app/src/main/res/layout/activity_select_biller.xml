@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/clr_primary_body_bg"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<com.ace.member.view.PagerSlidingTabStrip
+		android:id="@+id/tab_title"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height45"
+		app:pstsIndicatorColor="@color/clr_tab_select_txt"
+		app:pstsIndicatorHeight="@dimen/height1d"
+		app:pstsSelectedTabTextColor="@color/clr_tab_select_txt"
+		app:pstsShouldExpand="false"
+		app:pstsTabBackground="@color/clr_tab_gb"
+		app:pstsTabPaddingLeftRight="@dimen/padding10"
+		app:pstsTabTextAllCaps="true"
+		app:pstsTabTextColor="@color/clr_tab_txt"
+		app:pstsTabTextSize="@dimen/txtSize14"
+		app:pstsUnderlineColor="@color/clr_primary_body_bg"
+		app:pstsUnderlineHeight="@dimen/height1d"/>
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/bill_pager"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+</LinearLayout>

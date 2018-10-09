@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<com.og.utils.SlidingLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin30"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/iv_biller_company"
+						android:layout_width="@dimen/width40"
+						android:layout_height="@dimen/height40"
+						app:srcCompat="@drawable/ic_partner_common"/>
+
+					<TextView
+						android:id="@+id/tv_biller_company_name"
+						style="@style/tv_order_detail_title"/>
+
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/tv_total_amount"
+					style="@style/tv_order_detail_total"/>
+
+
+				<View
+					style="@style/v_horizontal_divider_line2"/>
+
+				<!--<LinearLayout style="@style/ll_order_detail_content">-->
+
+					<!--<TextView-->
+						<!--style="@style/tv_order_detail_content_left"-->
+						<!--android:text="@string/type"/>-->
+
+					<!--<TextView-->
+						<!--android:id="@+id/tv_type"-->
+						<!--style="@style/tv_order_detail_content_right"/>-->
+				<!--</LinearLayout>-->
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/phone"/>
+
+					<TextView
+						android:id="@+id/tv_phone"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						android:id="@+id/tv_bill_id_title"
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/bill_id"/>
+
+					<TextView
+						android:id="@+id/tv_bill_id"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/amount"/>
+
+					<TextView
+						android:id="@+id/tv_amount"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/fee"/>
+
+					<TextView
+						android:id="@+id/tv_fee"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/ll_remark"
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/remark"/>
+
+					<TextView
+						android:id="@+id/tv_remark"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<View style="@style/v_horizontal_divider_line2"/>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/time"/>
+
+					<TextView
+						android:id="@+id/tv_time"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<!--<LinearLayout style="@style/ll_order_detail_content">-->
+
+					<!--<TextView-->
+						<!--style="@style/tv_order_detail_content_left"-->
+						<!--android:text="@string/post_process"/>-->
+
+					<!--<TextView-->
+						<!--android:id="@+id/tv_flag"-->
+						<!--style="@style/tv_order_detail_content_right"/>-->
+				<!--</LinearLayout>-->
+
+				<!--<Button-->
+				<!--android:id="@+id/btn_confirm"-->
+				<!--style="@style/btn_submit"-->
+				<!--android:layout_width="match_parent"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_marginTop="@dimen/margin30"-->
+				<!--android:text="@string/done"-->
+				<!--android:visibility="gone"/>-->
+			</LinearLayout>
+
+		</ScrollView>
+
+	</com.og.utils.SlidingLayout>
+
+</LinearLayout>

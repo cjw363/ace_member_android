@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_primary_body_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<com.og.utils.GridViewForScrollView
+				android:id="@+id/gv_user"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:gravity="center"
+				android:minHeight="@dimen/height200"
+				android:numColumns="5"
+				android:paddingBottom="@dimen/padding10"
+				android:paddingEnd="@dimen/padding15"
+				android:paddingStart="@dimen/padding15"
+				android:scrollbars="none"/>
+
+			<View style="@style/v_horizontal_divider_section_1"/>
+
+			<RelativeLayout
+				android:id="@+id/rl_transfer_history"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/width40"
+				android:background="@color/white"
+				android:orientation="horizontal"
+				android:paddingEnd="@dimen/padding15"
+				android:paddingStart="@dimen/padding15">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/transfer_history"
+					android:textColor="@color/clr_common_title"
+					android:textSize="@dimen/txtSize16"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:layout_width="@dimen/width20"
+					android:layout_height="@dimen/height20"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					app:srcCompat="@drawable/ic_arrow_right"/>
+			</RelativeLayout>
+
+			<View style="@style/v_horizontal_divider_section_1"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/width40"
+				android:background="@color/white"
+				android:orientation="horizontal"
+				android:paddingEnd="@dimen/padding15"
+				android:paddingStart="@dimen/padding15">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/mute_notifications"
+					android:textColor="@color/clr_common_title"
+					android:textSize="@dimen/txtSize16"/>
+
+				<android.support.v7.widget.SwitchCompat
+					android:id="@+id/sw_mute"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:background="@color/white"
+					android:textOff=""
+					android:textOn=""
+					android:thumb="@drawable/switch_thumb"
+					android:visibility="invisible"
+					app:switchMinWidth="@dimen/width45"
+					app:track="@drawable/switch_track"/>
+
+			</RelativeLayout>
+
+			<View style="@style/v_horizontal_divider_section_1"/>
+
+			<TextView
+				android:id="@+id/tv_clear"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/width40"
+				android:background="@color/white"
+				android:gravity="center_vertical"
+				android:paddingEnd="@dimen/padding15"
+				android:paddingStart="@dimen/padding15"
+				android:text="@string/clear_chat_history"
+				android:textColor="@color/clr_common_title"
+				android:textSize="@dimen/txtSize16"/>
+
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

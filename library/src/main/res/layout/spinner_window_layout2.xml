@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+  <TextView
+      android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+
+  <LinearLayout
+      android:id="@+id/llPopupWindow"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/title"
+          style="@style/dlg_title"
+          android:textColor="@color/dlg_title"
+          android:textSize="@dimen/txtSize16"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/height40"
+          android:background="@color/white"
+          android:gravity="start|center"/>
+
+      <ScrollView
+          android:id="@+id/svPopupWindow"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:background="@color/clr_window_bg"
+          android:minHeight="@dimen/height310"
+          android:scrollbars="none">
+
+        <com.og.utils.ListViewForScrollView
+            android:id="@+id/lvContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.og.utils.ListViewForScrollView>
+
+      </ScrollView>
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+</LinearLayout>

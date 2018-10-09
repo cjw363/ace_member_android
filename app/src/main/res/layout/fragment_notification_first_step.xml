@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/ll_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:id="@+id/sv_main"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<include
+				android:id="@+id/toolbar"
+				layout="@layout/view_toolbar"/>
+
+			<LinearLayout
+				android:id="@+id/ll_phone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/margin5"
+				android:orientation="vertical"
+				android:padding="@dimen/padding5">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/margin20"
+					android:text="@string/phone_number"
+					android:textColor="@color/clr_common_title"
+					android:textSize="@dimen/txtSize16"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin5"
+					android:layout_marginLeft="@dimen/margin10"
+					android:layout_marginRight="@dimen/margin10"
+					android:layout_marginTop="@dimen/margin5"
+					android:orientation="horizontal">
+
+					<LinearLayout
+						android:id="@+id/ll_country_code"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:orientation="horizontal">
+
+						<TextView
+							android:id="@+id/tv_country_code"
+							android:layout_width="@dimen/width80"
+							android:layout_height="match_parent"
+							android:gravity="center"
+							android:textColor="@color/clr_common_title"
+							android:textSize="@dimen/txtSize26"/>
+
+						<android.support.v7.widget.AppCompatImageView
+							android:layout_width="@dimen/width10"
+							android:layout_height="@dimen/height10"
+							android:layout_gravity="center_vertical"
+							app:srcCompat="@drawable/ic_triangle_black"/>
+
+						<View
+							style="@style/vertical_line2"
+							android:layout_marginStart="@dimen/margin8"/>
+					</LinearLayout>
+
+					<EditText
+						android:id="@+id/et_phone"
+						style="@style/et_phone_content"
+						android:layout_width="@dimen/width0"
+						android:layout_weight="8"
+						android:background="@null"
+						android:padding="@dimen/padding5"
+						android:textColor="@color/clr_common_content"
+						android:textColorHint="@color/clr_common_content_hint"
+						android:textSize="@dimen/txtSize26"/>
+
+					<RelativeLayout
+						android:id="@+id/rl_delete"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+						android:layout_weight="1"
+						android:visibility="gone">
+
+						<android.support.v7.widget.AppCompatImageView
+							android:layout_width="25dp"
+							android:layout_height="25dp"
+							android:layout_centerInParent="true"
+							android:gravity="center"
+							app:srcCompat="@drawable/ic_delete"/>
+					</RelativeLayout>
+				</LinearLayout>
+
+				<View style="@style/horizontal_line2"/>
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/btn_next"
+				style="@style/btn_common"
+				android:layout_marginTop="@dimen/margin15"
+				android:text="@string/next"/>
+
+			<LinearLayout
+				android:id="@+id/ll_agreement"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/margin10"
+				android:layout_marginTop="@dimen/margin20"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_agree"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="@drawable/sel_bg_agree"/>
+
+				<TextView
+					android:id="@+id/tv_agreement"
+					style="@style/tv_agreement_content"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/margin5"/>
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

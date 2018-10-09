@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:attrs="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:id="@+id/rl_member_bank_info"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height160">
+
+				<android.support.v4.view.ViewPager
+					android:id="@+id/vp_member_bank_info"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:layout_margin="@dimen/margin10"
+					android:clipChildren="false"/>
+
+				<com.rd.PageIndicatorView
+					android:id="@+id/piv_member_bank"
+					style="@style/bank_card_indicator"
+					android:layout_alignParentBottom="true"
+					app:piv_animationType="slide"
+					app:piv_autoVisibility="true"
+					app:piv_interactiveAnimation="true"
+					app:piv_padding="@dimen/padding3"
+					app:piv_radius="@dimen/width5"
+					app:piv_selectedColor="@color/black"
+					app:piv_unselectedColor="@color/clr_view_page"
+					attrs:piv_viewPager="@id/viewPager"/>
+
+			</RelativeLayout>
+
+			<View style="@style/v_horizontal_divider_section"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/currency"/>
+
+				<TextView
+					android:id="@+id/tv_currency"
+					style="@style/tv_common_content"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line1"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/balance"/>
+
+				<TextView
+					android:id="@+id/tv_balance"
+					style="@style/tv_common_content"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<View style="@style/v_horizontal_divider_section"/>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					android:id="@+id/tv_amount_info"
+					style="@style/tv_common_title"
+					android:text="@string/amount"/>
+
+				<EditText
+					android:id="@+id/et_withdraw_amount"
+					style="@style/et_common"
+					android:hint="@string/amount"
+					android:inputType="numberDecimal"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<LinearLayout style="@style/ll_fee_content">
+
+				<TextView
+					android:id="@+id/tv_title_withdraw_fee"
+					style="@style/tv_fee_title"
+					android:layout_width="@dimen/width110"
+					android:layout_marginLeft="@dimen/margin10"
+					android:text="@string/withdraw_fee"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/margin10"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/tv_withdraw_fee"
+						style="@style/tv_fee_content"
+						android:text="@string/zero_with_decimal"/>
+
+					<TextView
+						android:id="@+id/tv_title_bank_fee"
+						style="@style/tv_fee_title"
+						android:layout_marginStart="@dimen/margin20"
+						android:text="@string/bank_fee"/>
+
+					<TextView
+						android:id="@+id/tv_bank_fee"
+						style="@style/tv_fee_content"
+						android:layout_marginLeft="@dimen/margin10"
+						android:text="@string/zero_with_decimal"/>
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<View style="@style/v_horizontal_divider_section"/>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height50"
+				android:layout_marginEnd="@dimen/margin15">
+
+				<TextView
+					android:id="@+id/tv_coupon"
+					style="@style/tv_common_title"
+					android:layout_centerVertical="true"
+					android:text="@string/coupon"/>
+
+				<TextView
+					android:id="@+id/tv_select"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center_vertical"
+					android:layout_centerVertical="true"
+					android:layout_toEndOf="@+id/tv_coupon"
+					android:text="@string/select"
+					android:textColor="@color/clr_common_content_hint"
+					android:textSize="@dimen/txtSize16"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:layout_width="@dimen/width16"
+					android:layout_height="@dimen/height16"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					app:srcCompat="@drawable/ic_arrow_right"/>
+			</RelativeLayout>
+
+			<View style="@style/v_horizontal_divider_line1"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/remark"/>
+
+				<EditText
+					android:id="@+id/et_remark"
+					style="@style/et_common"
+					android:hint="@string/remark"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<Button
+				android:id="@+id/btn_submit"
+				style="@style/btn_submit"
+				android:text="@string/submit"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

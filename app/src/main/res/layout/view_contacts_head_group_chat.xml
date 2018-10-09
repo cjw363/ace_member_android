@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/layout_friends_lv_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+	>
+
+	<android.support.v7.widget.AppCompatImageView
+		android:id="@+id/iv_friends_lv_head"
+		android:layout_width="@dimen/width40"
+		android:layout_height="@dimen/height40"
+		android:layout_marginBottom="@dimen/margin5"
+		android:layout_marginStart="@dimen/margin10"
+		android:layout_marginTop="@dimen/margin5"
+		app:srcCompat="@drawable/ic_friends_list_group_chat"
+		/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginStart="20dp"
+		android:layout_toEndOf="@+id/iv_friends_lv_head"
+		android:text="@string/group_chat"
+		android:textColor="@color/clr_chat_tv_title"
+		android:textSize="@dimen/txtSize16"
+		/>
+
+	<View
+		style="@style/v_horizontal_divider_line"
+		android:layout_alignParentBottom="true"
+		android:layout_marginEnd="@dimen/margin20"
+		android:layout_marginStart="@dimen/margin10"
+		/>
+
+</RelativeLayout>

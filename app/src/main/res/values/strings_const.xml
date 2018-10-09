@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="country_code_855">+855</string>
+	<string name="zero">0</string>
+	<string name="zero_with_khr">0 KHR</string>
+	<string name="zero_with_usd">0.00 USD</string>
+	<string name="zero_with_decimal">0.00</string>
+
+	<string name="usd">USD</string>
+	<string name="khr">KHR</string>
+	<string name="vnd">VND</string>
+	<string name="thb">THB</string>
+
+	<string name="english">English</string>
+	<string name="chinese">简体中文</string>
+	<string name="cambodian">កម្ពុជា</string>
+	<string name="Vietnamese">tiếng Việt</string>
+
+	<string name="_8888_samrithisak">8888 Samrithisak</string>
+	<string name="samrithisak_tel">Tel: (855) 93 49 66 66 / 97 76 13 333</string>
+	<string name="samrithisak_email">Email: info@samrithisak.com</string>
+
+	<string name="hot_line">Hotline(+855):</string>
+	<string name="hot_line_phone">098 666 678 / 099 666 678 / 071 6666 078</string>
+	<string name="website">http://www.asiaweiluy.com/</string>
+
+	<string name="type_a">A</string>
+	<string name="type_b">B</string>
+</resources>

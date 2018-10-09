@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spinner_item_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingRight="@dimen/padding5">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height90"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/imageView"
+			android:layout_width="@dimen/width80"
+			android:layout_height="@dimen/height80"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="@dimen/margin5"
+			app:srcCompat="@drawable/ic_cambodia"/>
+
+		<TextView
+			android:id="@+id/tv_key"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone"/>
+
+		<TextView
+			android:id="@+id/textView"
+			android:gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/clr_spinner_bg"
+			android:textSize="@dimen/txtSize24"/>
+	</LinearLayout>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height80"
+		android:layout_centerInParent="true"
+		android:background="@drawable/bg_rectangle_corner2"/>
+
+</RelativeLayout>

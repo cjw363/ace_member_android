@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/svPopupWindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:scrollbars="none">
+
+
+	<com.og.utils.GridViewForScrollView
+		android:id="@+id/gvContents"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/sel_bg_pop"
+		android:numColumns="2"
+		android:paddingBottom="@dimen/padding5"
+		android:paddingLeft="@dimen/padding8"
+		android:paddingRight="@dimen/padding6"
+		android:paddingTop="@dimen/padding13"/>
+
+</ScrollView>

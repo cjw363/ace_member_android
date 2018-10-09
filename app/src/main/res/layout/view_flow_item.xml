@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/tv_date_title"
+		style="@style/tv_date_title"
+		tools:text="2017-09"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="@dimen/padding20"
+		android:paddingEnd="@dimen/padding15"
+		android:paddingStart="@dimen/padding15"
+		android:paddingTop="@dimen/padding20">
+
+		<TextView
+			android:id="@+id/tv_date"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical|start"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize14"
+			tools:text="10-10 10:10"/>
+
+		<TextView
+			android:id="@+id/tv_amount"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical|end"
+			android:paddingEnd="@dimen/margin15"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize14"
+			tools:text="-1,0000,0.00"/>
+
+		<TextView
+			android:id="@+id/tv_balance"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical|end"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize14"
+			tools:text="1,000,000,000.00"/>
+	</LinearLayout>
+
+	<View
+		android:id="@+id/v_divider"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height1"
+		android:layout_marginStart="@dimen/margin10"
+		android:background="@drawable/divider1"/>
+</LinearLayout>

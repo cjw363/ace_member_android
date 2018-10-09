@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tool="http://schemas.android.com/tools"
+	android:id="@+id/cv_background"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:cardCornerRadius="@dimen/margin8">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<FrameLayout
+			android:id="@+id/fl_bank"
+			android:layout_width="@dimen/width60"
+			android:layout_height="@dimen/height60"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="@dimen/margin10"
+			android:background="@drawable/style_circle_white">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv_bank"
+				android:layout_width="@dimen/width40"
+				android:layout_height="@dimen/height40"
+				android:layout_gravity="center"
+				app:srcCompat="@drawable/ic_bank_aba"/>
+		</FrameLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height60"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="@dimen/margin10"
+			android:layout_toRightOf="@+id/fl_bank"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv_bank"
+				style="@style/tv_common_title_1"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				tool:text="@string/bank"/>
+
+			<TextView
+				android:id="@+id/tv_account_name"
+				style="@style/tv_common_title_1"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				tool:text="@string/bank_account_name"/>
+
+			<TextView
+				android:id="@+id/tv_bank_account_no"
+				style="@style/tv_common_title_1"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				tool:text="999999999999999999"/>
+
+			<EditText
+				android:id="@+id/et_bank_account_no"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_marginLeft="0dp"
+				android:paddingLeft="@dimen/margin5"
+				android:layout_weight="1"
+				android:background="@drawable/et_style1"
+				android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+				android:hint="@string/bank_account_no"
+				android:maxLength="20"
+				android:maxLines="1"
+				android:textColor="@color/clr_common_content"
+				android:textColorHint="@color/clr_common_content_hint"
+				android:textSize="@dimen/txtSize16"
+				android:visibility="gone"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</android.support.v7.widget.CardView>

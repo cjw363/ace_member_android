@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<View
+		android:background="#e1e1e1"
+		android:layout_width="match_parent"
+		android:layout_height="0.01dp"/>
+
+	<LinearLayout
+		android:id="@+id/ll_keyboard_view_top"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height40"
+		android:background="@drawable/keyboard_general_nom"
+		android:orientation="horizontal"
+		android:visibility="visible">
+
+		<RelativeLayout
+			android:id="@+id/rl_finish"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:layout_width="@dimen/width15"
+				android:layout_height="@dimen/height15"
+				android:layout_centerInParent="true"
+				app:srcCompat="@drawable/ic_fork_black"/>
+		</RelativeLayout>
+
+		<TextView
+			android:text="@string/safe_keyboard"
+			android:textColor="@color/clr_about_tv"
+			android:textSize="@dimen/txtSize16"
+			android:gravity="center"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="2"/>
+
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv_submit"
+				android:layout_width="@dimen/width20"
+				android:layout_height="@dimen/height20"
+				android:layout_centerInParent="true"
+				android:visibility="gone"
+				app:srcCompat="@drawable/sel_confirm"/>
+		</RelativeLayout>
+	</LinearLayout>
+
+	<!-- 普通数字键盘样式 -->
+	<com.ace.member.keyboard.PopKeyboardView
+		android:id="@+id/keyboard_view"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:background="#bababa"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:keyBackground="@drawable/btn_keyboard_key"
+		android:keyTextColor="#000"
+		android:keyTextSize="@dimen/txtSize20"
+		android:labelTextSize="@dimen/txtSize20"
+		android:shadowColor="#000"
+		android:shadowRadius="0.0"/>
+
+</LinearLayout>

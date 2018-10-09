@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="id_type_array">
+		<item>@string/certificate_type_id</item>
+		<item>@string/passport</item>
+		<item>@string/drive_license</item>
+		<item>@string/family_book</item>
+	</array>
+
+	<array name="sex_array">
+		<item>@string/male</item>
+		<item>@string/female</item>
+	</array>
+
+	<array name="nationality_array">
+		<item>@string/nation_cambodians</item>
+		<item>@string/nation_vietnamese</item>
+		<item>@string/nation_chinese</item>
+		<item>@string/nation_thais</item>
+		<item>@string/nation_malaysians</item>
+		<item>@string/nation_indonesians</item>
+		<item>@string/nation_french_citizens</item>
+	</array>
+</resources>

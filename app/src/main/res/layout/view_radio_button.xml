@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/bg_exchange_currency"
+             android:button="@null"
+             android:paddingBottom="@dimen/padding4"
+             android:paddingLeft="@dimen/padding10"
+             android:paddingRight="@dimen/padding10"
+             android:paddingTop="@dimen/padding4"
+             android:textColor="@color/sel_currency_list"
+             android:textSize="@dimen/txtSize14"
+             android:gravity="center">
+
+</RadioButton>

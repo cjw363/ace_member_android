@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="oval"
+	android:useLevel="false">
+	<solid android:color="@color/clr_log_left_circle"/>
+	<size
+		android:width="30dip"
+		android:height="30dp"/>
+</shape>

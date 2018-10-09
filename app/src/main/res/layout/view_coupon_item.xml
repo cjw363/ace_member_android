@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<!--<TextView-->
+	<!--android:id="@+id/tv_date_title"-->
+	<!--style="@style/tv_date_title"-->
+	<!--tools:text="2017-09-01 到期"/>-->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/padding10"
+		android:paddingEnd="@dimen/padding15"
+		android:paddingStart="@dimen/padding15"
+		android:paddingTop="@dimen/padding10">
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/free_withdraw_fee"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize24"/>
+
+		<TextView
+			android:id="@+id/tv_time_to_time"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/margin10"
+			android:textSize="@dimen/txtSize16"
+			tools:text="2017-09-01 ~ 2017-10-01"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical">
+	<View android:id="@+id/v_button"
+	      style="@style/v_horizontal_divider_section"/>
+	<LinearLayout style="@style/ll_order_detail_content">
+
+		<TextView
+			style="@style/tv_order_detail_content_left"
+			android:text="@string/loan_date"/>
+		<TextView
+			android:id="@+id/tv_loan_date"
+			style="@style/tv_order_detail_content_right"/>
+
+	</LinearLayout>
+
+
+	<!--<LinearLayout style="@style/ll_order_detail_content">-->
+
+		<!--<TextView-->
+			<!--style="@style/tv_order_detail_content_left"-->
+			<!--android:text="@string/currency"/>-->
+
+		<!--<TextView-->
+			<!--android:id="@+id/tv_currency"-->
+			<!--style="@style/tv_order_detail_content_right"/>-->
+	<!--</LinearLayout>-->
+
+
+	<LinearLayout style="@style/ll_order_detail_content">
+
+		<TextView
+			style="@style/tv_order_detail_content_left"
+			android:text="@string/amount"/>
+
+		<TextView
+			android:id="@+id/tv_amount"
+			style="@style/tv_order_detail_content_right"/>
+	</LinearLayout>
+
+	<LinearLayout style="@style/ll_order_detail_content">
+
+		<TextView
+			style="@style/tv_order_detail_content_left"
+			android:text="@string/interest"/>
+
+		<TextView
+			android:id="@+id/tv_interest"
+			style="@style/tv_order_detail_content_right"/>
+	</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

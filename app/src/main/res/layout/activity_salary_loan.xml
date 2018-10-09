@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/ll_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_primary_body_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:id="@+id/srl"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="10">
+
+		<ScrollView
+			android:id="@+id/scroll_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:descendantFocusability="blocksDescendants"
+				android:orientation="vertical">
+
+				<FrameLayout
+					android:layout_width="@dimen/width200"
+					android:layout_height="@dimen/height200"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="@dimen/margin30">
+
+					<com.roundProgress.RoundProgressBar
+						android:id="@+id/v_round"
+						android:layout_width="@dimen/width200"
+						android:layout_height="@dimen/height200"
+						android:layout_gravity="center"
+						app:roundColor="@color/clr_round"
+						app:roundProgressColor="@color/clr_round_progress"
+						app:roundWidth="@dimen/width8"
+						app:textColor="@color/clr_round_progress"
+						app:textIsDisplayable="true"
+						app:textSize="@dimen/txtSize26"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:orientation="vertical">
+
+						<TextView
+							style="@style/tv_item_title"
+							android:layout_marginBottom="@dimen/margin15"
+							android:gravity="center"
+							android:text="@string/available_credit"
+							android:textColor="@color/clr_loan_title"
+							android:textSize="@dimen/txtSize16"/>
+
+						<TextView
+							android:id="@+id/tv_currency"
+							style="@style/tv_item_title"
+							android:layout_marginTop="@dimen/margin40"
+							android:gravity="center"
+							android:text="@string/usd"
+							android:textColor="@color/clr_tv_currency"
+							android:textSize="@dimen/txtSize18"/>
+					</LinearLayout>
+				</FrameLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin10"
+					android:layout_marginTop="@dimen/margin16"
+					android:gravity="center_horizontal"
+					android:orientation="horizontal">
+
+					<TextView
+						style="@style/tv_item_title"
+						android:text="@string/credit"
+						android:textSize="@dimen/txtSize16"/>
+
+					<TextView
+						android:id="@+id/tv_credit"
+						style="@style/tv_item_title"
+						android:layout_marginStart="@dimen/margin10"
+						android:text="@string/zero_with_decimal"
+						android:textColor="@color/clr_money_gb"
+						android:textSize="@dimen/txtSize18"/>
+
+					<TextView
+						android:id="@+id/tv_credit_currency"
+						style="@style/tv_item_title"
+						android:layout_marginStart="@dimen/margin10"
+						android:text="@string/usd"
+						android:textSize="@dimen/txtSize16"/>
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/tv_due_date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/margin30"
+					android:layout_marginStart="@dimen/margin30"
+					android:gravity="center"
+					android:text="@string/due_date_info"
+					android:textColor="@color/clr_tab_txt"
+					android:textSize="@dimen/txtSize12"
+					android:visibility="gone"/>
+
+				<TextView
+					android:id="@+id/tv_service_charge"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/height35"
+					android:layout_marginTop="@dimen/margin5"
+					android:background="@color/clr_fee_area_bg"
+					android:gravity="center"
+					android:text="@string/service_charge_info"
+					android:textColor="@color/clr_money_gb"
+					android:textSize="@dimen/txtSize12"
+					android:visibility="gone"/>
+
+				<View style="@style/v_horizontal_divider_section"/>
+
+				<LinearLayout
+					android:id="@+id/ll_record"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@color/white"
+					android:orientation="vertical"
+					android:visibility="gone">
+
+					<TextView
+						android:id="@+id/tv_recent_title"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:paddingBottom="@dimen/padding10"
+						android:paddingEnd="@dimen/padding15"
+						android:paddingStart="@dimen/padding15"
+						android:paddingTop="@dimen/padding10"
+						android:text="@string/recent"
+						android:textColor="@color/clr_order_title"
+						android:textSize="@dimen/txtSize16"/>
+
+					<View style="@style/v_horizontal_divider_line"/>
+
+					<com.og.utils.ListViewForScrollView
+						android:id="@+id/lv_loan_flow"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@color/white"/>
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</android.support.v4.widget.SwipeRefreshLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_function"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2"
+		android:background="@color/clr_primary_body_bg"
+		android:gravity="center">
+
+		<Button
+			android:id="@+id/btn_loan"
+			style="@style/btn_common"
+			android:layout_marginEnd="@dimen/margin8"
+			android:layout_marginStart="@dimen/margin15"
+			android:layout_weight="1"
+			android:enabled="false"
+			android:text="@string/loan"/>
+
+		<Button
+			android:id="@+id/btn_return_loan"
+			style="@style/btn_common"
+			android:layout_marginEnd="@dimen/margin15"
+			android:layout_marginStart="@dimen/margin8"
+			android:layout_weight="1"
+			android:enabled="false"
+			android:text="@string/return_loan"/>
+	</LinearLayout>
+
+</LinearLayout>

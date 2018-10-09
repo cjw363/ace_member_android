@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="6">
+
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="5"
+			android:background="@color/white"
+			android:paddingBottom="@dimen/padding10"
+			android:paddingLeft="@dimen/padding10"
+			android:paddingRight="@dimen/padding10"
+			android:paddingTop="@dimen/padding10"
+			>
+
+			<EditText
+				android:id="@+id/et_friends_search"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height25"
+				android:layout_centerVertical="true"
+				android:background="@drawable/bg_friend_et_search_gray"
+				android:maxLines="1"
+				android:textCursorDrawable="@drawable/bg_et_cursor"
+				android:paddingStart="@dimen/padding30"
+				android:textColor="@color/clr_chat_tv_title"
+				android:textSize="@dimen/txtSize13"/>
+
+			<android.support.v7.widget.AppCompatImageView
+				android:layout_width="@dimen/width15"
+				android:layout_height="@dimen/height15"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="@dimen/margin10"
+				app:srcCompat="@drawable/ic_friends_search"
+				/>
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv_friends_search_clear"
+				android:layout_width="@dimen/width16"
+				android:layout_height="@dimen/height16"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/margin10"
+				app:srcCompat="@drawable/ic_clear_input"/>
+
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/tv_friends_search"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:text="@string/search"
+			android:textColor="@color/colorPrimary"
+			android:textSize="@dimen/txtSize16"/>
+	</LinearLayout>
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/clr_window_bg">
+
+		<ListView
+			android:id="@+id/lv_friends_search"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:divider="@null"
+			android:dividerHeight="0dp">
+		</ListView>
+
+		<TextView
+			android:id="@+id/tv_search_friends_no_more"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="@dimen/margin20"
+			android:text="@string/no_more_results"
+			android:textColor="@color/clr_tv_primary"
+			android:textSize="@dimen/txtSize16"
+			android:visibility="gone"/>
+	</RelativeLayout>
+
+</LinearLayout>

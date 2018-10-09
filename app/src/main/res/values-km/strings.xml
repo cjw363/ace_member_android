@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">សមាជិកអាស៊ីវេរលុយ</string>
+	<string name="login_title">សមាជិកអាស៊ីវេរលុយ</string>
+
+	<string name="version">កំណែ</string>
+	<string name="version_name"><xliff:g>%s</xliff:g> [<xliff:g>%s</xliff:g>]</string>
+	<string name="login">ចូលគណនី</string>
+	<string name="account">គណនី</string>
+	<string name="password">លេខសម្ងាត់</string>
+	<string name="date">កាលបរិច្ឆេទ</string>
+	<string name="back">ត្រលប់</string>
+
+	<!--reset password-->
+	<string name="reset_password">កំណត់លេខសម្ងាត់ឡើងវិញ</string>
+	<string name="new_password">New Password</string>
+	<string name="trading_password_required">លេខសម្ងាត់សំរាប់ប្រតិបត្តិការ</string>
+	<string name="new_password_required">ស្នើរសុំលេខសម្ងាត់ថ្មី</string>
+	<string name="confirm_password">បញ្ជាក់លេខសម្ងាត់</string>
+	<string name="confirm_password_required">បញ្ជាក់ការស្នើរសុំលេខសម្ងាត់</string>
+	<string name="invalid_confirm_password">បញ្ជាក់លេខសម្ងាត់មិនត្រឹមត្រូវ</string>
+	<string name="your_password">លេខសម្ងាត់របស់អ្នក</string>
+	<string name="your_trading_password">Your Trading Password</string>
+	<string name="new_trading_password">New Trading Password</string>
+	<string name="confirm_trading_password">បញ្ជាក់លេខសម្ងាត់សំរាប់ប្រតិបត្តិការ</string>
+	<string name="title_note">សំគាល់:</string>
+	<string name="reset_password_rules">\n
+		1. លេខសម្ងាត់ថ្មីមិនអាចដូចគ្នានឹងលេខសម្ងាត់ចាស់បានទេ ;\n
+		2. លេខសម្ងាត់ថ្មីត្រុវមានជាលេខ និង អក្សរបញ្ចូលគ្នា លេខសម្ងាត់ត្រុវមានចាប់ពី 8​ខ្ទង់ឡើងទៅ\n
+		3. លេខសម្ងាត់ថ្មីមិនត្រូវងាយស្រួលពេកទេ ឩទាហរណ៏ aaaa1111\n
+	</string>
+	<string name="trading_pwd_rules">\n
+		1. លេខសម្ងាត់សំរាប់ប្រតិបត្តិការមិនអាចលើសពី6លេខ;\n
+	</string>
+
+	<string name="transfer_rules">
+		Note:\n
+		1. System will charge 0.012% of the transfer amount as transfer fee (minimal fee: 0.25 USD);\n
+	</string>
+
+	<string name="password_rules">\n
+		1. លេខសម្ងាត់ថ្មីត្រុវមានជាលេខ និង អក្សរបញ្ចូលគ្នា, លេខសម្ងាត់ត្រុវមានចាប់ពី 8​ខ្ទង់ឡើងទៅ\n
+		2. លេខសម្ងាត់ថ្មីមិនត្រូវងាយស្រួលពេកទេ ឩទាហរណ៏ aaaa1111.\n
+	</string>
+
+	<string name="pwd_too_simple">Password too Simple</string>
+
+	<!-- gesture lock -->
+	<string name="enter_pattern_password">បញ្ចូលលេខសម្ងាត់ជាគំនូស</string>
+	<string name="enter_new_pattern_password">បញ្ចូលលេខសម្ងាត់ជាគំនូសថ្មី</string>
+	<string name="confirm_pattern_password">បញ្ជាក់លេខសម្ងាត់ជាគំនូស​</string>
+	<string name="try_again">Try Again</string>
+	<string name="gesture_lock_forbidden">គំនូសត្រូវបានបិទ សូមព្យាយាមម្ដងទៀតនៅ30នាទីក្រោយ</string>
+	<string name="gesture_lock_forbidden_time_left">សូមព្យាយាមម្ដងទៀតនៅពេលក្រោយ <xliff:g>%d</xliff:g> ទីពីរ(s)</string>
+	<string name="gesture_invalid_pattern">មិនត្រឹមត្រូវ, <xliff:g>%d</xliff:g> chance(s) left</string>
+	<string name="gesture_pattern_not_long_enough">គំនូសមិនគ្រប់គ្រាន់ សូមព្យាយាមម្ដងទៀត</string>
+	<string name="gesture_password_inactive">លេខសម្ងាត់គំនូសមិនត្រឹមត្រូវ</string>
+	<string name="lockpattern_recording_incorrect_too_short">យ៉ាងហោចណាស់មាន 4 ចំនុច សូ​មព្យាយាមម្ដងទៀត</string>
+	<string name="lockpattern_error">គំនូសមិនត្រឹមត្រូវ</string>
+
+	<!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_start">គំនូសបានចាប់ផ្ដើម</string>
+	<!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_cleared">គំនូសបានជម្រះ</string>
+	<!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_cell_added">Cell added</string>
+	<!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_detected">គំនូសបានបញ្ចប់</string>
+
+	<string name="ask_forgot_gesture_password">Forgot Gesture Password?</string>
+	<string name="install_google_services">Please Install Google Play Services</string>
+
+	<!--Login-->
+	<string name="phone_required">ការស្នើរសុំទូរស័ព្ទ</string>
+	<string name="password_required">ការស្នើរលេខសម្ងាត់</string>
+	<string name="register">ចុះឈ្មោះ</string>
+	<string name="forgot_password">ភ្លេចលេខសម្ងាត់</string>
+	<string name="ask_forgot_password">ភ្លេចលេខសម្ងាត់សំរាប់ចូលគណនី?</string>
+	<string name="member_system">ប្រព័ន្ធរបស់សមាជិក</string>
+	<string name="login_password">លេខសម្ងាត់</string>
+
+	<!-- settings -->
+	<string name="about">អំពី</string>
+	<string name="gesture_password">លេខសម្ងាត់ជាគំនូស​​</string>
+	<string name="confirm_to_set_gesture_password">កំណត់លេខសម្ងាត់ជាគំនូស​​?</string>
+	<string name="settings_reset_gesture_password">កំណត់ឡើងវិញលេខសម្ងាត់ជាគំនូស</string>
+	<string name="set_gesture_password">កំណត់លេខសម្ងាត់ជាគំនូស</string>
+	<string name="settings_fingerprint_login">ស្កេនម្រាមដៃចូលគណនី</string>
+	<string name="settings_fingerprint_pay">ទូទាត់ដោយការស្កេនម្រាមដៃ</string>
+	<string name="logout">ចាកចេញ​</string>
+	<string name="forgot_gesture_password">ភ្លេចលេខសម្ងាត់ជាគំនូស? </string>
+	<string name="invalid_trading_password">Invalid Trading Password</string>
+	<string name="about_us">Asia Wei Luy is a mobile payment service provider that allows our customers (individuals and businesses) to transfer, deposit and withdraw money between each other and with anyone in Cambodia, via any mobile phone, at low cost. Moreover, as the leading mobile payment provider, Asia Wei Luy allows customers to make payment like bill payment, phone top up and loan services whenever and wherever.</string>
+	<string name="hot_line">Hotline(+855):</string>
+	<string name="hot_line_phone">098 666 678 / 099 666 678 / 071 6666 078</string>
+	<string name="head_office">Head Office</string>
+	<string name="head_office1">Head Office:</string>
+	<string name="head_office_address">អគារ​45-47 ផ្លូវកោះពេជ្រ សង្កាត់ទន្លេបាសាក់ ខណ្ឌចំការមន ភ្នំពេញ</string>
+	<string name="copyright">Copyright © 2017 Asia Wei Luy Co., Ltd. All rights reserved.</string>
+	<string name="system_language">System Language</string>
+	<string name="office_website">Website:</string>
+	<string name="website">http://www.asiaweiluy.com/</string>
+	<string name="waiting_for_verifying">រងចាំការត្រួតពិនិត្យ</string>
+	<string name="to_verify_certificate">ការផ្ទៀងផ្ទាត់</string>
+
+	<!--Me-->
+	<string name="statement">របាយការណ៍</string>
+	<string name="transaction">ប្រតិបត្តិការ</string>
+	<string name="log">ចូល​</string>
+	<string name="payment_history">របាយការណ៏ទូទាត់</string>
+	<string name="service_point">ចំណុចសេវា</string>
+	<string name="suspended">បានផ្អាក</string>
+	<string name="inactive">អសកម្ម</string>
+	<string name="active">សកម្ម</string>
+
+	<!--Main-->
+	<string name="double_click_to_exit_the_program">ចុចប៊ូតុងថយក្រោយម្តងទៀតនឹងចាកចេញពីកម្មវិធី.</string>
+	<string name="home">ទំព័រដើម</string>
+	<string name="friends">មិត្តភក្ដិ</string>
+	<string name="service">Service</string>
+	<string name="me">ខ្ញុំ</string>
+	<string name="scan">ស្កេន​</string>
+	<string name="money">ទឹកប្រាក់</string>
+	<string name="transfer">ផ្ទេរប្រាក់</string>
+	<string name="transfer_out">ផ្ទេរប្រាក់ចេញ</string>
+	<string name="transfer_out_a2c">ផ្ទេរប្រាក់ចេញ (គណនីទៅសាច់ប្រាក់)</string>
+	<string name="transfer_in">ផ្ទេរប្រាក់ចូល</string>
+	<string name="transfer_history">ប្រវត្តិនៃការផ្ទេរប្រាក់</string>
+	<string name="top_up">បញ្ចូល​</string>
+	<string name="top_up_show_pin_code">Top Up (Show Pin-code)</string>
+	<string name="top_up_send_sms">Top Up (Send SMS)</string>
+	<string name="exchange">ប្ដូរ </string>
+	<string name="exchange_success">ការប្ដូរបានជោគជ័យ</string>
+	<string name="a2c_receive">ទទួលសាច់ប្រាក់ពីការវេរគណនីទៅសាច់ប្រាក់</string>
+	<string name="history">ប្រវត្តិ</string>
+	<string name="balance">សមតុល្យ</string>
+	<string name="currency">រូបិយប័ណ្ណ</string>
+	<string name="deposit">ដាក់ប្រាក់</string>
+	<string name="withdraw">ដកប្រាក់​</string>
+	<string name="withdraw_cancelled">បានបោះបង់ការដកប្រាក់</string>
+	<string name="withdraw_detail">របាយការណ៏ការដកប្រាក់លំអិត</string>
+	<string name="record">កត់ត្រា</string>
+	<string name="sure_logout">តើអ្នកប្រាកដក្នុងកាចាកចេញ?</string>
+	<string name="language">ភាសា </string>
+	<string name="id_certificate">ID Certificate</string>
+	<string name="to_member">ទៅសមាជិក</string>
+	<string name="to_non_member">To Non-Member</string>
+	<string name="to_merchant">To Merchant</string>
+	<string name="to_partner">To Partner</string>
+	<string name="to_set_trading">Please set trading password</string>
+	<string name="source_phone">Source Phone</string>
+	<string name="target_phone">Target Phone</string>
+	<string name="input_amount">Input Amount</string>
+	<string name="input_remark">Input Remark</string>
+	<string name="fee">Fee</string>
+	<string name="delete_bank">Delete Bank Account</string>
+	<string name="msg_gesture_dlg_tip">Will Close Fingerprint Login</string>
+	<string name="member">Member</string>
+	<string name="non_member">Non Member</string>
+
+	<!--friends-->
+	<string name="add_contact">បន្ថែមទំនាក់ទំនង</string>
+	<string name="new_friends">មិត្តភក្ដិថ្មី</string>
+	<string name="accepted">បានទទួល</string>
+	<string name="accept">ទទួល</string>
+	<string name="rejected">បោះបង់ចោល</string>
+	<string name="contact_information">ទំនាក់ទំនងព័ត៌មាន</string>
+	<string name="add">បន្ថែម</string>
+	<string name="chat">ជជែកកំសាន្ត</string>
+	<string name="chat_info">Chat Info</string>
+	<string name="send">ផ្ញើ</string>
+	<string name="photo">រូបថត</string>
+	<string name="photograph">ថតរូប</string>
+	<string name="contact_list">បញ្ជីទំនាក់ទំនង</string>
+	<string name="send_message">ផ្ញើសារ</string>
+	<string name="group_chat">Group Chat</string>
+	<string name="create_chat_group">បង្កើតក្រុមជជែកកំសាន្ដ</string>
+	<string name="select_contacts">សូមជ្រើសទំនាក់ទំនង</string>
+	<string name="hold_to_talk">ចុចអោយជាប់ហើយនិយាយ</string>
+	<string name="release_end">ចេញផ្សាយបញ្ចប់</string>
+	<string name="slide_up_cancel_send">រុញម្រាមដៃរបស់អ្នកហើយលុបចោលការផ្ញើ</string>
+	<string name="release_cancel_send">ប្រលែងម្រាមដៃហើយលុបចោលការផ្ញើ</string>
+	<string name="record_require_permissions">ការថតសំឡេងតម្រូវឱ្យបើភើមីសសិន</string>
+	<string name="attention_non_friend">កំណត់សំគាល់ ពុំមានមិត្តភក្ដិទេ!</string>
+	<string name="send_temp_msg">សារបណ្ដោះអាសន្ន</string>
+	<string name="no_contacts_found">រកមិនឃើញទំនាក់ទំនង</string>
+	<string name="system_message">សាររបស់ប្រព័ន្ធ</string>
+	<string name="payment_message">សារបង់ប្រាក់</string>
+	<string name="trading_message">សារជួញដូរ</string>
+	<string name="official_account">គណនីផ្លូវការ</string>
+	<string name="my_qr_code">QR កូដរបស់ខ្ញុំ</string>
+	<string name="scan_qr_code">ស្កេន QR កូដ</string>
+	<string name="scan_to_add_friend">ស្កេនដើម្បីបន្ថែមមិត្ត​</string>
+	<string name="scan_qr_to_add_friends">ស្កេនដើម្បីបន្ថែមមិត្ត​ភក្ដិ</string>
+	<string name="friend_requests">សំណើ​របស់​មិត្ត​ភក្តិ</string>
+	<string name="people_you_may_know">មនុស្ស​ដែល​អ្នក​អាច​ស្គាល់</string>
+	<string name="added">បានបន្ថែម</string>
+	<string name="no_more_results">មិនមានលទ្ធផលច្រើនទេ</string>
+	<string name="contacts">ទំនាក់ទំនង</string>
+	<string name="read_contacts_require_permissions">អានទំនាក់ទំនងទូរស័ព្ទចល័តទាមទារអោយបើកភើមីសសិនជាមុនសិន</string>
+	<string name="profile">Profile</string>
+	<string name="ignore">Ignore</string>
+	<string name="real_name">ឈ្មោះពិត</string>
+	<string name="area">តំបន់</string>
+	<string name="be_rejected">ត្រូវបានបោះបង់</string>
+	<string name="Yesterday">កាលពីម្សិលមិញ</string>
+	<string name="scan_qr_code_add_me_as_a_friend">ស្កេន QR កូដដើម្បីបន្ថែមខ្ញុំជាមិត្ត</string>
+	<string name="add_type">បន្ថែមប្រភេទ</string>
+	<string name="scan_my_qr_code">ស្កេន QR កូដរបស់ខ្ញុំ​</string>
+	<string name="search_via_phone">ស្វែងរកតាមទូរស័ព្ទ</string>
+	<string name="search_my_phone">ស្វែងរកលេខ​ទូរស័ព្ទរបស់ខ្ញុំ</string>
+	<string name="note_information">Note information</string>
+	<string name="request_sent">Request Sent</string>
+
+	<!--maps-->
+	<string name="agent_count">ភ្នាក់ងារ (<xliff:g>%d</xliff:g>)</string>
+	<string name="branch_count">សាខា(<xliff:g>%d</xliff:g>)</string>
+	<string name="agent">ភ្នាក់ងារ</string>
+	<string name="head_quarter">ទីស្នាក់កាកណ្ដាល</string>
+	<string name="bank_code">កូដធនាគារ</string>
+	<string name="bank_account_no">លេខគណនីធនាគារ</string>
+	<string name="bank_account_name">ឈ្មោះគណនីធនាគារ​</string>
+	<string name="bank_transaction_name">ឈ្មោះប្រតិបត្តិការធនាគារ</string>
+	<string name="bank_transaction_time">កាបរិច្ឆេទនៃប្រតិបត្តិការធនាគារ</string>
+	<string name="type">ប្រភេទ</string>
+	<string name="amount">ចំនួនទឹកប្រាក់</string>
+	<string name="status">ស្ថានភាព</string>
+	<string name="electricity">អគ្គីសនី</string>
+	<string name="water_supply">ការ​ផ្គត់ផ្គង់​ទឹក</string>
+	<string name="lotto">ឆ្នោតឡូតូ</string>
+	<string name="lottery">ឆ្នោតឡូតូ</string>
+	<string name="lottery_prize">រង្វាន់ឆ្នោតឡូតូ</string>
+	<string name="scratch">ឆ្នោតកោស​</string>
+	<string name="scratch_card">ឆ្នោតកោស</string>
+	<string name="scratch_card_prize">រង្វាន់ឆ្នោតកោស</string>
+	<string name="kh_express">KH Express</string>
+	<string name="bank">ធនាគារ</string>
+	<string name="phone">លេខទូរស័ព្ទ</string>
+	<string name="remark">សំគាល់</string>
+	<string name="invalid_bank_account_no">Invalid Bank Account</string>
+	<string name="withdraw_fee">Withdraw Fee</string>
+	<string name="no_balance">No Balance</string>
+	<string name="money_type">Money Type</string>
+	<string name="cash">សាច់ប្រាក់</string>
+	<string name="balance_usd">សមតុល្យ ដុល្លារ</string>
+	<string name="balance_khr">សមតុល្យ រៀល</string>
+	<string name="balance_thb">សមតុល្យ បាត</string>
+	<string name="balance_vnd">សមតុល្យ ដុង</string>
+	<string name="customer_service">សេវាកម្ម​អតិថិជន</string>
+	<string name="need_bank_account">ត្រូវការគណនីធនាគារ</string>
+	<string name="no_data">គ្មាន​ទិន្នន័យ</string>
+	<string name="hotline">Hotline</string>
+
+	<!--Exchange Currency-->
+	<string name="source_currency">ប្រភពរូបិយប័ណ្ណ :</string>
+	<string name="target_currency">គោលដៅនៃរូបិយប័ណ្ណ :</string>
+	<string name="source_amount">ប្រភពទឹកប្រាក់</string>
+	<string name="exchange_rate">អត្រា​ប្តូ​រ​ប្រាក់ :</string>
+	<string name="target_amount">គោលដៅទឹកប្រាក់ :</string>
+	<string name="exchange_detail">Exchange Detail</string>
+
+	<string name="next">បន្ទាប់</string>
+	<string name="sell_price">តម្លៃលក់</string>
+	<string name="buy_price">តម្លៃទិញ</string>
+	<string name="member_bank_account">គណនីធនាគាររបស់សមាជិក</string>
+	<string name="company_bank_account">គណនីធនាគារក្រុមហ៊ុន</string>
+
+	<string name="system_update">ប្រព័ន្ធកំពុងតម្លើង</string>
+	<string name="select_bank">ជ្រើសរើសធនាគារ</string>
+	<string name="invalid_currency">រូបិយប័ណ្ណមិនត្រឹមត្រូវ</string>
+	<string name="no_bank">គ្មានធនាគារ</string>
+	<string name="check_update">ត្រួតពិនិត្យដើម្បីតម្លើង</string>
+	<string name="receive_to_acct">ទទួលប្រាក់ចូលគណនី</string>
+	<string name="target">គោលដៅ</string>
+
+	<!--Register-->
+	<string name="verify_phone_number">Verify Phone Number</string>
+	<string name="verification_code">ផ្ទៀងផ្ទាត់លេខកូដ</string>
+	<string name="verification_sent">Verification Code has Sent to</string>
+	<string name="wrong_code">លេខកូដមិនត្រឹមត្រូវ</string>
+	<string name="duplicated">ស្ទួន</string>
+	<string name="next_resend_time">ផ្ញើសារឡើងវិញ <xliff:g>%d</xliff:g>s</string>
+	<string name="resend">ផ្ញើបន្ត</string>
+
+	<!--Forgot Password-->
+	<string name="give_up_password_reset">បោះបង់ការកំណត់លេខសម្ងាត់?</string>
+
+	<string name="new_bank_account">គណនីធនាគារថ្មី</string>
+	<string name="save">រក្សាទុក</string>
+	<string name="need_update">ត្រូវការតម្លើងកម្មវិធី</string>
+	<string name="latest_version">កម្មវិធីចុងក្រោយ</string>
+	<string name="phone_number">លេខទូរស័ព្ទ</string>
+	<string name="please_input_phone">សូមបញ្ចូលលេខទូរស័ព្ទ</string>
+	<string name="please_input_login_password">សូមបញ្ចូលលេខសម្ងាត់សំរាប់ចូលគណនី</string>
+	<string name="forgot_trading_password_query">ភ្លេចលេខសម្ងាត់សំរាប់ប្រតិបត្តិការ​?</string>
+	<string name="invalid_phone">លេខទូរស័ព្ទមិនត្រឹមត្រូវ</string>
+	<string name="please_set_trading_password">សូមកំណត់លេខសម្ងាត់សំរាប់ប្រតិបត្តិការជាមុនសិន</string>
+
+	<string name="over_one_time_limit">លើសការកំណត់ម្ដង</string>
+	<string name="over_daily_limit">លើសការកំណត់ជារៀងរាល់ថ្ងៃ</string>
+	<string name="over_one_day_bank_transfer_limit">លើសអតិបរមាសមតុល្យនៃការផ្ទេប្រាក់តាមធនាគារ</string>
+	<string name="no_more">គ្មាន​ទៀត​ទេ</string>
+	<string name="time">កាលបរិច្ឆេទ</string>
+	<string name="invalid_pwd_for_chance_left">Invalid Password, %s Chance Left Today</string>
+	<string name="invalid_pwd_for_chances_left">Invalid Password, %s Chances Left Today</string>
+	<string name="trading_pwd_is_lock">លេខសម្ងាត់សំរាប់ប្រតិបត្តិការត្រូវបានបិទ</string>
+	<string name="inactive_trading_password">Inactive Trading Password</string>
+	<string name="require_reset_trading_password">Please Reset Trading Password</string>
+	<string name="require_verify_certificate_first">Please Verify Certificate First</string>
+	<string name="input_accept_code">សូមបញ្ចូលកូដទទួលប្រាក់</string>
+
+	<string name="receive_money">ទទូលប្រាក់</string>
+	<string name="receive_money_success">Receive Money Success</string>
+	<string name="deposit_cash">ដាក់ប្រាក់</string>
+	<string name="deposit_cash_success">ការដាក់បានជោគជ័យ</string>
+	<string name="withdraw_cash_confirm">បញ្ជាក់ការដកប្រាក់</string>
+	<string name="withdraw_cash">ដកប្រាក់</string>
+
+	<string name="ask_switch_on_fingerprint_login">Switch on Fingerprint Login?</string>
+	<string name="area_code_type">លេខកូដតំបន់</string>
+	<string name="currency_type">ប្រភេទរូបិយប័ត្រ</string>
+	<string name="please_select_currency">សូមជ្រើសរើសរូបិយប័ត្រ</string>
+	<string name="receive_to_phone_number">Receive to Phone Number</string>
+
+	<string name="finish_trading_password_setting">Please Finish Your Trading Password Setting</string>
+
+	<!--Statement-->
+	<string name="beginning">ចាប់ផ្តើម</string>
+	<string name="filter">តម្រង</string>
+	<string name="payment">ការទូទាត់</string>
+	<string name="transfer_fee">ថ្លៃសេវាផ្ទេរប្រាក់</string>
+	<string name="loan">ឥទាណ</string>
+	<string name="return_loan">សង់ប្រាក់ពីឥទាណ</string>
+	<string name="all">ទាំងអស់</string>
+	<string name="service_charge">ថ្លៃសេវា</string>
+	<string name="loan_service_charge_partner">ថ្លៃសេវាឥទាណ (ដៃគូសហការ)</string>
+	<string name="bank_fee">ថ្លៃសេវាធនាគារ</string>
+	<string name="start">ចាប់ផ្ដើម</string>
+	<string name="end_date">កាលបរិច្ឆេទបញ្ចប់</string>
+	<string name="to">~</string>
+	<string name="please_select_a_valid_date">សូមជ្រើសកាលបរិច្ឆេទដែលត្រឹមត្រូវ</string>
+
+	<!--Transaction-->
+	<string name="attention">ប្រុងប្រយ័ត្ន</string>
+	<string name="total">សរុប​:</string>
+	<string name="transaction_detail">ប្រតិបត្តិការលំអិត</string>
+	<string name="id_type">ប្រភេទលេខសម្គាល់</string>
+	<string name="id_number">លេខអតសញ្ញាណបត្រ</string>
+	<string name="id">លេខសម្គាល់</string>
+	<string name="done">រួចរាល់</string>
+	<string name="not_enough_storage_space">មិនមានទំហំផ្ទុកគ្រប់គ្រាន់</string>
+	<string name="accept_code">លេខកូដទទួលប្រាក់</string>
+	<string name="please_select_id_type">សូមជ្រើសរើសប្រភេទលេខសម្គាល់</string>
+	<string name="please_select_sex">សូមជ្រើសរើសការភេទ</string>
+	<string name="please_select_nationality">សូមជ្រើសសញ្ជាតិ</string>
+	<string name="please_select_birthday">សូមជ្រើសរើសថ្ងៃខែឆ្នាំកំណើត</string>
+	<string name="please_take_picture">សូមថតរូប</string>
+	<string name="task_error">ភារៈកិច្ចមិនត្រឹមត្រូវ</string>
+	<string name="no_task">គ្មានភារៈកិច្ច</string>
+	<string name="task">ភារៈកិច្ច</string>
+	<string name="invalid_id_number">លេខអតសញ្ញាណបត្រមិនត្រឹមត្រូវ</string>
+	<string name="certification_is_pending">សូមរង់ចាំសំរាប់ការត្រួតពិនិត្យលេខអតសញ្ញាណ</string>
+	<string name="certification_is_accepted">លិខិតបញ្ជាក់ត្រូវបានទទួល</string>
+	<string name="certification_is_rejected">លិខិតបញ្ជាក់របស់អ្នកមិនត្រូវបានអនុម័ត</string>
+	<string name="certificate_type_id">អត្តសញ្ញាណប័ណ្ណជាតិ</string>
+	<string name="passport">លិខិតឆ្លងដែន</string>
+	<string name="drive_license">ប័ណ្ណបើកបរ</string>
+	<string name="family_book">សៀវភៅគ្រួសារ</string>
+
+	<string name="recent_order">បញ្ជាទិញថ្មីៗ</string>
+	<string name="top_up_way">បញ្ចូល</string>
+	<string name="order_detail">លំអិតការកុម្ម៉ុង</string>
+	<string name="price_with_amount">តម្លៃ:%s</string>
+	<string name="no_phone_company">គ្មានក្រុមហ៊ុនទូរស័ព្ទ</string>
+	<string name="face_value">Face Value</string>
+	<string name="sn">SN</string>
+	<string name="pincode">Pin-code</string>
+	<string name="show_pincode">បង្ហាញ Pin-code</string>
+	<string name="face_values">Face Value %s</string>
+	<string name="country_codes">+ %s</string>
+	<string name="send_sms">ផ្ញើសារ​</string>
+	<string name="directly_top_up">បញ្ចូលទឹកប្រាក់ដោយផ្ទាល់</string>
+	<string name="phone_company">ក្រុមហ៊ុនទូរស័ព្ទ</string>
+	<string name="no_face_value">No face value</string>
+	<string name="invalid_country_code">លេខកូដប្រទេសមិនត្រឹមត្រូវ</string>
+	<string name="please_select_face_value">Please select face value</string>
+
+	<string name="error">មានបញ្ហា</string>
+
+	<string name="receive_success">ទទួលបានជោគជ័យ</string>
+	<string name="number">លេខទទួល</string>
+	<string name="name">ឈ្មោះ</string>
+	<string name="commission">កម្រៃជើងសារ</string>
+
+	<string name="take_picture">ថតរូប</string>
+	<string name="select_from_album">ជ្រើសពីអាល់ប៊ុម</string>
+	<string name="invalid_camera">កាមេរ៉ាមិនត្រឹមត្រូវ</string>
+	<string name="please_select_type">សូមជ្រើសរើសប្រភេទ</string>
+	<string name="invalid_consumer_number">លេខអ្នកប្រើប្រាស់មិនត្រឹមត្រូវ</string>
+	<string name="invalid_consumer_name">ឈ្មោះអ្នកប្រើប្រាស់មិនត្រឹមត្រូវ</string>
+	<string name="need_attachment">ត្រូវការឯកសារភ្ជាប់</string>
+	<string name="invalid_bill_number">មិនត្រឹមត្រូវ <xliff:g>%s</xliff:g></string>
+
+	<string name="invalid_fee">ថ្លៃសេវាមិនត្រឹមត្រូវ</string>
+
+	<string name="tap_to_view_payment_code">Tap to View Payment Code</string>
+	<string name="tap_to_view_deposit_code">ចុចដើម្បីមើលលេខកូដដាក់ប្រាក់</string>
+	<string name="tap_to_view_withdraw_code">ចុចដើម្បីមើលលេខកូដដកប្រាក់</string>
+	<string name="transfer_success">ការផ្ទេប្រាក់បានជោគជ័យ</string>
+
+	<string name="water">ទឹក</string>
+	<string name="consumer">លេខអតិថិជន</string>
+	<string name="source">ប្រភព</string>
+	<string name="amount_khr">ចំនួនទឹកប្រាក់ (រៀល)</string>
+	<string name="amount_khr_format">%s រៀល</string>
+	<string name="detail">លំអិត</string>
+	<string name="pending">កំពុងរង់ចាំ</string>
+	<string name="completed">បញ្ចប់</string>
+	<string name="sender">អ្នកផ្ញើ</string>
+	<string name="receiver">អ្នកទទួល</string>
+	<string name="recertify">អះអាងជាថ្មី</string>
+	<string name="uploading">កំពុងទាញយក</string>
+	<string name="bill_amount">ចំនួនទឹកប្រាក់</string>
+	<string name="invalid_pincode">Pin-code មិនត្រឹមត្រូវ</string>
+	<string name="recent">របាយការណ៍ថ្មីៗ</string>
+	<string name="transfer_detail">ព័ត៌មានលំអិតនៃកាផ្ទេ</string>
+
+	<string name="invalid_accept_code">លេខកូដទទួលប្រាក់មិនត្រឹមត្រូវ</string>
+	<string name="register_agreement">I agree with &lt;font color="#29a3f0"&gt;the Terms of Service&lt;/font&gt; and &lt;font color="#29a3f0"&gt;the Privacy Policy&lt;/font&gt;</string>
+	<string name="invalid_token">សញ្ញា​សម្ងាត់​មិន​ត្រឹមត្រូវ</string>
+
+	<string name="loan_partner">ឥទាណ (ដៃគូសហការ)</string>
+	<string name="return_loan_partner">ត្រឡប់ប្រាក់កម្ចី(ដៃគូសហការ)</string>
+	<string name="pay_wsa">បង់វិក័យបត្រទឹក</string>
+	<string name="pay_edc">បង់វិក័យបត្រអគ្គីសនី</string>
+	<string name="source_account">ប្រភពគណនី</string>
+	<string name="target_account">គោដៅគណនី</string>
+	<string name="deposit_detail">ព័ត៌មានលំអិតនៃកាដាក់ប្រាក់</string>
+
+	<string name="receive_to_account">ទទួលប្រាក់ចូលគណនី</string>
+	<string name="compensation">សំណង</string>
+	<string name="pay_wsa_fee">បង់វិក័យបត្រទឹក</string>
+	<string name="pay_edc_fee">បង់វិក័យបត្រអគ្គីសនី</string>
+
+	<string name="withdraw_via_bank">ដកប្រាក់ (តាមរយៈធនាគារ)</string>
+	<string name="withdraw_via_agent">ដកប្រាក់ (តាមរយៈភ្នាក់ងារ)</string>
+	<string name="withdraw_via_branch">ដកប្រាក់ (តាមរយៈសាខា)</string>
+	<string name="deposit_via_bank">ដាក់ប្រាក់​ (តាមរយៈធនាគារ)</string>
+	<string name="deposit_via_agent">ដាក់ប្រាក់ (តាមរយៈភ្នាក់ងារ)</string>
+	<string name="deposit_via_branch">ដាក់ប្រាក់តាមរយៈសាខា)</string>
+	<string name="reject_reason">ច្រានចោលមូលហេតុ:</string>
+	<string name="bill_payment">ទូទាត់វិក័យបត្រ</string>
+	<string name="currency_exchange">អាត្រាប្ដូរប្រាក់</string>
+	<string name="phone_top_up">បញ្ចូលកាតទូរស័ព្ទ</string>
+	<string name="pay_partner_bill">ទូទាត់វិក័យបត្រ</string>
+	<string name="pay_partner_bill_fee">ថ្លៃសេវាទូទាត់វិក័យបត្រ</string>
+	<string name="partner_bill_return">Partner Bill Return</string>
+	<string name="api_pay">API Pay</string>
+
+	<string name="edc_type_1_phnom_penh_kandal"/>
+	<string name="edc_type_2_battambang">បាត់ដំបង</string>
+	<string name="edc_type_3_siem_reap">សៀមរាប</string>
+	<string name="edc_type_4_sihanoukville">ព្រះសីហនុ</string>
+	<string name="edc_type_5_ang_ta_som">អង្គតាសោម</string>
+	<string name="edc_type_6_banteay_meanchey">បន្ទាយមានជ័យ</string>
+	<string name="edc_type_7_bavat">បាវិត</string>
+	<string name="edc_type_8_chipoul">ជីភូ</string>
+	<string name="edc_type_9_kampong_cham">កំពង់ចាម</string>
+	<string name="edc_type_10_kampong_rou">កំពង់រ៏</string>
+	<string name="edc_type_11_kampong_speu">កំពង់ស្ពឺ</string>
+	<string name="edc_type_12_kampong_sralao">កំពង់សាឡៅ</string>
+	<string name="edc_type_13_kao_seyma">កែវសីមា</string>
+	<string name="edc_type_14_kratie">ក្រចេះ</string>
+	<string name="edc_type_15_memot">មេម៉ត់</string>
+	<string name="edc_type_16_mongkul_borey">មង្គលបុរី</string>
+	<string name="edc_type_17_ponhea_krek">ពញ្ញាក្រែង</string>
+	<string name="edc_type_18_prey_veng">ព្រៃវែង</string>
+	<string name="edc_type_19_rattanakiri">Rattanakiri</string>
+	<string name="edc_type_20_senmonorom">សែនមនោរម្យ</string>
+	<string name="edc_type_21_snuol">ស្នួល</string>
+	<string name="edc_type_22_steung_treng">ស្ទឹងត្រែង</string>
+	<string name="edc_type_23_svay_rieng">ស្វាយរៀង</string>
+	<string name="edc_type_24_takeo">តាកែវ</string>
+
+	<string name="wsa_type_1_ppwsa">វិក័យបត្រទឹកភ្នំពេញ</string>
+	<string name="wsa_type_2_srwsa">វិក័យបត្រទឹកសៀមរាប</string>
+	<string name="consumer1">អតិថិជន#</string>
+	<string name="bill_no">លេខវិក័យបត្រ</string>
+	<string name="client_id">លេខសម្គាល់អតិថិជន</string>
+	<string name="invalid_bill_no">លេខវិក័យបត្រមិនត្រឹមត្រូវ</string>
+	<string name="invalid_client_id">លេខសម្គាល់អតិថិជនមិនត្រឹមត្រូវ</string>
+
+	<string name="finance">ហិរញ្ញវត្ថុ</string>
+	<string name="insurance">ធានារ៉ាប់រង</string>
+	<string name="internet_and_tv"/>
+	<string name="others">ផ្សេងៗ</string>
+	<string name="partner_biller">ដៃគូសហការ</string>
+	<string name="samrithisak_loan">ឥទាណសំរិទ្ធិស័ក្ដ</string>
+	<string name="minimal_amount">Minimal Amount</string>
+	<string name="service_charge_rate">Service Charge Rate</string>
+	<string name="no_partner_company">មិនមានក្រុមហ៊ុនសហការ</string>
+	<string name="calculate_fee_rule">ថ្លៃសេវា: <xliff:g>%s</xliff:g></string>
+	<string name="title">ចំណងជើង</string>
+	<string name="select_title">ជ្រើសរើសចំណងជើង</string>
+	<string name="amount_limit">ដែនកំណត់ចំនួនទឹកប្រាក់ [0,<xliff:g>%s</xliff:g>]</string>
+	<string name="bill_id">លេខសំគាល់វិក័យបត្រ</string>
+	<string name="bill_number_length">មិនត្រឹមត្រូវ​ <xliff:g>%s</xliff:g> ប្រវែង (<xliff:g>%s</xliff:g>)</string>
+	<string name="over_max_balance_limit">លើសពីសមតុល្យអតិបរមា</string>
+	<string name="usd_balance_not_enough">មិនមានទឹកប្រាក់គ្រប់គ្រាន់ក្នុងគណនីដុល្លារ</string>
+	<string name="credit">ចំនួនក្រេឌីត</string>
+	<string name="over_partner_total_loan_limit">Over Partner Total Loan Limit</string>
+	<string name="current_loan">ឥណទានបច្ចុប្បន្ន</string>
+	<string name="to_be_repaid">ត្រូវសង</string>
+	<string name="bill_date">កាលបរិច្ឆេទវិក័យបត្រ</string>
+	<string name="due_date">កាលបរិច្ឆេទ​កំណត់</string>
+	<string name="config">រចនាសម្ព័ន្ធ</string>
+	<string name="address1">អាសយដ្ឋាន:</string>
+	<string name="samrithisak_head_office_address">អគារ​​502G,502H មហាវិថីព្រះមុនីវង្ស សង្កាត់ទន្លេបាសាក់ ខណ្ឌចំការមន ភ្នំពេញ​</string>
+	<string name="no_loan_credit">មិនមានក្រេឌីតគ្រប់គ្រាន់ សូមទំនាក់ទំនងទៅសំរិទ្ធិស័ក្ដដើម្បីស្នើរសុំ</string>
+	<string name="over_due">លើសកំណត់</string>
+	<string name="fixed">ថេរ</string>
+	<string name="percent">ភាគរយ</string>
+	<string name="select_biller_error">កាជ្រើសរើសិក័យប័ត្រមិនត្រឹមត្រូវ</string>
+	<string name="get_more">វិក័យប័ត្រច្រើនទៀត</string>
+	<string name="partner">ដៃគូសហការ</string>
+	<string name="partner_company">ក្រុមហ៊ុនសហការ</string>
+	<string name="biller">Biller</string>
+	<string name="biller_company">Biller Company</string>
+	<string name="amount_usd">ចំនួនទឹកប្រាក់ (ដុល្លារ)</string>
+	<string name="related_transaction">ប្រតិបត្តិ​ការដែលពាក់ព័ន្ធ</string>
+	<string name="level">កម្រិត</string>
+	<string name="over_member_count_limit">លើសដែនកំណត់របស់សមាជិក</string>
+	<string name="over_credit">លើសចំនួនក្រេឌីត</string>
+	<string name="over_max_loan">លើសពីឥណទានអតិបរមា</string>
+	<string name="less_than_min_loan">កម្ចីតិចជាងអប្បបរមា</string>
+	<string name="need_greater_than_service_charge">ត្រូវការបន្ទុកសេវាកម្មធំជាង</string>
+
+	<string name="all_currency">រូបភាពទាំងអស់</string>
+	<string name="rule">ច្បាប់</string>
+	<string name="sex">ភេទ</string>
+	<string name="nationality">សញ្ជាតិ</string>
+	<string name="birthday">ថ្ងៃខែឆ្នាំកំណើត</string>
+	<string name="male">ប្រុស</string>
+	<string name="female">ស្រី</string>
+	<string name="credit_with_currency">ចំនួនក្រេឌីត %1$s %2$s</string>
+	<string name="day_service_charge_rate">អត្រាការប្រាក់ប្រចាំថ្ងៃ: <xliff:g>%s</xliff:g></string>
+	<string name="ace_loan">ឥទាណអាស៊ីវេរលុយ</string>
+	<string name="salary_loan">កម្ចៃប្រាក់ខែ</string>
+	<string name="salary_loan_return">ប្រាក់ខែប្រាក់កក់ត្រឡប់</string>
+	<string name="salary_loan_service_charge">សេវាប្រាក់កម្ចីប្រាក់ខែ</string>
+	<string name="select_date">ជ្រើសរើសកាលបរិច្ឆេទ</string>
+	<string name="repay_plan">ផែនការសងប្រាក់វិញ</string>
+	<string name="repay_day">ថ្ងៃបង់ប្រាក់</string>
+	<string name="loan_time">ពេលវេលាប្រាក់កម្ចី</string>
+	<string name="due_date_info">ប្រព័ន្ធនឹងប្រគល់ប្រាក់កម្ចីដោយស្វ័យប្រវត្តិនៅពេលអ្នកទទួលបានប្រាក់ខែនៅថ្ងៃបន្ទាប់កាលបរិច្ឆេទសង <xliff:g>%s</xliff:g></string>
+	<string name="service_charge_info">អត្រាគិតប្រាក់សេវាកម្ម %1$s, Minimal Charge %2$s USD</string>
+	<string name="service_charge_info2">អត្រាគិតប្រាក់សេវាកម្ម %1$s, Minimal Amount %2$s USD</string>
+	<string name="choose_term">Choose Term</string>
+	<string name="capital_interest_total"><xliff:g>%s</xliff:g> (ទុន) + <xliff:g>%s</xliff:g> (ការប្រាក់) = <xliff:g>%s</xliff:g></string>
+	<string name="loan_limit">ដែនកំណត់ប្រាក់កម្ចី [<xliff:g>%s</xliff:g>, <xliff:g>%s</xliff:g>]</string>
+	<string name="repay_error">សងប្រាក់មិនត្រឹមត្រូវ</string>
+	<string name="available_credit">ឥណទានដែលអាចប្រើបាន</string>
+	<string name="please_choose_term">Please Choose Term</string>
+	<string name="input_multiple_amount">សូមបញ្ចូលជម្រើស %1$s</string>
+	<string name="loan_date">កាលបរិច្ឆេទផ្តល់ប្រាក់កម្ចី</string>
+	<string name="plan_total">ផែនការសរុប</string>
+	<string name="staging_detail">ពត៌មានលំអិត</string>
+	<string name="repay_now">សងវិញឥឡូវ</string>
+	<string name="finished">បានបញ្ចប់</string>
+	<string name="contain_interest">មានការប្រាក់</string>
+	<string name="capital_interest"><xliff:g>%s</xliff:g> (ទុន) + <xliff:g>%s</xliff:g> (ការប្រាក់)</string>
+	<string name="bill_payment_rule_description">ចំនួនទឺកប្រាក់*ភាគរយ(<xliff:g>%s</xliff:g>) ឬថេរ(<xliff:g>%s</xliff:g>)</string>
+	<string name="input_amount_times">សូមបញ្ចូលជម្រើស <xliff:g>%s</xliff:g></string>
+	<string name="post_process">ដាក់អោយដំណើរការ</string>
+	<string name="repay_plan_total">ទូទាត់សំណងសរុប</string>
+	<string name="interest_amount"> រួមបញ្ចូលការប្រាក់ <xliff:g>%s</xliff:g></string>
+	<string name="current_repay_amount">ចំនួនទឹកប្រាក់សងបច្ចុប្បន្ន</string>
+	<string name="interest">ការប្រាក់</string>
+	<string name="plan_date">កាលបរិច្ឆេទផែនការ</string>
+	<string name="undone">មិនទាន់រួចរាល់</string>
+	<string name="repay_plan_detail">ពត៌មានលំអិតផែនការសង</string>
+	<string name="repay">សង</string>
+	<string name="stage">ដំណាក់កាល <xliff:g>%s</xliff:g></string>
+	<string name="term_x_month">រយៈពេល <xliff:g>%s</xliff:g> ខែ​</string>
+	<string name="term_x_months">រយៈពេល <xliff:g>%s</xliff:g> ខែ​</string>
+	<string name="bill_payment_fee_rule"><xliff:g>%s</xliff:g>, ថ្លៃសេវា <xliff:g>%s</xliff:g></string>
+	<string name="transfer_to_member">Transfer to Member</string>
+	<string name="transfer_to_non_member">Transfer to Non-Member</string>
+	<string name="transfer_to_partner">Transfer to Partner</string>
+	<string name="batch_repay">ការសងបំណុល</string>
+	<string name="bill_number">វិក័យប័ត្រ <xliff:g>%s</xliff:g></string>
+	<string name="please_choose_prepayment_data">សូមជ្រើសរើសទិន្នន័យបង់ប្រាក់ជាមុន</string>
+	<string name="loan_history">របាយការណ៍ឥទាណ</string>
+	<string name="running">កំពុងដំណើរការ</string>
+	<string name="paid_off">បិទកាបង់</string>
+	<string name="loan_amount">ចំនួនប្រាក់ឥណទាន</string>
+	<string name="reimbursement_complete">ការទូទាត់សំណងត្រូវបញ្ចប់</string>
+	<string name="loan_history_detail">របាយការណ៍លម្អិតអំពីឥណទាន</string>
+	<string name="loan_n">ឥណទាន <xliff:g>%s</xliff:g></string>
+	<string name="loan_detail">ព័ត៌មានលម្អិតអំពីឥណទាន</string>
+	<string name="safe_keyboard">ក្តារចុចសុវត្ថិភាព</string>
+	<string name="input_type">ប្រភេទបញ្ចូល</string>
+	<string name="by_hand">ដោយដៃ</string>
+	<string name="qr_code">QR Code</string>
+	<string name="length_limit">ប្រវែង (<xliff:g>%s</xliff:g>)</string>
+	<string name="split_amount">Split Amount</string>
+	<string name="over_max_loan_limit">Over Max Loan Limit [<xliff:g>%s</xliff:g>, <xliff:g>%s</xliff:g>]</string>
+	<string name="ticket_id">លេខសម្គាល់សំបុត្រ</string>
+	<string name="service_charge_not_match">ថ្លៃសេវាមិនត្រូវគ្នា</string>
+	<string name="over_loan_amount">លើសពីចំនួនប្រាក់កម្ចី</string>
+	<string name="term">រយៈពេល</string>
+	<string name="x_month"><xliff:g>%s</xliff:g> ខែ</string>
+	<string name="x_months"><xliff:g>%s</xliff:g> ខែ</string>
+	<string name="select_term">ជ្រើសរើសរយៈពេល</string>
+	<string name="repay_total">សងសរុប</string>
+	<string name="clear_chat_history">លុបប្រវត្តិជជែកកំសាន្ដ</string>
+	<string name="mute_notifications">Mute Notifications</string>
+	<string name="choose_friends">ជ្រើសរើសមិត្តភក្ដិ</string>
+
+	<string name="function_pause_format">%1$s (%2$s) ត្រូវបានផ្អាក</string>
+	<string name="format_twice">%1$s %2$s</string>
+	<string name="over_available_credit">Over Available Credit</string>
+	<string name="red_packet">អាំងប៉ាវ</string>
+	<string name="config_error">Config Error</string>
+
+	<string name="msg_1001">គណនីរបស់អ្នកត្រូវបានចូលនៅកន្លែងផ្សេង សូមចូលគណនីម្ដងទៀត</string>
+	<string name="login_again2">គណនីរបស់អ្នកត្រូវបានចូលនៅកន្លែងផ្សេង សូមបញ្ជាក់ការចូលគណនីម្ដងទៀត?</string>
+	<string name="msg_1706">ចំនួនទឹកប្រាក់មិនត្រឹមត្រូវ</string>
+	<string name="msg_1707">លេខកូដសុវត្ថិភាពមិនត្រឹមត្រូវ</string>
+	<string name="msg_1708">រកមិនឃើញសមាជិក</string>
+	<string name="msg_1709">សមតុល្យគណនីមិនគ្រប់គ្រាន់</string>
+	<string name="msg_1710">ធនាគារនេះមានរួចហើយ</string>
+	<string name="msg_1711">លើសការកំណត់ជារៀងរាល់ថ្ងៃ</string>
+	<string name="msg_1714">លើសអតិបរមាសមតុល្យនៃការផ្ទេប្រាក់</string>
+	<string name="msg_1715">លើសពីការកំំណត់ក្នុងមួយថ្ងៃនៃប្រតិបត្តិការផ្ទេរសាច់ប្រាក់</string>
+	<string name="msg_1721">អ្នកទទួលត្រូវតែជាសមាជិក</string>
+	<string name="msg_1722">មិនអាចផ្ទេ​ប្រាក់ចូលគណនីខ្លួនអ្នកផ្ទាល់បានទេ</string>
+	<string name="msg_1723">លើសពីគណនីសមតុល្យអតិបរមា</string>
+	<string name="msg_1836">Over Max Loan limit</string>
+	<string name="msg_1837">ការកំណត់បាន​ផុតកំណត់</string>
+	<string name="msg_1838">Over Return Loan</string>
+
+	<string name="balance_flow">លំហូរសមតុល្យ</string>
+	<string name="pay">Pay</string>
+	<string name="set_amount">Set Amount</string>
+	<string name="save_image">Save Image</string>
+	<string name="remove_amount">Remove Amount</string>
+
+	<!---Lotto-->
+	<string name="shanghai_lotto">Shanghai - Lotto</string>
+	<string name="lotto_90">Lotto 90</string>
+	<string name="outstanding">Outstanding</string>
+	<string name="ticket">Ticket</string>
+	<string name="single">Single</string>
+	<string name="multiple">Multiple</string>
+	<string name="special">Special</string>
+	<string name="bet_list">Bet List</string>
+	<string name="win_report">Win Report</string>
+	<string name="result">Result</string>
+	<string name="bracket">[%s]</string>
+	<string name="vietnam">Vietnam</string>
+	<string name="cambodia">Cambodia</string>
+	<string name="china">China</string>
+	<string name="thailand">Thailand</string>
+
+	<!--portrait-->
+	<string name="update_portrait">Update Portrait</string>
+	<string name="please_select_image">Please Select Image</string>
+
+
+	<!-- Coupon-->
+	<string name="coupon">Coupon</string>
+	<string name="no_coupon">No Coupon</string>
+	<string name="coupon_due_date">Due %s</string>
+	<string name="free_withdraw_fee">Free Withdraw Fee</string>
+	<array name="coupon_titles">
+		<item>Available</item>
+		<item>UnAvailable</item>
+	</array>
+
+
+</resources>

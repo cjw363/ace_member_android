@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_primary_body_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<RelativeLayout
+		android:id="@+id/rl_condition"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height45"
+		android:background="@color/white">
+
+		<TextView
+			android:id="@+id/tv_condition"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height30"
+			android:layout_centerHorizontal="true"
+			android:layout_centerInParent="true"
+			android:layout_marginLeft="@dimen/margin15"
+			android:layout_marginRight="@dimen/margin15"
+			android:background="@drawable/bg_rectangle_gray"
+			android:gravity="center"
+			android:textColor="@color/clr_common_title"
+			android:textSize="@dimen/txtSize16"/>
+	</RelativeLayout>
+
+	<include layout="@layout/view_statement_list_head"/>
+
+	<com.og.component.CustomSlidingRefreshListView
+		android:id="@+id/lv_statement"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		android:cacheColorHint="@color/transparent"
+		android:divider="@null"
+		android:listSelector="@color/transparent"
+		android:scrollbars="none"/>
+
+</LinearLayout>

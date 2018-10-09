@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="rb_top_up_way">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:background">@drawable/bg_top_up_way</item>
+		<item name="android:button">@null</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@drawable/sel_top_up_way</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+
+	<style name="rb_common">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/bg_exchange_currency</item>
+		<item name="android:button">@null</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/sel_currency_list</item>
+		<item name="android:paddingBottom">@dimen/margin5</item>
+		<item name="android:paddingTop">@dimen/margin5</item>
+		<item name="android:paddingRight">@dimen/padding15</item>
+		<item name="android:paddingLeft">@dimen/padding15</item>
+		<item name="android:textSize">@dimen/txtSize14</item>
+	</style>
+
+	<style name="btn_common_lotto" parent="Base.Widget.AppCompat.Button.Borderless">
+		<item name="android:starStyle">?android:attr/borderlessButtonStyle</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/btn_lotto_common</item>
+		<item name="android:textAllCaps">false</item>
+		<item name="android:textColor">@color/clr_lotto_btn_text</item>
+		<item name="android:textSize">@dimen/txtSize14</item>
+	</style>
+
+</resources>

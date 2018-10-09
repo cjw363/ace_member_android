@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eee"
+              android:orientation="vertical"
+	>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		>
+
+		<android.support.v4.view.ViewPager
+			android:id="@+id/viewPager_fragment_emotion"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			/>
+	</LinearLayout>
+
+	<com.ace.member.view.IndicatorView
+		android:id="@+id/group_fragment_emotion"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height30"
+		android:gravity="center"
+		android:orientation="horizontal"
+		>
+	</com.ace.member.view.IndicatorView>
+</LinearLayout>

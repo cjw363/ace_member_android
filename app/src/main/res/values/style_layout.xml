@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--通常LinearLayout样式-->
+	<style name="ll_content">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minHeight">@dimen/height50</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:background">@color/white</item>
+	</style>
+
+	<style name="ll_content1">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minHeight">@dimen/height70</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:orientation">vertical</item>
+		<item name="android:background">@color/white</item>
+	</style>
+
+	<!--点击右样式变化-->
+	<style name="ll_content_container_select">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minHeight">@dimen/height50</item>
+		<item name="android:background">@drawable/layout_select_style2</item>
+	</style>
+
+	<!--order-->
+	<style name="ll_order_detail_content">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minHeight">@dimen/height30</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:background">@color/white</item>
+		<item name="android:layout_marginStart">@dimen/margin15</item>
+		<item name="android:layout_marginEnd">@dimen/margin15</item>
+	</style>
+
+	<style name="ll_fee_content" parent="ll_content">
+		<item name="android:background">@color/clr_fee_area_bg</item>
+	</style>
+</resources>

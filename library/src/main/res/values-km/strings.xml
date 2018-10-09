@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="title_error">មានបញ្ហា</string>
+	<string name="result_converting_error">លទ្ធផលបម្លែងមានបញ្ហា</string>
+	<string name="result_parsing_error">លទ្ធផលមិនត្រឹមត្រូវ</string>
+	<string name="session_time_out">Session Time Out</string>
+	<string name="not_supported_version">មិនគាំទ្រកម្មវិធី សូមតម្លើងកម្មវិធីររបស់អ្នក!</string>
+
+	<string name="loading">កំពុងផ្ទុក</string>
+	<string name="wait_for_loading">សូមរង់ចាំសម្រាប់ការផ្ទុក…     </string>
+	<string name="checking_update">ត្រួតពិនិត្យដើម្បីតម្លើង…</string>
+	<string name="new_update_available">កំពុងស្វែងរកកម្មវិធីថ្មី</string>
+	<string name="download_now">ទាញយក</string>
+	<string name="download_later">ពេលក្រោយ</string>
+	<string name="download_progress">កំពុងទាញយក:%1$d%%</string>
+	<string name="download_success">ការទាញយកបានជោគជ័យ សូមចុចដើម្បីតម្លើង</string>
+
+	<string name="app_update_cancel">បោះបង់ចោល</string>
+	<string name="cancelled">បានបោះបង់ចោល</string>
+	<string name="select">Select</string>
+
+	<string name="confirm">បញ្ចាក់</string>
+	<string name="close">បិទ</string>
+	<string name="submit">ដាក់ស្នើ</string>
+	<string name="cancel">បោះបង់ចោល</string>
+	<string name="clear">ជម្រះ</string>
+	<string name="search">ស្វែងរក</string>
+	<string name="btn_return">ត្រឡប់</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="ok">OK</string>
+	<string name="done">រួចរាល់</string>
+
+	<string name="waiting">សូមធ្វើការរង់ចាំ…</string>
+	<string name="click_too_fast">ចុចលឿនពេក</string>
+	<string name="fatal_error">កំហុស​ធ្ងន់ធ្ងរ</string>
+
+	<string name="capture_title">ស្កេនលេខកូដ</string>
+	<string name="capture_tips">បញ្ចូលក្នុងប្រអប់ហើយស្កេនដោយស្វ័យប្រវត្តិ</string>
+	<string name="scan_failed">ស្កេនបរាជ័យ</string>
+	<string name="request_camera_permission">ការបើកកាមេរ៉ាតម្រូវឱ្យបើកភើមីសសិន</string>
+
+	<string name="trading_password">លេខសម្ងាត់សំរាប់ប្រតិបត្តិការ</string>
+
+	<string name="description"> </string>
+	<string name="delete">លុប</string>]
+	<string name="delete_member_bank_account">លុបគណនីធនាគារ</string>
+	<string name="status">ស្ថានភាព</string>
+
+	<!--下拉刷新-->
+	<string name="drop_dow_refresh">Drop Down Refresh</string>
+	<!--松开刷新数据-->
+	<string name="loosen_refresh_data">Release to Refresh</string>
+	<!--正在加载...-->
+	<string name="refresh_loading">កំពុងផ្ទុក …</string>
+	<!--上次更新时间-->
+	<string name="last_update_time">ការតម្លើងចុងក្រោយ：</string>
+	<!--查看更多-->
+	<string name="pull_up_load_more">Pull Up Load More</string>
+	<!--松开载入更多-->
+	<string name="loosen_load_more">Loosen Load More</string>
+	<string name="please_select">សូមជ្រើសរើស</string>
+	<!--释放载入更多-->
+	<string name="release_to_load_more"> ចេញផ្សាយដើម្បីផ្ទុកបន្ថែមទៀត</string>
+
+	<string name="mon">ច័ន្ទ</string>
+	<string name="tue">អង្គារ៏</string>
+	<string name="wed">ពុធ</string>
+	<string name="thu">ព្រហស្បតិ៍</string>
+	<string name="fri">សុក្រ</string>
+	<string name="set">សៅរ៏</string>
+	<string name="sun">អាទិត្យ</string>
+
+	<string name="Monday">ច័ន្ទ</string>
+	<string name="Tuesday">អង្គារ៏</string>
+	<string name="Wednesday">ពុធ</string>
+	<string name="Thursday">ព្រហស្បតិ៍</string>
+	<string name="Friday">សុក្រ</string>
+	<string name="Saturday">សៅរ៏</string>
+	<string name="Sunday">អាទិត្យ</string>
+
+	<string name="january">មករា</string>
+	<string name="february">កុម្ភៈ</string>
+	<string name="march">មិនា</string>
+	<string name="april">មេសា</string>
+	<string name="may">ឩសភា</string>
+	<string name="june">មិថុនា</string>
+	<string name="july">កក្កដា</string>
+	<string name="august">សីហា</string>
+	<string name="september">កញ្ញា</string>
+	<string name="october">តុលា</string>
+	<string name="november">វិច្ឆិកា</string>
+	<string name="december">ធ្នូ</string>
+
+	<string name="china">China</string>
+	<string name="thailand">Thailand</string>
+	<string name="vietnam">Vietnam</string>
+	<string name="cambodia">Cambodia</string>
+
+	<string name="nation_cambodians">Cambodians</string>
+	<string name="nation_vietnamese">Vietnamese</string>
+	<string name="nation_chinese">Chinese</string>
+	<string name="nation_thais">Thais</string>
+	<string name="nation_malaysians">Malaysians</string>
+	<string name="nation_indonesians">Indonesians</string>
+	<string name="nation_french_citizens">French citizens</string>
+
+	<!--Exchange-->
+	<string name="invalid_exchange_currency">ប្ដូររូបិយបត្រមិនត្រឹមត្រូវ</string>
+	<string name="invalid_amount">ចំនួនទឹកប្រាក់មិនត្រឹមត្រូវ</string>
+	<string name="required">ទាមទារ</string>
+
+	<string name="no_permission">គ្មានការអនុញ្ញាត</string>
+	<string name="invalid_device_id">លេខសម្គាល់ឧបករណ៍មិនត្រឹមត្រូវ</string>
+	<string name="fingerprint_not_support">មិនតំណើរការជាមួយandroid 6.0</string>
+	<string name="fingerprint_hardware_not_support">Hardware not support</string>
+	<string name="has_no_fingerprint">ឧបករណ៍គ្មានការស្កេនម្រាមដៃ សូមចូលទៅកាន់ប្រព័ន្ធ - &gt; រួចបន្ថែមមុខងារស្កេនម្រាមដៃ</string>
+	<string name="try_again">សូមព្យាយាមម្ដងទៀត</string>
+	<string name="verify_fingerprint">សូមបញ្ជាក់ការស្កេនម្រាមដៃ</string>
+	<string name="confirm_to_use_fingerprint">ជំនួសការចូលជាមួយស្កេន​ម្រាមដៃ? </string>
+
+	<string name="download">ទាញយក</string>
+	<string name="new_version">កម្មវិធីថ្មី</string>
+
+	<string name="confirm_to_exit">តើអ្នកប្រាកដជាចាកចេញ?</string>
+	<string name="success">ជោគជ័យ</string>
+	<string name="fail">បរាជ័យ</string>
+
+	//使用msg_xxx的方式，不使用msg_xxx_说明文字的方式，这样当数字一样时容易发现
+	<string name="msg_101">មិនត្រឹមត្រូវ</string>
+	<string name="msg_102">Session timeout</string>
+	<string name="msg_103">ស្នើការធ្វើម្តងទៀត</string>
+	<string name="msg_104">កម្មវិធីមិនត្រឹមត្រូវ សូមតម្លើងកម្មវិធីររបស់អ្នក</string>
+	<string name="msg_200">គ្មានសិទ្ធិទេ</string>
+
+	<string name="msg_1000">គណនីរបស់អ្នកអសកម្ម</string>
+	<string name="msg_1002">ការចូលបានបរាជ័យ ខុសលេខទូរស័ព្ទ ឬ លេខសម្ងាត់</string>
+	<string name="msg_1004">លេខសម្ងាត់គំនូសបានផុតកំណត់ សូមចូលហើយកំណត់លេខសម្ងាត់ជាគំនូសឡើងវិញ</string>
+	<string name="msg_1006">លេខសម្ងាត់មិនត្រឹមត្រូវ</string>
+	<string name="msg_1007">លេខសម្ងាត់ថ្មីមិនត្រឹមត្រូវ</string>
+	<string name="msg_1008">លេខសម្ងាត់ថ្មីងាយស្រួលពេក</string>
+
+	<string name="network_error">អ៊ីនធើណេតមានបញ្ហា</string>
+	<string name="connect_timeout">ការ​ភ្ជាប់ផុតកំណត់</string>
+
+
+	<string name="msg_1910">Invalid Number</string>
+	<string name="msg_1911">Invalid Number (Too Many Stars)</string>
+	<string name="msg_1912">Details Mismatch</string>
+	<string name="msg_1913">Invalid Type/Sub Type</string>
+	<string name="msg_1914">Wrong Times</string>
+	<string name="msg_1915">Over Special Max Times</string>
+	<string name="msg_1916">Betting Amount Mismatch</string>
+	<string name="msg_1917">Wrong Detail Number</string>
+	<string name="msg_1918">Over Multiple Max Numbers</string>
+</resources>

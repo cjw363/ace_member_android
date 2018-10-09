@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:attrs="http://schemas.android.com/tools"
+	android:id="@+id/ll_main_lotto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_lotto_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:fillViewport="true"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height160"
+				android:layout_marginTop="@dimen/padding10"
+				>
+
+				<android.support.v4.view.ViewPager
+					android:id="@+id/vp_ad"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:clipChildren="false"/>
+
+				<LinearLayout
+					android:id="@+id/ll_point"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true"
+					android:layout_marginBottom="@dimen/margin20"
+					android:orientation="horizontal" >
+				</LinearLayout>
+			</RelativeLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="vertical"
+				android:paddingBottom="@dimen/padding10"
+				android:layout_marginTop="@dimen/padding10">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:paddingBottom="@dimen/padding5"
+					android:layout_marginTop="@dimen/margin10"
+					android:paddingTop="@dimen/padding10">
+
+					<LinearLayout
+						android:id="@+id/menu_shr_90"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@drawable/shr_90"/>
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/menu_shr_6_39"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@drawable/shr_6_39"/>
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/menu_shr_6_49"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@drawable/shr_6_49"/>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:paddingBottom="@dimen/padding2"
+					android:paddingTop="@dimen/padding2">
+					<!--<ImageView-->
+					<!--android:id="@+id/iv_tab_1"-->
+					<!--android:layout_width="wrap_content"-->
+					<!--android:layout_height="wrap_content"-->
+					<!--android:scaleType="matrix"-->
+					<!--android:src="@drawable/iv_line"/>-->
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:paddingBottom="@dimen/padding5"
+					android:paddingTop="@dimen/padding10">
+
+					<LinearLayout
+						android:id="@+id/menu_shr_18"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@drawable/shr_18"/>
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/menu_shr_27"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@drawable/shr_27"/>
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/menu_shr_4d"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@drawable/shr_4d"/>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:minHeight="@dimen/height10"
+					android:paddingBottom="@dimen/padding2"
+					android:paddingTop="@dimen/padding2">
+					<!--<ImageView-->
+					<!--android:id="@+id/iv_tab_2"-->
+					<!--android:layout_width="wrap_content"-->
+					<!--android:layout_height="wrap_content"-->
+					<!--android:scaleType="matrix"-->
+					<!--android:visibility="gone"-->
+					<!--android:src="@drawable/iv_line"/>-->
+				</LinearLayout>
+				<!--<LinearLayout-->
+				<!--android:layout_width="match_parent"-->
+				<!--android:layout_height="@dimen/height2">-->
+				<!--<ImageView-->
+				<!--android:id="@+id/iv_tab_2"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="@dimen/height2"-->
+				<!--android:scaleType="matrix"-->
+				<!--android:visibility="gone"-->
+				<!--android:src="@drawable/iv_line"/>-->
+				<!--</LinearLayout>-->
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/ll_game_area"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/tv_game_title"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/height30"
+					android:gravity="center_vertical"
+					android:paddingLeft="@dimen/padding10"
+					android:textSize="@dimen/txtSize12"/>
+
+				<FrameLayout
+					android:id="@+id/frame_game_content"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+				<!--<com.lt.member.view.NoScrollViewPager-->
+				<!--android:id="@+id/view_pager"-->
+				<!--android:layout_width="match_parent"-->
+				<!--android:layout_height="fill_parent"-->
+				<!--/>-->
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

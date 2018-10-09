@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/clr_primary_body_bg"
+              android:orientation="vertical">
+
+	<include
+		android:id="@+id/il_toolbar" layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv_partner_biller"
+				style="@style/tv_item_title"
+				android:layout_marginStart="@dimen/margin15"
+				android:layout_marginTop="@dimen/margin10"
+				android:text="@string/partner_biller"/>
+
+			<RelativeLayout
+				android:id="@+id/rl_select_company"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height50"
+				android:layout_marginBottom="@dimen/margin10"
+				android:layout_marginEnd="@dimen/margin15"
+				android:layout_marginStart="@dimen/margin15"
+				android:layout_marginTop="@dimen/margin10">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_biller_company"
+					android:layout_width="@dimen/width50"
+					android:layout_height="match_parent"
+					tools:src="@drawable/ic_partner_common"/>
+
+				<TextView
+					android:id="@+id/tv_biller_company_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginStart="@dimen/margin10"
+					android:layout_toEndOf="@+id/iv_biller_company"
+					android:gravity="center"
+					android:textColor="@color/clr_common_title"
+					android:textSize="@dimen/txtSize16"
+					tools:text="ABA Top Up"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_arrow_right"
+					android:layout_width="@dimen/width16"
+					android:layout_height="@dimen/height16"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					app:srcCompat="@drawable/ic_arrow_right"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_touch"
+					android:layout_width="@dimen/width32"
+					android:layout_height="@dimen/height32"
+					android:layout_centerInParent="true"
+					android:visibility="gone"
+					app:srcCompat="@drawable/ic_touch"/>
+			</RelativeLayout>
+
+			<!--<View style="@style/v_horizontal_divider_line1"/>-->
+
+			<!--<LinearLayout style="@style/ll_content">-->
+
+			<!--<TextView-->
+			<!--style="@style/tv_common_title"-->
+			<!--android:text="@string/phone"/>-->
+
+			<!--<TextView-->
+			<!--android:id="@+id/tv_phone"-->
+			<!--style="@style/tv_common_content"/>-->
+			<!--</LinearLayout>-->
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<View style="@style/v_horizontal_divider_section"/>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					android:id="@+id/tv_bill_title"
+					style="@style/tv_common_title"
+					android:text="@string/bill_id"/>
+
+				<EditText
+					android:id="@+id/et_bill_number"
+					style="@style/et_common"
+					android:hint="@string/bill_id"
+					android:inputType="numberDecimal"
+					android:maxLength="20"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line1"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					android:id="@+id/tv_amount_info"
+					style="@style/tv_common_title"
+					android:text="@string/amount"/>
+
+				<EditText
+					android:id="@+id/et_amount"
+					style="@style/et_common"
+					android:layout_width="wrap_content"
+					android:paddingRight="@dimen/padding3"
+					android:inputType="numberDecimal"
+					android:maxLength="12"/>
+
+				<TextView
+					android:id="@+id/tv_currency"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:clickable="true"
+					android:gravity="start|center"
+					android:textColor="@color/clr_common_content"
+					android:textSize="@dimen/txtSize16"/>
+
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<LinearLayout style="@style/ll_fee_content">
+
+				<TextView
+					android:id="@+id/tv_fee_title"
+					style="@style/tv_fee_title"
+					android:layout_width="@dimen/width100"
+					android:layout_marginLeft="@dimen/margin15"
+					android:text="@string/fee"/>
+
+				<TextView
+					android:id="@+id/tv_fee"
+					style="@style/tv_fee_content"
+					android:text="@string/zero_with_usd"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<View style="@style/v_horizontal_divider_section"/>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/remark"/>
+
+				<EditText
+					android:id="@+id/et_remark"
+					style="@style/et_common"
+					android:hint="@string/remark"
+					android:inputType="text"
+					android:maxLength="200"/>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:id="@+id/ll_fee_rule_area"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone">
+
+				<View style="@style/v_horizontal_divider_line"/>
+
+				<View style="@style/v_horizontal_divider_section"/>
+
+				<View style="@style/v_horizontal_divider_line"/>
+
+				<LinearLayout
+				style="@style/ll_fee_content"
+					android:layout_height="@dimen/height40">
+
+					<!--<TextView-->
+						<!--style="@style/tv_bill_payment_rule"-->
+						<!--android:textColor="@color/clr_common_content"-->
+						<!--android:text="@string/currency"/>-->
+
+
+					<TextView
+						style="@style/tv_bill_payment_rule"
+						android:textColor="@color/clr_common_content"
+						android:text="@string/amount"/>
+
+
+					<TextView
+						style="@style/tv_bill_payment_rule"
+						android:textColor="@color/clr_common_content"
+						android:text="@string/fee"/>
+				</LinearLayout>
+				<View style="@style/v_horizontal_divider_line"/>
+				<com.og.utils.ListViewForScrollView
+					android:id="@+id/lv_rule"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/white"
+					android:divider="@null"
+					android:scrollbars="none">
+
+				</com.og.utils.ListViewForScrollView>
+			</LinearLayout>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/clr_primary_body_bg"
+				android:gravity="center_vertical"
+				android:paddingBottom="@dimen/padding10"
+				android:paddingTop="@dimen/padding20">
+
+				<Button
+					android:id="@+id/btn_submit"
+					style="@style/btn_common"
+					android:layout_marginTop="@dimen/margin15"
+					android:background="@drawable/btn_deposit"
+					android:text="@string/submit"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

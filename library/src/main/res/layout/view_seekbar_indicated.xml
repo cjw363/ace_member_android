@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+	<com.og.view.TextThumbSeekBar
+		android:id="@+id/seekbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:focusable="true"
+		android:maxHeight="4dp"
+		android:minHeight="4dp"
+		android:paddingLeft="@dimen/padding20"
+		android:paddingRight="@dimen/padding20"
+		android:progressDrawable="@drawable/seek_bar_progress_bg_lotto"
+		android:thumb="@drawable/view_bar_progress_thumb"/>
+</FrameLayout>

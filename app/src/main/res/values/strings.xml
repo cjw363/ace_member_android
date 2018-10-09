@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">ACE Member</string>
+	<string name="login_title">ACE Member</string>
+
+	<string name="version">Version</string>
+	<string name="version_name"><xliff:g>%s</xliff:g> [<xliff:g>%s</xliff:g>]</string>
+	<string name="login">Login</string>
+	<string name="account">Account</string>
+	<string name="password">Password</string>
+	<string name="date">Date</string>
+	<string name="back">Back</string>
+
+	<!--reset password-->
+	<string name="reset_password">Reset Password</string>
+	<string name="new_password">New Password</string>
+	<string name="trading_password_required">Trading Password Required</string>
+	<string name="new_password_required">New Password Required</string>
+	<string name="confirm_password">Confirm Password</string>
+	<string name="confirm_password_required">Confirm Password Required</string>
+	<string name="invalid_confirm_password">Invalid Confirm Password</string>
+	<string name="your_password">Your Password</string>
+	<string name="your_trading_password">Your Trading Password</string>
+	<string name="new_trading_password">New Trading Password</string>
+	<string name="confirm_trading_password">Confirm Trading Password</string>
+	<string name="title_note">Note:</string>
+	<string name="reset_password_rules">\n
+		1. New password can not be as same as the old one;\n
+		2. New password should be composed by 1 letter and 1 digit at least, and should not less than 8 bits.\n
+		3. New password can not be too simple, such as aaaa1111.\n
+	</string>
+	<string name="trading_pwd_rules">\n
+		1. Trading password is composed by 6 digits;\n
+	</string>
+
+	<string name="transfer_rules">
+Note:\n
+	1. System will charge 0.012% of the transfer amount as transfer fee (minimal fee: 0.25 USD);\n
+	</string>
+
+	<string name="password_rules">\n
+		1. Password should be composed by 1 letter and 1 digit at least, and should not less than 8 bits.\n
+		2. Password can not be too simple, such as aaaa1111.\n
+	</string>
+
+	<string name="pwd_too_simple">Password too Simple</string>
+
+	<!-- gesture lock -->
+	<string name="enter_pattern_password">Enter Gesture Password</string>
+	<string name="enter_new_pattern_password">Enter New Gesture Password</string>
+	<string name="confirm_pattern_password">Confirm Gesture Password</string>
+	<string name="try_again">Try Again</string>
+	<string name="gesture_lock_forbidden">Password locked, try again after 30 seconds</string>
+	<string name="gesture_lock_forbidden_time_left">Try Again after <xliff:g>%d</xliff:g> Second(s)</string>
+	<string name="gesture_invalid_pattern">Invalid, <xliff:g>%d</xliff:g> Chance(s) Left</string>
+	<string name="gesture_pattern_not_long_enough">Gesture length not enough, please try again</string>
+	<string name="gesture_password_inactive">Gesture Password Inactive</string>
+	<string name="lockpattern_recording_incorrect_too_short">At least 4 points, please try again</string>
+	<string name="lockpattern_error">Invalid gesture</string>
+
+	<!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_start">Gesture Started</string>
+	<!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_cleared">Gesture Cleared</string>
+	<!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_cell_added">Cell Added</string>
+	<!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+	<string name="lockscreen_access_pattern_detected">Gesture Completed</string>
+
+	<string name="ask_forgot_gesture_password">Forgot Gesture Password?</string>
+	<string name="install_google_services">Please Install Google Play Services</string>
+
+	<!--Login-->
+	<string name="phone_required">Phone Required</string>
+	<string name="password_required">Password Required</string>
+	<string name="register">Register</string>
+	<string name="forgot_password">Forgot Password</string>
+	<string name="ask_forgot_password">Forgot Password?</string>
+	<string name="member_system">Member System</string>
+	<string name="login_password">Login Password</string>
+
+	<!-- settings -->
+	<string name="about">About</string>
+	<string name="gesture_password">Gesture Password</string>
+	<string name="confirm_to_set_gesture_password">Set Gesture Password?</string>
+	<string name="settings_reset_gesture_password">Reset Gesture Password</string>
+	<string name="set_gesture_password">Set Gesture Password</string>
+	<string name="settings_fingerprint_login">Fingerprint Login</string>
+	<string name="settings_fingerprint_pay">Fingerprint Pay</string>
+	<string name="logout">Logout</string>
+	<string name="forgot_gesture_password">Forgot Gesture Password</string>
+	<string name="invalid_trading_password">Invalid Trading Password</string>
+	<string name="about_us">Asia Wei Luy is a mobile payment service provider that allows our customers (individuals and businesses) to transfer, deposit and withdraw money between each other and with anyone in Cambodia, via any mobile phone, at low cost. Moreover, as the leading mobile payment provider, Asia Wei Luy allows customers to make payment like bill payment, phone top up and loan services whenever and wherever.</string>
+	<string name="head_office">Head Office</string>
+	<string name="head_office1">Head Office:</string>
+	<string name="head_office_address">#45&#8211;47, Street Koh Pich, Sangkat Tole Bassac, Khan Chamkarmon, Phnom Penh</string>
+	<string name="copyright">Copyright © 2017 Asia Wei Luy Co., Ltd. All rights reserved.</string>
+	<string name="system_language">System Language</string>
+	<string name="office_website">Website:</string>
+	<string name="waiting_for_verifying">Waiting for Verifying Your Certificate.</string>
+	<string name="to_verify_certificate">To Verify Certificate</string>
+
+	<!--Me-->
+	<string name="statement">Statement</string>
+	<string name="transaction">Transaction</string>
+	<string name="log">Log</string>
+	<string name="payment_history">Payment History</string>
+	<string name="service_point">Service Point</string>
+	<string name="suspended">Suspended</string>
+	<string name="inactive">Inactive</string>
+	<string name="active">Active</string>
+
+	<!--Main-->
+	<string name="double_click_to_exit_the_program">Press back key again will exit the program</string>
+	<string name="home">Home</string>
+	<string name="friends">Friends</string>
+	<string name="service">Service</string>
+	<string name="me">Me</string>
+	<string name="scan">Scan</string>
+	<string name="money">Money</string>
+	<string name="transfer">Transfer</string>
+	<string name="transfer_out">Transfer Out</string>
+	<string name="transfer_out_a2c">Transfer Out (A2C)</string>
+	<string name="transfer_in">Transfer In</string>
+	<string name="transfer_history">Transfer History</string>
+	<string name="top_up">Top Up</string>
+	<string name="top_up_show_pin_code">Top Up (Show Pin-code)</string>
+	<string name="top_up_send_sms">Top Up (Send SMS)</string>
+	<string name="exchange">Exchange </string>
+	<string name="exchange_success">Exchange Success</string>
+	<string name="a2c_receive">A2C Receive</string>
+	<string name="history">History</string>
+	<string name="balance">Balance</string>
+	<string name="currency">Currency</string>
+	<string name="deposit">Deposit</string>
+	<string name="withdraw">Withdraw</string>
+	<string name="withdraw_cancelled">Withdraw Cancelled</string>
+	<string name="withdraw_detail">Withdraw Detail</string>
+	<string name="record">Record</string>
+	<string name="sure_logout">Are You Sure to Logout?</string>
+	<string name="language">Language</string>
+	<string name="id_certificate">ID Certificate</string>
+	<string name="to_member">To Member</string>
+	<string name="to_non_member">To Non-Member</string>
+	<string name="to_merchant">To Merchant</string>
+	<string name="to_partner">To Partner</string>
+	<string name="to_set_trading">Please Set Trading Password</string>
+	<string name="source_phone">Source Phone</string>
+	<string name="target_phone">Target Phone</string>
+	<string name="input_amount">Input Amount</string>
+	<string name="input_remark">Input Remark</string>
+	<string name="fee">Fee</string>
+	<string name="delete_bank">Delete Bank Account</string>
+	<string name="msg_gesture_dlg_tip">Will Close Fingerprint Login</string>
+	<string name="member">Member</string>
+	<string name="non_member">Non Member</string>
+
+	<!--friends-->
+	<string name="add_contact">Add Contacts</string>
+	<string name="new_friends">New Friends</string>
+	<string name="accepted">Accepted</string>
+	<string name="accept">Accept</string>
+	<string name="rejected">Rejected</string>
+	<string name="contact_information">Contact Information</string>
+	<string name="add">Add</string>
+	<string name="chat">Chat</string>
+	<string name="chat_info">Chat Info</string>
+	<string name="send">Send</string>
+	<string name="photo">Photo</string>
+	<string name="photograph">Photograph</string>
+	<string name="contact_list">Contact List</string>
+	<string name="send_message">Send Message</string>
+	<string name="group_chat">Group Chat</string>
+	<string name="create_chat_group">Create Chat Group</string>
+	<string name="select_contacts">Please Select Contacts</string>
+	<string name="hold_to_talk">Hold to Talk</string>
+	<string name="release_end">Release End</string>
+	<string name="slide_up_cancel_send">Slide Up to Cancel Send</string>
+	<string name="release_cancel_send">Release to Cancel Send</string>
+	<string name="record_require_permissions">Voice Recording Requires Permissions</string>
+	<string name="attention_non_friend">Attention, not Friend!</string>
+	<string name="send_temp_msg">Temp Message</string>
+	<string name="no_contacts_found">No Contacts Found</string>
+	<string name="system_message">System Message</string>
+	<string name="payment_message">Payment Message</string>
+	<string name="trading_message">Trading Message</string>
+	<string name="official_account">Official Account</string>
+	<string name="my_qr_code">My QR Code</string>
+	<string name="scan_qr_code">Scan QR Code</string>
+	<string name="scan_to_add_friend">Scan to Add Friend</string>
+	<string name="scan_qr_to_add_friends">Scan QR to Add Friends</string>
+	<string name="friend_requests">Friend Requests</string>
+	<string name="people_you_may_know">People You May Know</string>
+	<string name="added">Added</string>
+	<string name="no_more_results">No more results</string>
+	<string name="contacts">Contacts</string>
+	<string name="read_contacts_require_permissions">Read Mobile Phone Contacts Requires Permissions</string>
+	<string name="profile">Profile</string>
+	<string name="ignore">Ignore</string>
+	<string name="real_name">Real Name</string>
+	<string name="area">Area</string>
+	<string name="be_rejected">Be rejected</string>
+	<string name="Yesterday">Yesterday</string>
+	<string name="scan_qr_code_add_me_as_a_friend">Scan the QR Code to add me as a friend</string>
+	<string name="add_type">Add Type</string>
+	<string name="scan_my_qr_code">Scan My QR Code</string>
+	<string name="search_via_phone">Search via Phone</string>
+	<string name="search_my_phone">Search My Phone</string>
+	<string name="note_information">Note information</string>
+	<string name="request_sent">Request Sent</string>
+
+	<!--maps-->
+	<string name="agent">Agent</string>
+	<string name="branch">Branch (<xliff:g>%d</xliff:g>)</string>
+	<string name="Agent">Agent</string>
+	<string name="head_quarter">Head Quarter</string>
+	<string name="bank_code">Bank Code</string>
+	<string name="bank_account_no">Bank Account No</string>
+	<string name="bank_account_name">Bank Account Name</string>
+	<string name="bank_transaction_name">Bank Transaction Name</string>
+	<string name="bank_transaction_time">Bank Transaction Time</string>
+	<string name="type">Type</string>
+	<string name="amount">Amount</string>
+	<string name="status">Status</string>
+	<string name="electricity">Electricity</string>
+	<string name="water_supply">Water Supply</string>
+	<string name="lotto">Lotto</string>
+	<string name="lottery">Lottery</string>
+	<string name="lottery_prize">Lottery Prize</string>
+	<string name="scratch">Scratch</string>
+	<string name="scratch_card">Scratch Card</string>
+	<string name="scratch_card_prize">Scratch Card Prize</string>
+	<string name="kh_express">KH Express</string>
+	<string name="bank">Bank</string>
+	<string name="phone">Phone</string>
+	<string name="remark">Remark</string>
+	<string name="invalid_bank_account_no">Invalid Bank Account</string>
+	<string name="withdraw_fee">Withdraw Fee</string>
+	<string name="no_balance">No Balance</string>
+	<string name="money_type">Money Type</string>
+	<string name="cash">Cash</string>
+	<string name="balance_usd">Balance USD</string>
+	<string name="balance_khr">Balance KHR</string>
+	<string name="balance_thb">Balance THB</string>
+	<string name="balance_vnd">Balance VND</string>
+	<string name="customer_service">Customer Service</string>
+	<string name="need_bank_account">Need Bank Account</string>
+	<string name="no_data">No Data</string>
+	<string name="hotline">Hotline</string>
+
+	<!--Exchange Currency-->
+	<string name="source_currency">Source Currency</string>
+	<string name="target_currency">Target Currency</string>
+	<string name="source_amount">Source Amount</string>
+	<string name="exchange_rate">Exchange Rate</string>
+	<string name="target_amount">Target Amount</string>
+	<string name="exchange_detail">Exchange Detail</string>
+
+	<string name="next">Next</string>
+	<string name="sell_price">Sell Price</string>
+	<string name="buy_price">Buy Price</string>
+	<string name="member_bank_account">Member Bank Account</string>
+	<string name="company_bank_account">Company Bank Account</string>
+
+	<string name="system_update">System Update</string>
+	<string name="select_bank">Select Bank</string>
+	<string name="invalid_currency">Invalid Currency</string>
+	<string name="no_bank">No Bank</string>
+	<string name="check_update">Check Update</string>
+	<string name="receive_to_acct">Receive to Acct</string>
+	<string name="target">Target</string>
+
+	<!--Register-->
+	<string name="verify_phone_number">Verify Phone Number</string>
+	<string name="verification_code">Verify Code</string>
+	<string name="verification_sent">Verification Code has Sent to</string>
+	<string name="wrong_code">Code Invalid</string>
+	<string name="duplicated">Duplicated</string>
+	<string name="next_resend_time">Re-send <xliff:g>%d</xliff:g>s</string>
+	<string name="resend">Resend</string>
+
+	<!--Forgot Password-->
+	<string name="give_up_password_reset">Give up Password Reset?</string>
+
+	<string name="new_bank_account">New Bank Account</string>
+	<string name="save">Save</string>
+	<string name="need_update">Need Update</string>
+	<string name="latest_version">Latest Version</string>
+	<string name="phone_number">Phone Number</string>
+	<string name="please_input_phone">Please Input Phone Number</string>
+	<string name="please_input_login_password">Please Input Login Password</string>
+	<string name="forgot_trading_password_query">Forgot Trading Password?</string>
+	<string name="invalid_phone">Invalid Phone</string>
+	<string name="please_set_trading_password">Please Set Trading Password First</string>
+
+	<string name="over_one_time_limit">Over One Time Limit</string>
+	<string name="over_daily_limit">Over Daily Limit</string>
+	<string name="over_one_day_bank_transfer_limit">Over Daily Bank Transfer Limit</string>
+	<string name="no_more">No more</string>
+	<string name="time">Time</string>
+	<string name="invalid_pwd_for_chance_left">Invalid Password, %s Chance Left Today</string>
+	<string name="invalid_pwd_for_chances_left">Invalid Password, %s Chances Left Today</string>
+	<string name="trading_pwd_is_lock">Trading Password is Locked</string>
+	<string name="inactive_trading_password">Inactive Trading Password</string>
+	<string name="require_reset_trading_password">Please Reset Trading Password</string>
+	<string name="require_verify_certificate_first">Please Verify Certificate First</string>
+	<string name="input_accept_code">Please Input Accept Code</string>
+
+	<string name="receive_money">Receive Money</string>
+	<string name="receive_money_success">Receive Money Success</string>
+	<string name="deposit_cash">Deposit Cash</string>
+	<string name="deposit_cash_success">Deposit Cash Success</string>
+	<string name="withdraw_cash_confirm">Withdraw Cash Confirm</string>
+	<string name="withdraw_cash">Withdraw Cash</string>
+
+	<string name="ask_switch_on_fingerprint_login">Switch on Fingerprint Login?</string>
+	<string name="area_code_type">Area Code Type</string>
+	<string name="currency_type">Currency Type</string>
+	<string name="please_select_currency">Please Select Currency</string>
+	<string name="receive_to_phone_number">Receive to Phone Number</string>
+
+	<string name="finish_trading_password_setting">Please Finish Your Trading Password Setting</string>
+
+	<!--Statement-->
+	<string name="beginning">Beginning</string>
+	<string name="filter">Filter</string>
+	<string name="payment">Payment</string>
+	<string name="transfer_fee">Transfer Fee</string>
+	<string name="loan">Loan</string>
+	<string name="return_loan">Return Loan</string>
+	<string name="all">All</string>
+	<string name="service_charge">Service Charge</string>
+	<string name="loan_service_charge_partner">Loan Service Charge (Partner)</string>
+	<string name="bank_fee">Bank Fee</string>
+	<string name="start">Start</string>
+	<string name="end_date">End date</string>
+	<string name="to">~</string>
+	<string name="please_select_a_valid_date">Please Select a Valid Date</string>
+
+	<!--Transaction-->
+	<string name="attention">Attention</string>
+	<string name="total">Total</string>
+	<string name="transaction_detail">Transaction Detail</string>
+	<string name="id_type">ID Type</string>
+	<string name="id_number">ID Number</string>
+	<string name="id">ID</string>
+	<string name="done">Done</string>
+	<string name="not_enough_storage_space">Not Enough Storage Space</string>
+	<string name="accept_code">Accept Code</string>
+	<string name="please_select_id_type">Please Select ID Type</string>
+	<string name="please_select_sex">Please Select Sex</string>
+	<string name="please_select_nationality">Please Select Nationality</string>
+	<string name="please_select_birthday">Please Select Birthday</string>
+	<string name="please_take_picture">Please Take Picture</string>
+	<string name="task_error">Task Error</string>
+	<string name="no_task">No Task</string>
+	<string name="task">Task</string>
+	<string name="invalid_id_number">Invalid ID Number</string>
+	<string name="certification_is_pending">Please Wait for Checking Your Certificate</string>
+	<string name="certification_is_accepted">Certificate Accepted</string>
+	<string name="certification_is_rejected">Your Certificate is not Approved</string>
+	<string name="certificate_type_id">National Identity Card</string>
+	<string name="passport">Passport</string>
+	<string name="drive_license">Drive License</string>
+	<string name="family_book">Family Book</string>
+
+	<string name="recent_order">Recent Order</string>
+	<string name="top_up_way">Top Up Way</string>
+	<string name="order_detail">Order Detail</string>
+	<string name="price_with_amount">Price:%s</string>
+	<string name="no_phone_company">No Phone Company</string>
+	<string name="face_value">Face Value</string>
+	<string name="sn">SN</string>
+	<string name="pincode">Pin-code</string>
+	<string name="show_pincode">Show Pin-code</string>
+	<string name="face_values">Face Value %s</string>
+	<string name="country_codes">+%s</string>
+	<string name="send_sms">Send SMS</string>
+	<string name="directly_top_up">Directly Top Up</string>
+	<string name="phone_company">Phone Company</string>
+	<string name="no_face_value">No Face Value</string>
+	<string name="invalid_country_code">Invalid Country Code</string>
+	<string name="please_select_face_value">Please Select Face Value</string>
+
+	<string name="error">Error</string>
+
+	<string name="receive_success">Receive Success</string>
+	<string name="number">Number</string>
+	<string name="name">Name</string>
+	<string name="commission">Commission</string>
+
+	<string name="take_picture">Take Picture</string>
+	<string name="select_from_album">Select from Album</string>
+	<string name="invalid_camera">Invalid Camera</string>
+	<string name="please_select_type">Please Select Type</string>
+	<string name="invalid_consumer_number">Invalid Consumer Number</string>
+	<string name="invalid_consumer_name">Invalid Consumer Name</string>
+	<string name="need_attachment">Need Attachment</string>
+	<string name="invalid_bill_number">Invalid <xliff:g>%s</xliff:g></string>
+
+	<string name="invalid_fee">Invalid Fee</string>
+
+	<string name="tap_to_view_payment_code">Tap to View Payment Code</string>
+	<string name="tap_to_view_deposit_code">Tap to View Deposit Code</string>
+	<string name="tap_to_view_withdraw_code">Tap to View Withdraw Code</string>
+	<string name="transfer_success">Transfer Success</string>
+
+	<string name="water">Water</string>
+	<string name="consumer">Consumer</string>
+	<string name="source">Source</string>
+	<string name="amount_khr">Amount (KHR)</string>
+	<string name="amount_khr_format">%s KHR</string>
+	<string name="detail">Detail</string>
+	<string name="pending">Pending</string>
+	<string name="completed">Completed</string>
+	<string name="sender">Sender</string>
+	<string name="receiver">Receiver</string>
+	<string name="recertify">Recertify</string>
+	<string name="uploading">Uploading</string>
+	<string name="bill_amount">Bill Amount</string>
+	<string name="invalid_pincode">Invalid Pin-code</string>
+	<string name="recent">Recent</string>
+	<string name="transfer_detail">Transfer Detail</string>
+
+	<string name="invalid_accept_code">Invalid Accept Code</string>
+	<string name="register_agreement"><Data><![CDATA[I agree with <font color="#29a3f0">the Terms of Service</font> and <font color="#29a3f0">the Privacy Policy</font>]]></Data></string>
+	<string name="invalid_token">Invalid Token</string>
+
+	<string name="loan_partner">Loan (Partner)</string>
+	<string name="return_loan_partner">Return Loan (Partner)</string>
+	<string name="pay_wsa">Pay Wsa</string>
+	<string name="pay_edc">Pay Edc</string>
+	<string name="source_account">Source Account</string>
+	<string name="target_account">Target Account</string>
+	<string name="deposit_detail">Deposit Detail</string>
+
+	<string name="receive_to_account">Receive to Account</string>
+	<string name="compensation">Compensation</string>
+	<string name="pay_wsa_fee">Pay WSA Fee</string>
+	<string name="pay_edc_fee">Pay EDC Fee</string>
+
+	<string name="withdraw_via_bank">Withdraw (via Bank)</string>
+	<string name="withdraw_via_agent">Withdraw (via Agent)</string>
+	<string name="withdraw_via_branch">Withdraw (via Branch)</string>
+	<string name="deposit_via_bank">Deposit (via Bank)</string>
+	<string name="deposit_via_agent">Deposit (via Agent)</string>
+	<string name="deposit_via_branch">Deposit (via Branch)</string>
+	<string name="reject_reason">Reject Reason: </string>
+	<string name="bill_payment">Bill Payment</string>
+	<string name="currency_exchange">Currency Exchange</string>
+	<string name="phone_top_up">Phone Top Up</string>
+	<string name="pay_partner_bill">Bill Payment</string>
+	<string name="pay_partner_bill_fee">Bill Payment Fee</string>
+	<string name="partner_bill_return">Partner Bill Return</string>
+	<string name="api_pay">API Pay</string>
+
+	<string name="edc_type_1_phnom_penh_kandal">Phnom Penh &amp; Kandal</string>
+	<string name="edc_type_2_battambang">Battambang</string>
+	<string name="edc_type_3_siem_reap">Siem Reap</string>
+	<string name="edc_type_4_sihanoukville">Sihanoukville</string>
+	<string name="edc_type_5_ang_ta_som">And Ta Som</string>
+	<string name="edc_type_6_banteay_meanchey">Banteay Meanchey</string>
+	<string name="edc_type_7_bavat">Bavat</string>
+	<string name="edc_type_8_chipoul">Chipoul</string>
+	<string name="edc_type_9_kampong_cham">Kampong Cham</string>
+	<string name="edc_type_10_kampong_rou">Kampong Rou</string>
+	<string name="edc_type_11_kampong_speu">Kampong Speu</string>
+	<string name="edc_type_12_kampong_sralao">Kampong Sralao</string>
+	<string name="edc_type_13_kao_seyma">Kao Seyma</string>
+	<string name="edc_type_14_kratie">Kratie</string>
+	<string name="edc_type_15_memot">Memot</string>
+	<string name="edc_type_16_mongkul_borey">Mongkul Borey</string>
+	<string name="edc_type_17_ponhea_krek">Ponhea Krek</string>
+	<string name="edc_type_18_prey_veng">Prey Veng</string>
+	<string name="edc_type_19_rattanakiri">Rattanakiri</string>
+	<string name="edc_type_20_senmonorom">Senmonorom</string>
+	<string name="edc_type_21_snuol">Snuol</string>
+	<string name="edc_type_22_steung_treng">Steung Treng</string>
+	<string name="edc_type_23_svay_rieng">Svay Rieng</string>
+	<string name="edc_type_24_takeo">Takeo</string>
+
+	<string name="wsa_type_1_ppwsa">PPWSA</string>
+	<string name="wsa_type_2_srwsa">SRWSA</string>
+	<string name="consumer1">Consumer#</string>
+	<string name="bill_no">Bill No</string>
+	<string name="client_id">Client ID</string>
+	<string name="invalid_bill_no">Invalid Bill No</string>
+	<string name="invalid_client_id">Invalid Client ID</string>
+
+	<string name="finance">Finance</string>
+	<string name="insurance">Insurance</string>
+	<string name="internet_and_tv">Internet &#038; TV</string>
+	<string name="others">Others</string>
+	<string name="partner_biller">Partner Biller</string>
+	<string name="samrithisak_loan">Samrithisak Loan</string>
+	<string name="minimal_amount">Minimal Amount</string>
+	<string name="service_charge_rate">Service Charge Rate</string>
+	<string name="no_partner_company">No Partner Company</string>
+	<string name="calculate_fee_rule">Fee: <xliff:g>%s</xliff:g></string>
+	<string name="title">Title</string>
+	<string name="select_title">Select Title</string>
+	<string name="amount_limit">Amount Limit [0,<xliff:g>%s</xliff:g>]</string>
+	<string name="bill_id">Bill ID</string>
+	<string name="bill_number_length">Invalid <xliff:g>%s</xliff:g> Length (<xliff:g>%s</xliff:g>)</string>
+	<string name="over_max_balance_limit">Over Max Balance</string>
+	<string name="usd_balance_not_enough">Not Enough USD Account BALANCE</string>
+	<string name="credit">Credit</string>
+	<string name="over_partner_total_loan_limit">Over Partner Total Loan Limit</string>
+	<string name="current_loan">Current Loan</string>
+	<string name="to_be_repaid">To be repaid</string>
+	<string name="bill_date">Bill Date</string>
+	<string name="due_date">Due Date</string>
+	<string name="config">Config</string>
+	<string name="address1">Address:</string>
+	<string name="samrithisak_head_office_address">No.502G, 502H, Monivong Blvd, Sangkat Tonle Basac, Khan Chamkar Mon, Phnom Penh.</string>
+	<string name="no_loan_credit">No loan credit, please contact Samrithisak to apply.</string>
+	<string name="over_due">Over Due</string>
+	<string name="fixed">Fixed</string>
+	<string name="percent">Percent</string>
+	<string name="select_biller_error">Select Biller Error</string>
+	<string name="get_more">More Bill</string>
+	<string name="partner">Partner</string>
+	<string name="partner_company">Partner Company</string>
+	<string name="biller">Biller</string>
+	<string name="biller_company">Biller Company</string>
+	<string name="amount_usd">Amount (USD)</string>
+	<string name="related_transaction">Related Transaction</string>
+	<string name="level">Level</string>
+	<string name="over_member_count_limit">Over Member Limit</string>
+	<string name="over_credit">Over Credit</string>
+	<string name="over_max_loan">Over Max Loan</string>
+	<string name="less_than_min_loan">Less than Min Loan</string>
+	<string name="need_greater_than_service_charge">Need Greater than Service Charge</string>
+
+	<string name="all_currency">All Currency</string>
+	<string name="rule">Rule</string>
+	<string name="sex">Sex</string>
+	<string name="nationality">Nationality</string>
+	<string name="birthday">Birthday</string>
+	<string name="male">Male</string>
+	<string name="female">Female</string>
+	<string name="credit_with_currency">Credit %1$s %2$s</string>
+	<string name="day_service_charge_rate">Day Service Charge Rate: <xliff:g>%s</xliff:g></string>
+	<string name="ace_loan">ACE Loan</string>
+	<string name="salary_loan">Salary Loan</string>
+	<string name="salary_loan_return">Salary Loan Return</string>
+	<string name="salary_loan_service_charge">Salary Loan Service Charge</string>
+	<string name="select_date">Select Date</string>
+	<string name="repay_plan">Repay Plan</string>
+	<string name="repay_day">Repay Day</string>
+	<string name="loan_time">Loan Time</string>
+	<string name="due_date_info">System will return loan automatically when you get salary next time, due date <xliff:g>%s</xliff:g></string>
+	<string name="service_charge_info">Service Charge Rate %1$s, Minimal Charge %2$s USD</string>
+	<string name="service_charge_info2">Service Charge Rate %1$s, Minimal Amount %2$s USD</string>
+	<string name="choose_term">Choose Term</string>
+	<string name="capital_interest_total"><xliff:g>%s</xliff:g> (Capital) + <xliff:g>%s</xliff:g> (Interest) = <xliff:g>%s</xliff:g></string>
+	<string name="loan_limit">Loan limit [<xliff:g>%s</xliff:g>, <xliff:g>%s</xliff:g>]</string>
+	<string name="repay_error">Repay Error</string>
+	<string name="available_credit">Available Credit</string>
+	<string name="please_choose_term">Please Choose Term</string>
+	<string name="input_multiple_amount">Please Input Multiple of %1$s</string>
+	<string name="loan_date">Loan Date</string>
+	<string name="plan_total">Plan Total</string>
+	<string name="staging_detail">Staging Detail</string>
+	<string name="repay_now">Repay Now</string>
+	<string name="finished">Finished</string>
+	<string name="contain_interest">Contain Interest</string>
+	<string name="capital_interest"><xliff:g>%s</xliff:g> (Capital) + <xliff:g>%s</xliff:g> (Interest)</string>
+	<string name="bill_payment_rule_description">amount*percent(<xliff:g>%s</xliff:g>) or fixed(<xliff:g>%s</xliff:g>)</string>
+	<string name="input_amount_times">Please Input Multiple of <xliff:g>%s</xliff:g></string>
+	<string name="post_process">Post Process</string>
+	<string name="repay_plan_total">Repay Plan Total</string>
+	<string name="interest_amount"> Included Interest <xliff:g>%s</xliff:g></string>
+	<string name="current_repay_amount">Current Repay Amount</string>
+	<string name="interest">Interest</string>
+	<string name="plan_date">Plan Date</string>
+	<string name="undone">Undone</string>
+	<string name="repay_plan_detail">Repay Plan Detail</string>
+	<string name="repay">Repay</string>
+	<string name="stage">Stage <xliff:g>%s</xliff:g></string>
+	<string name="term_x_month">Term <xliff:g>%s</xliff:g> Month</string>
+	<string name="term_x_months">Term <xliff:g>%s</xliff:g> Months</string>
+	<string name="bill_payment_fee_rule"><xliff:g>%s</xliff:g>, Fee <xliff:g>%s</xliff:g></string>
+	<string name="transfer_to_member">Transfer to Member</string>
+	<string name="transfer_to_non_member">Transfer to Non-Member</string>
+	<string name="transfer_to_partner">Transfer to Partner</string>
+	<string name="batch_repay">Batch Repay</string>
+	<string name="bill_number">Bill <xliff:g>%s</xliff:g></string>
+	<string name="please_choose_prepayment_data">Please Choose Prepayment Data</string>
+	<string name="loan_history">Loan History</string>
+	<string name="running">Running</string>
+	<string name="paid_off">Paid Off</string>
+	<string name="loan_amount">Loan Amount</string>
+	<string name="reimbursement_complete">Reimbursement to Complete</string>
+	<string name="loan_history_detail">Loan History Detail</string>
+	<string name="loan_n">Loan <xliff:g>%s</xliff:g></string>
+	<string name="loan_detail">Loan Detail</string>
+	<string name="safe_keyboard">Safe keyboard</string>
+	<string name="input_type">Input Type</string>
+	<string name="by_hand">By Hand</string>
+	<string name="qr_code">QR Code</string>
+	<string name="length_limit">Length (<xliff:g>%s</xliff:g>)</string>
+	<string name="split_amount">Split Amount</string>
+	<string name="over_max_loan_limit">Over Max Loan Limit [<xliff:g>%s</xliff:g>, <xliff:g>%s</xliff:g>]</string>
+	<string name="ticket_id">Ticket ID</string>
+	<string name="service_charge_not_match">Service Charge not Match</string>
+	<string name="over_loan_amount">Over Loan Amount</string>
+	<string name="term">Term</string>
+	<string name="x_month"><xliff:g>%s</xliff:g> Month</string>
+	<string name="x_months"><xliff:g>%s</xliff:g> Months</string>
+	<string name="select_term">Select Term</string>
+	<string name="repay_total">Repay Total</string>
+	<string name="clear_chat_history">Clear Chat History</string>
+	<string name="mute_notifications">Mute Notifications</string>
+	<string name="choose_friends">Choose Friends</string>
+
+	<string name="function_pause_format">%1$s (%2$s) is Paused</string>
+	<string name="format_twice">%1$s %2$s</string>
+	<string name="over_available_credit">Over Available Credit</string>
+	<string name="red_packet">Red Packet</string>
+	<string name="config_error">Config Error</string>
+
+	<string name="msg_1001">Your account has been logged in elsewhere, Please login again</string>
+	<string name="login_again2">Your account has been logged in elsewhere, confirm to login?</string>
+	<string name="msg_1706">Invalid Amount</string>
+	<string name="msg_1707">Invalid Security Code</string>
+	<string name="msg_1708">Cannot Find The Member</string>
+	<string name="msg_1709">Not Enough Balance</string>
+	<string name="msg_1710">The Bank Already Exists</string>
+	<string name="msg_1711">Over Daily Limit</string>
+	<string name="msg_1714">Over Max Transfer Cash Balance</string>
+	<string name="msg_1715">Over Per Day Transfer Cash Limit</string>
+	<string name="msg_1721">Receiver Must Be Member</string>
+	<string name="msg_1722">Cannot Transfer to Yourself</string>
+	<string name="msg_1723">Over Max Balance</string>
+	<string name="msg_1836">Over Max Loan limit</string>
+	<string name="msg_1837">Config Expired</string>
+	<string name="msg_1838">Over Return Loan</string>
+
+	<string name="balance_flow">Balance Flow</string>
+	<string name="pay">Pay</string>
+	<string name="set_amount">Set Amount</string>
+	<string name="save_image">Save Image</string>
+	<string name="remove_amount">Remove Amount</string>
+
+	<!---Lotto-->
+	<string name="shanghai_lotto">Shanghai - Lotto</string>
+	<string name="lotto_90">Lotto 90</string>
+	<string name="outstanding">Outstanding</string>
+	<string name="ticket">Ticket</string>
+	<string name="single">Single</string>
+	<string name="multiple">Multiple</string>
+	<string name="special">Special</string>
+	<string name="bet_list">Bet List</string>
+	<string name="win_report">Win Report</string>
+	<string name="result">Result</string>
+
+	<string name="lotto_90_multiple">Lotto 90 - Multiple</string>
+	<string name="lotto_90_single">Lotto 90 - Single</string>
+	<string name="time_left">Time Left</string>
+	<string name="manual">Manual</string>
+	<string name="random">Random</string>
+	<string name="random_1">Random 1</string>
+	<string name="random_5">Random 5</string>
+	<string name="total_amount_1">Amount:</string>
+	<string name="pleas_select_number">Number Over Limit 6 to <xliff:g>%s</xliff:g></string>
+	<string name="closed">Closed</string>
+	<string name="game_is_closed">Game Closed</string>
+	<string name="please_select_number">Please Choose Number</string>
+	<string name="please_betting">Please Betting</string>
+	<string name="bet_more_10_group">Most Choose 10 Groups</string>
+	<string name="most_select_number">Most Choose 5 Number</string>
+	<string name="please_choose_five_number">Please Choose 5 Number</string>
+	<string name="betting_success">Betting Success</string>
+	<string name="betting_amount">Betting Amount:</string>
+	<string name="buy_again">Buy Again</string>
+	<string name="buy_ticket_special">Special (<xliff:g>%s</xliff:g>)</string>
+	<string name="times">Times</string>
+	<string name="most_select_1_number">Most Choose 1 Number</string>
+	<string name="please_enter_times">Please Enter Times</string>
+	<string name="max_times">Times limit [1,<xliff:g>%s</xliff:g>]</string>
+	<string name="out_of_bet_credit">Out Of Bet Credit</string>
+
+	<!-- Coupon-->
+	<string name="coupon">Coupon</string>
+	<string name="no_coupon">No Coupon</string>
+	<string name="coupon_due_date">Due %s</string>
+	<string name="free_withdraw_fee">Free Withdraw Fee</string>
+	<array name="coupon_titles">
+		<item>Available</item>
+		<item>UnAvailable</item>
+	</array>
+
+	<string name="bracket">[%s]</string>
+	<string name="vietnam">Vietnam</string>
+	<string name="cambodia">Cambodia</string>
+	<string name="china">China</string>
+	<string name="thailand">Thailand</string>
+
+	<!--portrait-->
+	<string name="update_portrait">Update Portrait</string>
+	<string name="please_select_image">Please Select Image</string>
+
+</resources>

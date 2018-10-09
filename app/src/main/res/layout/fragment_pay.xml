@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_app_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<View style="@style/v_horizontal_divider_section"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout style="@style/ll_content">
+
+			<TextView
+				style="@style/tv_common_title"
+				android:text="@string/name"/>
+
+			<TextView
+				android:id="@+id/tv_name"
+				style="@style/tv_common_content"
+				tools:text="ABCDEFG"/>
+		</LinearLayout>
+
+		<View style="@style/horizontal_line2"/>
+
+		<LinearLayout style="@style/ll_content">
+
+			<TextView
+				style="@style/tv_common_title"
+				android:text="@string/phone"/>
+
+			<TextView
+				android:id="@+id/tv_phone"
+				style="@style/tv_common_content"
+				tools:text="+86-123456789"/>
+		</LinearLayout>
+
+		<View style="@style/horizontal_line2"/>
+
+		<View style="@style/v_horizontal_divider_section"/>
+
+		<LinearLayout style="@style/ll_content">
+
+			<TextView
+				style="@style/tv_common_title"
+				android:text="@string/currency"/>
+
+			<TextView
+				android:id="@+id/tv_currency"
+				style="@style/tv_common_content"
+				tools:text="USD"/>
+		</LinearLayout>
+
+		<View style="@style/horizontal_line2"/>
+
+		<View style="@style/horizontal_line2"/>
+
+		<LinearLayout style="@style/ll_content">
+
+			<TextView
+				style="@style/tv_common_title"
+				android:text="@string/amount"/>
+
+			<EditText
+				android:id="@+id/et_amount"
+				style="@style/et_common"
+				android:hint="@string/amount"/>
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/btn_submit"
+			style="@style/btn_submit"
+			android:layout_marginTop="@dimen/margin50"
+			android:enabled="false"
+			android:text="@string/submit"/>
+
+	</LinearLayout>
+
+</LinearLayout>

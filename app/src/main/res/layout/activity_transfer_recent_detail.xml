@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<com.og.utils.SlidingLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin30"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="@dimen/width32"
+						android:layout_height="@dimen/height32"
+						app:srcCompat="@drawable/ic_transfer"/>
+
+					<TextView
+						android:id="@+id/tv_fc_title"
+						style="@style/tv_order_detail_title"
+						tools:text="@string/transfer"/>
+
+				</LinearLayout>
+
+				<com.ace.member.view.MoneyTextView
+					android:id="@+id/tv_total_amount"
+					style="@style/tv_order_detail_total"
+					app:currency_at_end="true"
+					app:show_currency="true"
+					tools:text="12 USD"/>
+
+
+				<View
+					style="@style/v_horizontal_divider_line2"/>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/type"/>
+
+					<TextView
+						android:id="@+id/tv_type"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/sender"/>
+
+					<TextView
+						android:id="@+id/tv_sender"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/receiver"/>
+
+					<TextView
+						android:id="@+id/tv_receiver"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/amount"/>
+
+					<com.ace.member.view.MoneyTextView
+						android:id="@+id/tv_amount"
+						style="@style/tv_order_detail_content_right"
+						app:currency_at_end="true"
+						app:show_currency="true"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/fee"/>
+
+					<com.ace.member.view.MoneyTextView
+						android:id="@+id/tv_fee"
+						style="@style/tv_order_detail_content_right"
+						app:currency_at_end="true"
+						app:show_currency="true"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_accept_code"
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/accept_code"/>
+
+					<TextView
+						android:id="@+id/tv_accept_code"
+						style="@style/tv_order_detail_content_right"
+						/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_target"
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/target"/>
+
+					<TextView
+						android:id="@+id/tv_target_phone"
+						style="@style/tv_order_detail_content_right"
+						/>
+				</LinearLayout>
+
+				<RelativeLayout
+					android:id="@+id/rl_remark"
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						android:id="@+id/tv_remark_title"
+						style="@style/tv_order_detail_content_left"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin30"
+						android:gravity="center_vertical"
+						android:paddingTop="@dimen/padding10"
+						android:text="@string/remark"/>
+
+					<TextView
+						android:id="@+id/tv_remark"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_toEndOf="@id/tv_remark_title"
+						android:gravity="center_vertical|end"
+						android:minHeight="@dimen/height40"
+						android:paddingTop="@dimen/padding10"
+						android:textColor="@color/clr_common_content"
+						android:textSize="@dimen/txtSize16"
+						tools:text="2017-01-1231 1231221345 35324  324234 5 34"/>
+				</RelativeLayout>
+
+				<View style="@style/v_horizontal_divider_line2"/>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/time"/>
+
+					<TextView
+						android:id="@+id/tv_time"
+						style="@style/tv_order_detail_content_right"
+						tools:text="2017-01-01"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/status"/>
+
+					<TextView
+						android:id="@+id/tv_status"
+						style="@style/tv_order_detail_content_right"
+						android:text="@string/completed"
+						android:textColor="@color/color_completed"/>
+				</LinearLayout>
+
+				<!--<Button-->
+				<!--android:id="@+id/btn_confirm"-->
+				<!--style="@style/btn_submit"-->
+				<!--android:layout_width="match_parent"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_marginTop="@dimen/margin30"-->
+				<!--android:text="@string/done"-->
+				<!--android:visibility="gone"/>-->
+			</LinearLayout>
+
+		</ScrollView>
+
+	</com.og.utils.SlidingLayout>
+
+</LinearLayout>

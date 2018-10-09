@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/cv_add_bank"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:cardCornerRadius="@dimen/margin8">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center_horizontal"
+		android:background="@color/clr_add_bank_bg">
+
+		<FrameLayout
+			android:id="@+id/fl_bank"
+			android:layout_width="@dimen/width60"
+			android:layout_height="@dimen/height60"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="@dimen/margin10"
+			android:background="@drawable/style_circle_white">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv_bank"
+				android:layout_width="@dimen/width40"
+				android:layout_height="@dimen/height40"
+				android:layout_gravity="center"
+				android:background="@color/colorPrimary"
+				app:srcCompat="@drawable/ic_add"/>
+		</FrameLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="@string/new_bank_account"
+			android:textColor="@color/clr_common_title"
+			android:textSize="@dimen/txtSize18"/>
+	</RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height34"
+		android:gravity="center_vertical"
+		android:background="@color/white"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="0dp"
+			android:paddingStart="@dimen/padding15"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center|start"
+			android:text="@string/date"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize14"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center|end"
+			android:paddingEnd="@dimen/padding15"
+			android:text="@string/amount"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize14"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center|end"
+			android:layout_marginEnd="@dimen/margin15"
+			android:text="@string/balance"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize14"/>
+	</LinearLayout>
+
+	<com.og.component.CustomSlidingRefreshListView
+		android:id="@+id/lv"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@null"/>
+
+	<View
+		style="@style/v_horizontal_divider_line"/>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/ll_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:id="@+id/sv_main"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<include layout="@layout/view_toolbar"/>
+
+			<View
+				style="@style/v_horizontal_divider_section_1"
+				android:background="@color/white"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:text="@string/verification_sent"
+				android:textColor="@color/clr_common_title"
+				android:textSize="@dimen/txtSize20"/>
+
+			<View
+				style="@style/v_horizontal_divider_section_1"
+				android:background="@color/white"/>
+
+			<TextView
+				android:id="@+id/tv_message"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:textColor="@color/clr_common_title"
+				android:textSize="@dimen/txtSize30"/>
+
+
+			<View
+				style="@style/v_horizontal_divider_section_1"
+				android:background="@color/white"/>
+
+			<View
+				style="@style/v_horizontal_divider_section_1"
+				android:background="@color/white"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<com.ace.member.view.VerificationCodeView
+					android:id="@+id/verify_code"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					app:box="4"
+					app:box_bg_focus="@drawable/bg_verification_edit_focus"
+					app:box_bg_normal="@drawable/bg_verification_edit_normal"
+					app:child_h_padding="@dimen/padding15"
+					app:child_height="@dimen/height64"
+					app:child_width="@dimen/width64"
+					app:inputType="number"
+					app:showCursor="false"/>
+
+			</RelativeLayout>
+
+			<View
+				style="@style/v_horizontal_divider_section_1"
+				android:background="@color/white"/>
+
+			<View
+				style="@style/v_horizontal_divider_section_1"
+				android:background="@color/white"/>
+
+			<Button
+				android:id="@+id/time"
+				style="@style/btn_common"
+				android:text="@string/next_resend_time"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

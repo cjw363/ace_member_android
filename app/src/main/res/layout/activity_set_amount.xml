@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_app_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<View style="@style/v_horizontal_divider_section"/>
+
+	<LinearLayout style="@style/ll_content">
+
+		<TextView
+			style="@style/tv_common_title"
+			android:text="@string/amount"/>
+
+		<EditText
+			android:id="@+id/et_amount"
+			style="@style/et_common"
+			android:layout_width="wrap_content"
+			android:inputType="numberDecimal"/>
+
+		<TextView
+			android:id="@+id/tv_currency"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:clickable="true"
+			android:focusable="true"
+			android:gravity="start|center"
+			android:textColor="@color/clr_common_title"
+			android:textSize="@dimen/txtSize16"/>
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/btn_submit"
+		style="@style/btn_submit"
+		android:layout_marginTop="@dimen/margin30"
+		android:text="@string/confirm"/>
+
+</LinearLayout>

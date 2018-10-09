@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white">
+
+	<android.support.v7.widget.AppCompatImageView
+		android:id="@+id/aiv_friend_profile_bg"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height200"
+		android:scaleType="centerCrop"
+		/>
+
+	<com.ace.member.view.RoundRectImageView
+		android:id="@+id/aiv_friend_profile_head"
+		android:layout_width="@dimen/width100"
+		android:layout_height="@dimen/height100"
+		android:layout_alignBottom="@id/aiv_friend_profile_bg"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="@dimen/margin_40"
+		/>
+
+	<RelativeLayout
+		android:id="@+id/rl_friend_profile_name_remark"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@id/aiv_friend_profile_head"
+		android:layout_marginBottom="@dimen/margin_40">
+
+		<EditText
+			android:id="@+id/et_friend_profile_name_remark"
+			style="@style/tv_chat_title"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/height25"
+			android:layout_centerInParent="true"
+			android:background="@null"
+			android:focusable="false"
+			android:focusableInTouchMode="false"
+			android:gravity="center_vertical"
+			android:imeOptions="actionDone"
+			android:inputType="text"
+			android:maxWidth="@dimen/width180"
+			android:textCursorDrawable="@drawable/bg_et_cursor"
+			/>
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/iv_et_friend_profile_name_remark"
+			android:layout_width="@dimen/width24"
+			android:layout_height="@dimen/height24"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="@dimen/margin10"
+			android:layout_toEndOf="@id/et_friend_profile_name_remark"
+			android:visibility="gone"
+			app:srcCompat="@drawable/ic_friends_edit"/>
+	</RelativeLayout>
+
+	<include
+		layout="@layout/view_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/rl_friend_profile_name_remark"
+		android:layout_marginTop="@dimen/margin40">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+
+			<LinearLayout
+				android:id="@+id/ll_friend_profile_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:padding="@dimen/padding15">
+
+				<Button
+					android:id="@+id/btn_friend_profile_transfer"
+					android:layout_width="0dp"
+					android:layout_height="@dimen/height35"
+					android:layout_marginEnd="@dimen/margin8"
+					android:layout_weight="1"
+					android:background="@drawable/bg_btn_rectangle_blue"
+					android:text="@string/transfer"
+					android:textAllCaps="false"
+					android:textColor="@color/white"
+					android:textSize="@dimen/txtSize16"/>
+
+				<Button
+					android:id="@+id/btn_friend_profile_other"
+					android:layout_width="0dp"
+					android:layout_height="@dimen/height35"
+					android:layout_marginStart="@dimen/margin8"
+					android:layout_weight="1"
+					android:background="@drawable/bg_btn_rectangle_blue_stroke"
+					android:textAllCaps="false"
+					android:textColor="@color/colorPrimary"
+					android:textSize="@dimen/txtSize16"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:padding="@dimen/padding5">
+
+				<TextView
+					style="@style/tv_chat_hint"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:paddingStart="@dimen/padding30"
+					android:text="@string/phone"
+					/>
+
+				<TextView
+					android:id="@+id/tv_friend_profile_phone"
+					style="@style/tv_chat_title"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:paddingStart="@dimen/padding20"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:padding="@dimen/padding5">
+
+				<TextView
+					style="@style/tv_chat_hint"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:paddingStart="@dimen/padding30"
+					android:text="@string/name"
+					/>
+
+				<TextView
+					android:id="@+id/tv_friend_profile_real_name"
+					style="@style/tv_chat_title"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:paddingStart="@dimen/padding20"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:padding="@dimen/padding5">
+
+				<TextView
+					style="@style/tv_chat_hint"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:paddingStart="@dimen/padding30"
+					android:text="@string/area"
+					/>
+
+				<TextView
+					android:id="@+id/tv_friend_profile_area"
+					style="@style/tv_chat_title"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:paddingStart="@dimen/padding20"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/ll_friend_profile_add_type"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:padding="@dimen/padding5"
+				android:visibility="gone">
+
+				<TextView
+					style="@style/tv_chat_hint"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:paddingStart="@dimen/padding30"
+					android:text="@string/add_type"
+					/>
+
+				<TextView
+					android:id="@+id/tv_friend_profile_add_type"
+					style="@style/tv_chat_title"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:paddingStart="@dimen/padding20"
+					/>
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

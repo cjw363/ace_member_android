@@ -1,0 +1,180 @@
+<resources>
+	<!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+
+	<!--0.8-->
+
+	<dimen name="margin_1">-0.8dp</dimen>
+	<dimen name="margin1">0.8dp</dimen>
+	<dimen name="margin2">1.6dp</dimen>
+	<dimen name="margin3">2.4dp</dimen>
+	<dimen name="margin4">3.6dp</dimen>
+	<dimen name="margin5">4dp</dimen>
+	<dimen name="margin8">6.4dp</dimen>
+	<dimen name="margin10">8dp</dimen>
+	<dimen name="margin12">9.6dp</dimen>
+	<dimen name="margin14">11.2dp</dimen>
+	<dimen name="margin15">12dp</dimen>
+	<dimen name="margin16">12.8dp</dimen>
+	<dimen name="margin18">14.4dp</dimen>
+	<dimen name="margin20">16dp</dimen>
+	<dimen name="margin25">20dp</dimen>
+	<dimen name="margin30">24dp</dimen>
+	<dimen name="margin35">28dp</dimen>
+	<dimen name="margin40">32dp</dimen>
+	<dimen name="margin50">40dp</dimen>
+	<dimen name="margin60">48dp</dimen>
+	<dimen name="margin63">50.4dp</dimen>
+	<dimen name="margin65">52dp</dimen>
+	<dimen name="margin70">56dp</dimen>
+	<dimen name="margin100">80dp</dimen>
+	<dimen name="margin120">96dp</dimen>
+	<dimen name="margin150">120dp</dimen>
+	<dimen name="margin170">136dp</dimen>
+	<dimen name="margin200">160dp</dimen>
+	<dimen name="margin450">360dp</dimen>
+	<dimen name="margin500">400dp</dimen>
+
+	<dimen name="margin_10">-8dp</dimen>
+	<dimen name="margin_40">-32dp</dimen>
+
+	<dimen name="padding2">1.6dp</dimen>
+	<dimen name="padding3">2.4dp</dimen>
+	<dimen name="padding4">3.2dp</dimen>
+	<dimen name="padding5">4dp</dimen>
+	<dimen name="padding6">4.8dp</dimen>
+	<dimen name="padding8">6.4dp</dimen>
+	<dimen name="padding10">8dp</dimen>
+	<dimen name="padding13">10.4dp</dimen>
+	<dimen name="padding15">12dp</dimen>
+	<dimen name="padding16">12.8dp</dimen>
+	<dimen name="padding20">16dp</dimen>
+	<dimen name="padding25">20dp</dimen>
+	<dimen name="padding30">24dp</dimen>
+	<dimen name="padding32">25.6dp</dimen>
+	<dimen name="padding40">32dp</dimen>
+	<dimen name="padding50">40dp</dimen>
+
+	<dimen name="txtSize4">3.2sp</dimen>
+	<dimen name="txtSize6">4.8sp</dimen>
+	<dimen name="txtSize8">6.4sp</dimen>
+	<dimen name="txtSize10">8sp</dimen>
+	<dimen name="txtSize12">9.6sp</dimen>
+	<dimen name="txtSize14">11.2sp</dimen>
+	<dimen name="txtSize16">12.8sp</dimen>
+	<dimen name="txtSize18">14.4sp</dimen>
+	<dimen name="txtSize20">16sp</dimen>
+	<dimen name="txtSize24">19.2sp</dimen>
+	<dimen name="txtSize26">20.8sp</dimen>
+	<dimen name="txtSize30">24sp</dimen>
+	<dimen name="txtSize40">32sp</dimen>
+
+	<dimen name="width0">0dp</dimen>
+	<dimen name="width0.3">0.2dp</dimen>
+	<dimen name="width0.5">0.4dp</dimen>
+	<dimen name="width1">0.8dp</dimen>
+	<dimen name="width2">1.6dp</dimen>
+	<dimen name="width3">2.4dp</dimen>
+	<dimen name="width5">4dp</dimen>
+	<dimen name="width6">4.8dp</dimen>
+	<dimen name="width8">6.4dp</dimen>
+	<dimen name="width10">8dp</dimen>
+	<dimen name="width15">12dp</dimen>
+	<dimen name="width16">12.8dp</dimen>
+	<dimen name="width18">14.4dp</dimen>
+	<dimen name="width20">16dp</dimen>
+	<dimen name="width22">17.6dp</dimen>
+	<dimen name="width24">19.2dp</dimen>
+	<dimen name="width25">20dp</dimen>
+	<dimen name="width28">22.4dp</dimen>
+	<dimen name="width32">25.6dp</dimen>
+	<dimen name="width30">24dp</dimen>
+	<dimen name="width40">32dp</dimen>
+	<dimen name="width48">38.4dp</dimen>
+	<dimen name="width50">40dp</dimen>
+	<dimen name="width55">44dp</dimen>
+	<dimen name="width60">48dp</dimen>
+	<dimen name="width64">51.2dp</dimen>
+	<dimen name="width80">64dp</dimen>
+	<dimen name="width90">72dp</dimen>
+	<dimen name="width100">80dp</dimen>
+	<dimen name="width110">88dp</dimen>
+	<dimen name="width120">96dp</dimen>
+	<dimen name="width130">104dp</dimen>
+	<dimen name="width140">112dp</dimen>
+	<dimen name="width160">128dp</dimen>
+	<dimen name="width170">136dp</dimen>
+	<dimen name="width180">144dp</dimen>
+	<dimen name="width190">152dp</dimen>
+	<dimen name="width200">160dp</dimen>
+	<dimen name="width220">176dp</dimen>
+	<dimen name="width320">256dp</dimen>
+
+	<dimen name="height0">0dp</dimen>
+	<dimen name="height0.5">0.4dp</dimen>
+	<dimen name="height1">0.8px</dimen>
+	<dimen name="height1d">0.8dp</dimen>
+	<dimen name="height2">1.6dp</dimen>
+	<dimen name="height3">2.4dp</dimen>
+	<dimen name="height4">3.2dp</dimen>
+	<dimen name="height5">4dp</dimen>
+	<dimen name="height6">4.8dp</dimen>
+	<dimen name="height8">6.4dp</dimen>
+	<dimen name="height10">8dp</dimen>
+	<dimen name="height12">9.6dp</dimen>
+	<dimen name="height15">12dp</dimen>
+	<dimen name="height16">12.8dp</dimen>
+	<dimen name="height18">14.4dp</dimen>
+	<dimen name="height20">16dp</dimen>
+	<dimen name="height22">17.6dp</dimen>
+	<dimen name="height24">19.2dp</dimen>
+	<dimen name="height25">20dp</dimen>
+	<dimen name="height28">22.4dp</dimen>
+	<dimen name="height30">24dp</dimen>
+	<dimen name="height32">25.6dp</dimen>
+	<dimen name="height34">27.2dp</dimen>
+	<dimen name="height35">28dp</dimen>
+	<dimen name="height36">28.8dp</dimen>
+	<dimen name="height40">32dp</dimen>
+	<dimen name="height45">36dp</dimen>
+	<dimen name="height48">38.4dp</dimen>
+	<dimen name="height50">40dp</dimen>
+	<dimen name="height55">44dp</dimen>
+	<dimen name="height60">48dp</dimen>
+	<dimen name="height64">51.2dp</dimen>
+	<dimen name="height65">52dp</dimen>
+	<dimen name="height70">56dp</dimen>
+	<dimen name="height75">60dp</dimen>
+	<dimen name="height80">64dp</dimen>
+	<dimen name="height90">72dp</dimen>
+	<dimen name="height100">80dp</dimen>
+	<dimen name="height110">88dp</dimen>
+	<dimen name="height120">96dp</dimen>
+	<dimen name="height125">100dp</dimen>
+	<dimen name="height150">120dp</dimen>
+	<dimen name="height160">128dp</dimen>
+	<dimen name="height180">144dp</dimen>
+	<dimen name="height190">152dp</dimen>
+	<dimen name="height200">160dp</dimen>
+	<dimen name="height242">193.6dp</dimen>
+	<dimen name="height310">248dp</dimen>
+	<dimen name="height440">352dp</dimen>
+	<dimen name="height450">360dp</dimen>
+	<dimen name="height500">400dp</dimen>
+
+	<!-- 顶部按钮栏高度 -->
+	<dimen name="pickerview_topbar_height">35.2dp</dimen>
+	<!-- 顶部按钮paddingLeft -->
+	<dimen name="pickerview_topbar_paddingleft">8dp</dimen>
+	<!-- 顶部按钮paddingRight -->
+	<dimen name="pickerview_topbar_paddingright">24dp</dimen>
+	<!-- 顶部按钮文字大小 -->
+	<dimen name="pickerview_topbar_btn_textsize">16sp</dimen>
+	<dimen name="pickerview_topbar_title_textsize">16.8sp</dimen>
+	<!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+	<dimen name="pickerview_textsize">16sp</dimen>
+	<!--主要金额的字体大小-->
+	<dimen name="primary_money_text_size">12.8sp</dimen>
+
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ll_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_primary_body_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true">
+
+		<LinearLayout
+			android:id="@+id/ll_credit_loan"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height150"
+				android:background="@color/white"
+				android:gravity="center">
+
+				<TextView
+					android:id="@+id/tv_loan_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:text="@string/available_credit"
+					android:textColor="@color/clr_about_tv"
+					android:textSize="@dimen/txtSize16"/>
+
+				<com.ace.member.view.MoneyTextView
+					android:id="@+id/tv_loan"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/tv_loan_title"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/margin10"
+					android:textColor="@color/clr_tv_balance"
+					android:textSize="@dimen/txtSize30"
+					app:currency_at_end="true"
+					app:no_decimal="true"
+					app:show_currency="true"
+					tools:text="1,000.00 USD"/>
+
+				<TextView
+					android:id="@+id/tv_credit"
+					style="@style/tv_item_title"
+					android:layout_below="@+id/tv_loan"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/margin10"
+					android:textColor="@color/clr_about_tv"/>
+
+			</RelativeLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<View style="@style/v_horizontal_divider_section"/>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/amount"/>
+
+				<EditText
+					android:id="@+id/et_amount"
+					style="@style/et_common"
+					android:layout_width="wrap_content"
+					android:inputType="numberDecimal"
+					android:maxLength="20"/>
+
+				<TextView
+					android:id="@+id/tv_currency"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:clickable="true"
+					android:gravity="start|center"
+					android:textColor="@color/clr_common_title"
+					android:textSize="@dimen/txtSize16"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<LinearLayout style="@style/ll_fee_content">
+
+				<TextView
+					android:id="@+id/tv_charge_title"
+					style="@style/tv_fee_title"
+					android:layout_width="@dimen/width100"
+					android:layout_marginStart="@dimen/margin15"
+					android:text="@string/service_charge"/>
+
+				<com.ace.member.view.MoneyTextView
+					android:id="@+id/tv_charge"
+					style="@style/tv_fee_content"
+					android:text="@string/zero_with_usd"
+					app:currency_at_end="true"
+					app:show_currency="true"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+
+			<Button
+				android:id="@+id/btn_submit"
+				style="@style/btn_common"
+				android:layout_marginEnd="@dimen/margin15"
+				android:layout_marginStart="@dimen/margin15"
+				android:layout_marginTop="@dimen/margin30"
+				android:enabled="false"
+				android:text="@string/submit"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+	<include
+		android:id="@+id/rl_toolbar"
+		layout="@layout/view_toolbar"/>
+
+</LinearLayout>

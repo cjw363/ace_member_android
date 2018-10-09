@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tool="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:padding="@dimen/padding2">
+
+	<com.ace.member.view.CircleImageView
+		android:id="@+id/civ_bank"
+		android:layout_width="@dimen/width60"
+		android:layout_height="@dimen/height60"
+		android:layout_centerHorizontal="true"
+		tool:src="@drawable/ic_bank_aba"/>
+
+	<TextView
+		android:id="@+id/tv_bank"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/civ_bank"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/margin10"
+		android:gravity="center"
+		android:textColor="@color/clr_common_title"
+		android:textSize="@dimen/txtSize14"
+		tool:text="ABA-BANK"/>
+
+	<TextView
+		android:id="@+id/tv_currency"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tv_bank"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/margin5"
+		android:textColor="@color/clr_common_title"
+		android:textSize="@dimen/txtSize12"
+		tool:text="USD"/>
+
+</RelativeLayout>

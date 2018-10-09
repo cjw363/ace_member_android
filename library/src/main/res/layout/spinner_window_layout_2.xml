@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/spinner_box"
+              android:orientation="vertical"
+	>
+
+	<ListView
+		android:id="@+id/lv_spinner_window"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/clr_window_bg"
+		android:scrollbars="none"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/rl_company_bank_info"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/height160">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin10"
+		android:layout_marginTop="@dimen/margin3"
+		android:text="@string/company_bank_account"
+		android:textColor="@color/clr_common_title"
+		android:textSize="@dimen/txtSize16"/>
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/vp_company_bank_info"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:layout_marginBottom="@dimen/margin10"
+		android:layout_marginLeft="@dimen/margin10"
+		android:layout_marginRight="@dimen/margin10"
+		android:layout_marginTop="@dimen/margin30"
+		android:clipChildren="false"/>
+
+	<com.rd.PageIndicatorView
+		android:id="@+id/piv_company_bank"
+		style="@style/bank_card_indicator"
+		android:layout_alignParentBottom="true"
+		app:piv_animationType="slide"
+		app:piv_autoVisibility="true"
+		app:piv_interactiveAnimation="true"
+		app:piv_padding="@dimen/padding3"
+		app:piv_radius="@dimen/width5"
+		app:piv_selectedColor="@color/clr_common_content"
+		app:piv_unselectedColor="@color/clr_view_page"/>
+
+	<TextView
+		android:id="@+id/tv_no_bank"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:text="@string/no_bank"
+		android:visibility="gone"/>
+
+</RelativeLayout>

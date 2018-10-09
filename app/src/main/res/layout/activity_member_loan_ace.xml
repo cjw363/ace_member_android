@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/clr_app_bg"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height150"
+				android:background="@color/white"
+				android:gravity="center">
+
+				<TextView
+					android:id="@+id/tv_title"
+					style="@style/tv_item_title"
+					android:layout_centerHorizontal="true"
+					android:text="@string/available_credit"
+					android:textColor="@color/clr_about_tv"/>
+
+				<TextView
+					android:id="@+id/tv_loan"
+					style="@style/tv_item_title"
+					android:layout_below="@+id/tv_title"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/margin10"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:text="@string/zero_with_usd"
+					android:textColor="@color/clr_tv_balance"
+					android:textSize="@dimen/txtSize30"/>
+
+				<TextView
+					android:id="@+id/tv_credit"
+					style="@style/tv_item_title"
+					android:layout_below="@+id/tv_loan"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/margin10"
+					android:textColor="@color/clr_about_tv"/>
+			</RelativeLayout>
+
+			<View style="@style/v_horizontal_divider_section"/>
+
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					android:id="@+id/tv_amount_info"
+					style="@style/tv_common_title"
+					android:text="@string/amount"/>
+
+				<EditText
+					android:id="@+id/et_amount"
+					style="@style/et_common"
+					android:layout_width="wrap_content"
+					android:inputType="number"
+					android:maxLength="7"
+					tools:ignore="LabelFor"/>
+
+				<TextView
+					android:id="@+id/tv_currency"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:clickable="true"
+					android:gravity="start|center"
+					android:textColor="@color/clr_common_content"
+					android:textSize="@dimen/txtSize16"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_section"/>
+
+			<RelativeLayout
+				android:id="@+id/ll_term"
+				style="@style/ll_content"
+				android:paddingRight="@dimen/padding10">
+
+				<TextView
+					android:id="@+id/tv_term_title"
+					style="@style/tv_common_title"
+					android:gravity="start"
+					android:text="@string/term"/>
+
+				<TextView
+					android:id="@+id/tv_term"
+					style="@style/tv_common_content"
+					android:layout_width="wrap_content"
+					android:layout_toRightOf="@+id/tv_term_title"
+					android:hint="@string/select_term"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_arrow_right"
+					android:layout_width="@dimen/width16"
+					android:layout_height="@dimen/height16"
+					android:layout_alignParentEnd="true"
+					app:srcCompat="@drawable/ic_arrow_right"/>
+			</RelativeLayout>
+
+			<LinearLayout
+				android:id="@+id/ll_repay"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone">
+
+				<View style="@style/v_horizontal_divider_line1"/>
+
+				<LinearLayout style="@style/ll_content">
+
+					<TextView
+						style="@style/tv_common_title"
+						android:text="@string/repay"/>
+
+					<TextView
+						android:id="@+id/tv_repay"
+						style="@style/tv_common_content"
+						android:hint="@string/repay"/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<!--<com.og.component.CustomListView-->
+			<!--android:id="@+id/lv_periods"-->
+			<!--android:layout_width="match_parent"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:divider="@null"-->
+			<!--android:background="@color/white"-->
+			<!--android:scrollbars="none"/>-->
+
+			<LinearLayout style="@style/ll_fee_content">
+
+				<TextView
+					android:id="@+id/tv_day_interest"
+					style="@style/tv_common_content"
+					android:paddingLeft="@dimen/padding15"
+					android:text="@string/day_service_charge_rate"
+					android:textColor="@color/clr_tv_fee_select"
+					android:textSize="@dimen/txtSize14"/>
+			</LinearLayout>
+
+			<View
+				android:id="@+id/v_section"
+				style="@style/v_horizontal_divider_section"
+				android:visibility="gone"/>
+
+			<RelativeLayout
+				android:id="@+id/rl_plan"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height50"
+				android:background="@color/white"
+				android:gravity="center_vertical"
+				android:paddingLeft="@dimen/padding10"
+				android:visibility="gone"
+				android:paddingRight="@dimen/padding10">
+
+				<TextView
+					android:id="@+id/tv_time"
+					style="@style/tv_item_title"
+					android:layout_height="match_parent"
+					android:gravity="center_vertical"
+					android:textColor="@color/clr_tv_primary"
+					android:textSize="@dimen/txtSize14"/>
+
+				<TextView
+					android:id="@+id/tv_amount"
+					style="@style/tv_item_title"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="@dimen/margin5"
+					android:layout_toStartOf="@+id/iv_allow_right"
+					android:textColor="@color/clr_tv_balance"
+					android:textSize="@dimen/txtSize14"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_allow_right"
+					android:layout_width="@dimen/width16"
+					android:layout_height="@dimen/height16"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					app:srcCompat="@drawable/ic_arrow_right"/>
+			</RelativeLayout>
+
+			<Button
+				android:id="@+id/btn_submit"
+				style="@style/btn_common"
+				android:layout_marginBottom="@dimen/margin15"
+				android:layout_marginTop="@dimen/margin30"
+				android:text="@string/submit"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

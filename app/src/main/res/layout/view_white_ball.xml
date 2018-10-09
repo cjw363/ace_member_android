@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="@dimen/padding5">
+		<TextView
+			android:id="@+id/tv_content"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/txtSize12"
+			android:gravity="center"
+			android:textColor="@color/clr_lotto_btn_text"
+			android:background="@drawable/style_circle_white_1"/>
+	</LinearLayout>
+
+
+
+</LinearLayout>

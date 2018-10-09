@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<View style="@style/v_horizontal_divider_section"/>
+
+				<RelativeLayout
+					android:id="@+id/rl_type"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/height50"
+					android:layout_marginEnd="@dimen/margin15">
+
+					<TextView
+						android:id="@+id/tv_type_info"
+						style="@style/tv_common_title"
+						android:layout_centerVertical="true"
+						android:text="@string/type"/>
+
+					<TextView
+						android:id="@+id/tv_type"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toEndOf="@+id/tv_type_info"
+						android:text="@string/select"
+						android:textColor="@color/clr_common_content_hint"
+						android:textSize="@dimen/txtSize16"
+						tools:ignore="RelativeOverlap"/>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="@dimen/width16"
+						android:layout_height="@dimen/height16"
+						android:layout_alignParentEnd="true"
+						android:layout_centerVertical="true"
+						app:srcCompat="@drawable/ic_arrow_right"/>
+				</RelativeLayout>
+
+				<View style="@style/v_horizontal_divider_line1"/>
+
+				<LinearLayout style="@style/ll_content">
+
+					<TextView
+						android:id="@+id/tv_number_title"
+						style="@style/tv_common_title"
+						android:text="@string/bill_no"/>
+
+					<EditText
+						android:id="@+id/et_number"
+						style="@style/et_common"
+						android:hint="@string/bill_no"/>
+				</LinearLayout>
+
+				<View style="@style/horizontal_line2"/>
+
+				<View style="@style/horizontal_line2"/>
+
+				<LinearLayout style="@style/ll_content">
+
+					<TextView
+						style="@style/tv_common_title"
+						android:text="@string/phone"/>
+
+					<TextView
+						android:id="@+id/tv_phone_hint"
+						style="@style/tv_common_content"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:hint="@string/phone_number"
+						android:visibility="visible"/>
+
+					<LinearLayout
+						android:id="@+id/ll_phone"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:visibility="gone">
+
+						<TextView
+							android:id="@+id/tv_country_code"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:background="@color/white"
+							android:gravity="center_vertical"
+							android:text="@string/country_code_855"
+							android:textColor="@color/clr_common_title"
+							android:textSize="@dimen/txtSize16"/>
+
+						<View
+							style="@style/vertical_line1"
+							android:layout_width="@dimen/width1"
+							android:layout_height="@dimen/height16"
+							android:layout_marginEnd="@dimen/margin1"
+							android:layout_marginStart="@dimen/margin5"/>
+
+						<EditText
+							android:id="@+id/et_phone"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginStart="@dimen/margin3"
+							android:layout_weight="1"
+							android:background="@null"
+							android:digits="0123456789"
+							android:inputType="number"
+							android:labelFor="@+id/et_phone"
+							android:maxLength="15"
+							android:maxLines="1"
+							android:textColor="@color/clr_common_content"
+							android:textCursorDrawable="@drawable/bg_et_cursor"
+							android:textSize="@dimen/txtSize16"/>
+					</LinearLayout>
+
+					<FrameLayout
+						android:id="@+id/fl_contact"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:paddingEnd="@dimen/padding15"
+						android:paddingStart="@dimen/padding15">
+
+						<android.support.v7.widget.AppCompatImageView
+							android:layout_width="@dimen/width24"
+							android:layout_height="@dimen/height24"
+							android:layout_gravity="center"
+							app:srcCompat="@drawable/ic_edcwsa_recent"/>
+					</FrameLayout>
+
+				</LinearLayout>
+
+				<View style="@style/v_horizontal_divider_line"/>
+
+				<View style="@style/v_horizontal_divider_section"/>
+
+				<View style="@style/v_horizontal_divider_line"/>
+
+				<LinearLayout style="@style/ll_content">
+
+					<TextView
+						style="@style/tv_common_title"
+						android:text="@string/amount"/>
+
+					<EditText
+						android:id="@+id/et_amount"
+						style="@style/et_common"
+						android:layout_width="wrap_content"
+						android:inputType="number"/>
+
+					<TextView
+						android:id="@+id/tv_currency"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:clickable="true"
+						android:gravity="start|center"
+						android:textColor="@color/clr_common_title"
+						android:textSize="@dimen/txtSize16"/>
+				</LinearLayout>
+
+				<View style="@style/v_horizontal_divider_line"/>
+
+				<LinearLayout style="@style/ll_fee_content">
+
+					<TextView
+						android:id="@+id/tv_fee_title"
+						style="@style/tv_fee_title"
+						android:layout_width="@dimen/width100"
+						android:layout_marginStart="@dimen/margin15"
+						android:text="@string/fee"/>
+
+					<TextView
+						android:id="@+id/tv_fee"
+						style="@style/tv_fee_content"
+						android:text="@string/zero_with_khr"/>
+				</LinearLayout>
+
+				<View style="@style/v_horizontal_divider_line"/>
+
+				<View style="@style/v_horizontal_divider_section"/>
+
+				<View style="@style/v_horizontal_divider_line"/>
+
+				<LinearLayout
+					style="@style/ll_content"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						style="@style/tv_common_title"
+						android:text="@string/remark"/>
+
+					<EditText
+						android:id="@+id/et_remark"
+						style="@style/et_common"
+						android:hint="@string/remark"
+						android:inputType="text"
+						android:maxLength="200"/>
+				</LinearLayout>
+
+				<View style="@style/horizontal_line2"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_image"
+					android:layout_width="@dimen/width100"
+					android:layout_height="@dimen/height100"
+					android:layout_marginTop="@dimen/margin10"
+					android:layout_marginStart="@dimen/margin15"
+					android:scaleType="centerCrop"
+					app:srcCompat="@drawable/ic_photograph"/>
+
+				<Button
+					android:id="@+id/btn_submit"
+					style="@style/btn_submit"
+					android:text="@string/submit"/>
+			</LinearLayout>
+		</ScrollView>
+
+		<ProgressBar
+			android:id="@+id/pb_compress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:visibility="gone"/>
+	</FrameLayout>
+
+</LinearLayout>

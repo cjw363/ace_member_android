@@ -1,0 +1,117 @@
+<resources>
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimary</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:windowAnimationStyle">@style/animation_left_right</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+
+	<style name="main_tab_bottom">
+		<item name="android:textSize">@dimen/txtSize10</item>
+		<item name="android:textColor">@drawable/sel_tab_item_text</item>
+		<item name="android:ellipsize">marquee</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:button">@null</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_weight">1.0</item>
+	</style>
+
+	<style name="blend_theme_dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+
+	<style name="checkbox_min">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@null</item>
+		<item name="android:button">@null</item>
+		<item name="android:drawableLeft">@drawable/checkbox_bg_min</item>
+		<item name="android:drawablePadding">@dimen/padding4</item>
+		<item name="android:textSize">@dimen/txtSize10</item>
+	</style>
+
+	<style name="AnimationPreview">
+		<item name="android:windowEnterAnimation">@anim/fade_in</item>
+		<item name="android:windowExitAnimation">@anim/fade_out</item>
+	</style>
+
+	<style name="AnimationRight">
+		<item name="@android:windowEnterAnimation">@anim/in_from_right</item>
+		<item name="@android:windowExitAnimation">@anim/out_from_right</item>
+	</style>
+
+	<style name="Animations"/>
+
+	<!-- PopDownMenu -->  <style name="Animations.PopDownMenu"/>
+
+	<style name="Animations.PopDownMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+	</style>
+
+	<style name="Animations.PopDownMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+	</style>
+
+	<style name="Animations.PopDownMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+	</style>
+
+	<style name="Animations.PopDownMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_top</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+
+	<!-- PopUpMenu -->  <style name="Animations.PopUpMenu"/>
+
+	<style name="Animations.PopUpMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+	</style>
+
+	<style name="Animations.PopUpMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+	</style>
+
+	<style name="Animations.PopUpMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+	</style>
+
+	<style name="Animations.PopUpMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+
+	<style name="bank_card_indicator">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_marginBottom">@dimen/margin15</item>
+		<item name="android:layout_marginRight">@dimen/margin20</item>
+	</style>
+
+	<style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+		<item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+	</style>
+
+	<style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+		<item name="textAllCaps">false</item>
+		<item name="android:textSize">@dimen/txtSize18</item>
+	</style>
+
+</resources>

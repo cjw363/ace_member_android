@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ll_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:id="@+id/sv_main"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:scrollbars="none">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:id="@+id/tv_r2a_content"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/margin30"
+				android:gravity="center_horizontal"
+				android:padding="@dimen/padding10"
+				android:text="@string/receive_to_phone_number"
+				android:textColor="@color/clr_common_title"
+				android:textSize="@dimen/txtSize20"
+				/>
+
+			<TextView
+				android:id="@+id/tv_r2a_phone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tv_r2a_content"
+				android:layout_marginBottom="@dimen/margin15"
+				android:gravity="center_horizontal"
+				android:padding="@dimen/padding15"
+				android:textColor="@color/black"
+				android:textSize="@dimen/txtSize30"
+				tools:text="+855-12345678"
+				/>
+
+			<View
+				android:id="@+id/v_line1"
+				style="@style/v_horizontal_divider_line1"
+				android:layout_below="@+id/tv_r2a_phone"
+				/>
+
+			<TextView
+				android:id="@+id/tv_r2a_content2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/v_line1"
+				android:padding="@dimen/padding15"
+				android:text="@string/accept_code"
+				android:textColor="@color/clr_common_title"
+				android:textSize="@dimen/txtSize18"
+				/>
+
+			<RelativeLayout
+				android:id="@+id/rl_r2a"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/tv_r2a_content2"
+				android:layout_marginBottom="@dimen/margin20"
+				android:orientation="horizontal">
+
+				<com.ace.member.view.VerificationCodeView
+					android:id="@+id/et_r2a_security_code"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					app:TextSize="@dimen/txtSize24"
+					app:box="6"
+					app:box_bg_focus="@drawable/bg_verification_edit_focus"
+					app:box_bg_normal="@drawable/bg_verification_edit_normal"
+					app:child_h_padding="@dimen/padding5"
+					app:child_height="@dimen/height50"
+					app:child_width="@dimen/width50"
+					app:inputType="number"
+					app:showCursor="false"/>
+
+			</RelativeLayout>
+
+			<View
+				android:id="@+id/v_line2"
+				style="@style/v_horizontal_divider_line1"
+				android:layout_below="@+id/rl_r2a"/>
+
+		</RelativeLayout>
+
+	</ScrollView>
+
+</LinearLayout>

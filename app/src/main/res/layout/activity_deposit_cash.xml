@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/fl_content"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/ll_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/clr_money_deposit_cash"
+		android:orientation="vertical"
+		>
+
+		<include layout="@layout/view_toolbar"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height360"
+			android:layout_margin="@dimen/margin10"
+			android:background="@drawable/bg_rectangle_white_2"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height40"
+				android:background="@drawable/bg_shape_white_2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/img_function"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_marginLeft="@dimen/margin20"
+					app:srcCompat="@drawable/ic_receive_yellow"
+					/>
+
+				<TextView
+					android:id="@+id/tv_function"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="@dimen/padding10"
+					android:text="@string/receive_money"
+					android:textSize="@dimen/txtSize14"
+					android:textColor="@color/clr_money_deposit_cash"/>
+			</LinearLayout>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:orientation="vertical"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:orientation="vertical"
+					>
+
+					<TextView
+						android:id="@+id/tv_tap"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="@dimen/margin5"
+						android:layout_marginTop="@dimen/margin20"
+						android:gravity="center"
+						android:textColor="@color/clr_common_content"
+						android:textSize="@dimen/txtSize14"/>
+
+					<ImageView
+						android:id="@+id/img_bar_code"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingBottom="@dimen/padding10"
+						android:paddingLeft="@dimen/padding20"
+						android:paddingRight="@dimen/padding20"
+						/>
+
+					<ImageView
+						android:id="@+id/img_qr_code"
+						android:layout_width="@dimen/width160"
+						android:layout_height="@dimen/height160"
+						/>
+				</LinearLayout>
+			</FrameLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_bar_code_full_screen"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:visibility="gone"
+		>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:gravity="end|center">
+
+			<ImageView
+				android:id="@+id/img_bar_code_full_screen"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="start|center">
+
+			<ImageView
+				android:id="@+id/img_code"
+				android:layout_width="@dimen/width280"
+				android:layout_height="@dimen/width280"
+				/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_qr_code_full_screen"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="gone"
+		>
+
+		<ImageView
+			android:id="@+id/img_qr_code_full_screen"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+</FrameLayout>

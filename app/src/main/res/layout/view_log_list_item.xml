@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+	android:layout_height="100dp"
+	android:paddingLeft="@dimen/padding15"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical">
+
+	<LinearLayout android:id="@+id/ll_log_date" android:layout_width="match_parent" android:layout_height="30dp">
+		<TextView
+			android:id="@+id/tv_log_date"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			tools:text = "2017-01-05"
+			android:textColor="@color/clr_common_title"
+			android:textSize="@dimen/txtSize15"
+			android:textStyle="bold"
+			android:gravity="center_vertical"/>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"  android:layout_width="match_parent" android:layout_height="55dp" >
+		<!--线条部分-->
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+			<View
+				android:layout_width="@dimen/width2"
+				android:layout_height="@dimen/height20"
+				android:background="@color/clr_log_left_line" />
+			<ImageView
+				android:layout_width="15dp"
+				android:layout_height="15dp"
+				android:background="@drawable/style_circle_blue" />
+			<View
+				android:layout_width="@dimen/width2"
+				android:layout_height="@dimen/height20"
+				android:background="@color/clr_log_left_line" />
+		</LinearLayout>
+		<!--文字部分-->
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="55dp"
+			android:gravity="center"
+			android:layout_weight="3"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/tv_log_remark"
+				android:layout_width="match_parent"
+				android:paddingLeft="@dimen/padding10"
+				android:layout_height="wrap_content"
+				android:lineSpacingExtra="@dimen/height3"
+				tools:text = "Login Android"
+				android:textColor="@color/clr_common_content" />
+			<TextView
+				android:id="@+id/tv_log_ip"
+				android:layout_width="match_parent"
+				android:paddingLeft="@dimen/padding10"
+				android:layout_height="wrap_content"
+				android:lineSpacingExtra="@dimen/height3"
+				tools:text = "Login Android2222"
+				android:textColor="@color/clr_common_content" />
+
+		</LinearLayout>
+		<!---Time-->
+		<LinearLayout android:layout_width="@dimen/width50" android:layout_height="match_parent">
+			<TextView
+				android:id="@+id/tv_log_time"
+				android:layout_width="50dp"
+				android:layout_gravity="center_vertical|end"
+				android:layout_height="wrap_content"
+				android:text="12:22"
+				android:textColor="@color/clr_tv_time" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

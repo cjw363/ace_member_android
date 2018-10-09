@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+	android:background="@color/white">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height40"
+		android:orientation="horizontal">
+
+		<!--<TextView-->
+			<!--android:id="@+id/tv_currency"-->
+			<!--style="@style/tv_bill_payment_rule"/>-->
+
+
+		<TextView
+			android:id="@+id/tv_split"
+			style="@style/tv_bill_payment_rule"/>
+
+
+		<TextView
+			android:id="@+id/tv_fee"
+			style="@style/tv_bill_payment_rule"
+			android:textColor="@color/clr_tv_fee_select"/>
+	</LinearLayout>
+	<View
+		android:id="@+id/v_bottom" style="@style/v_horizontal_divider_line1"/>
+</LinearLayout>

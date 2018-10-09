@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:padding="@dimen/padding15">
+
+    <TextView
+        android:id="@+id/tv_chat_sys_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding5"
+        android:background="@drawable/bg_chat_item_sys_msg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtSize12"
+        android:text="You have successfully added XXX as your friend, and now you can chat with him(her)."/>
+</LinearLayout>

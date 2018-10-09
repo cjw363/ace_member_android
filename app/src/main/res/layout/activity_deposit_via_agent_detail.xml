@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/margin20"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_icon"
+					android:layout_width="@dimen/width32"
+					android:layout_height="@dimen/height32"
+					app:srcCompat="@drawable/ic_deposit_via_agent"/>
+
+				<TextView
+					android:id="@+id/tv_fc_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/margin10"
+					android:gravity="center"
+					android:text="@string/deposit_via_agent"
+					android:textColor="@color/black"
+					android:textSize="@dimen/txtSize16"/>
+
+			</LinearLayout>
+
+			<com.ace.member.view.MoneyTextView
+				android:id="@+id/tv_amount"
+				style="@style/tv_order_detail_total"
+				app:abs_amount="true"
+				app:currency_at_end="true"
+				app:show_currency="true"/>
+
+
+			<View
+				style="@style/v_horizontal_divider_line2"/>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/ticket_id"/>
+
+				<TextView
+					android:id="@+id/tv_ticket_id"
+					style="@style/tv_order_detail_content_right"
+					android:textColor="@color/clr_order_content"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/time"/>
+
+				<TextView
+					android:id="@+id/tv_time"
+					style="@style/tv_order_detail_content_right"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/currency"/>
+
+				<TextView
+					android:id="@+id/tv_currency"
+					style="@style/tv_order_detail_content_right"
+					android:textColor="@color/clr_order_content"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/amount"/>
+
+				<com.ace.member.view.MoneyTextView
+					android:id="@+id/tv_detail_amount"
+					style="@style/tv_order_detail_content_right"
+					android:textColor="@color/clr_order_content"
+					app:show_currency="false"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/source"/>
+
+				<TextView
+					android:id="@+id/tv_source"
+					style="@style/tv_order_detail_content_right"
+					android:textColor="@color/clr_order_content"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/status"/>
+
+				<TextView
+					android:id="@+id/tv_status"
+					style="@style/tv_order_detail_content_right"/>
+			</LinearLayout>
+
+			<RelativeLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					android:id="@+id/tv_remark_title"
+					style="@style/tv_order_detail_content_left"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/margin30"
+					android:gravity="center_vertical"
+					android:paddingTop="@dimen/padding10"
+					android:text="@string/remark"/>
+
+				<TextView
+					android:id="@+id/tv_remark"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_toEndOf="@id/tv_remark_title"
+					android:gravity="center_vertical|end"
+					android:minHeight="@dimen/height40"
+					android:paddingTop="@dimen/padding10"
+					android:textColor="@color/clr_common_content"
+					android:textSize="@dimen/txtSize16"/>
+			</RelativeLayout>
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

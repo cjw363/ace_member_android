@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/login_background"
+	android:orientation="vertical"
+	tools:context=".start.StartActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height0"
+		android:layout_weight="1"
+		android:gravity="center">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/padding50"
+			android:src="@drawable/logo"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_login"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height0"
+		android:layout_weight="0.4"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/tvVersionNotSupported"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="@dimen/margin10"
+			android:gravity="center_horizontal"
+			android:textSize="@dimen/txtSize24"
+			android:textColor="@color/white"
+			android:text="@string/not_supported_version"
+			android:visibility="gone"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height0"
+		android:layout_weight="0.2"/>
+
+	<TextView
+		android:id="@+id/tv_version"
+		style="@style/tv_version"
+		android:layout_gravity="center"/>
+
+</LinearLayout>

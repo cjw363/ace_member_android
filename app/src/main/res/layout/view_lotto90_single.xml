@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/layout_select_style2"
+		android:orientation="horizontal"
+		android:paddingBottom="@dimen/margin10"
+		android:paddingTop="@dimen/margin10">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="9"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:paddingLeft="@dimen/padding10">
+
+			<TextView
+				android:id="@+id/tv_number"
+				android:layout_width="@dimen/width30"
+				android:layout_height="@dimen/width30"
+				android:layout_marginRight="@dimen/margin10"
+				android:background="@drawable/ic_rhombus"
+				android:gravity="center"
+				android:text="10"
+				android:textColor="@color/white"
+				android:textSize="@dimen/txtSize14"/>
+
+			<TextView
+				android:id="@+id/tv_ball_1"
+				android:layout_width="@dimen/width30"
+				android:layout_height="@dimen/width30"
+				android:layout_marginRight="@dimen/margin10"
+				android:background="@drawable/style_circle_white_1"
+				android:gravity="center"
+				android:text="01"
+				android:textColor="@color/clr_lotto_btn_text"
+				android:textSize="@dimen/txtSize14"/>
+
+			<TextView
+				android:id="@+id/tv_ball_2"
+				android:layout_width="@dimen/width30"
+				android:layout_height="@dimen/width30"
+				android:layout_marginRight="@dimen/margin10"
+				android:background="@drawable/style_circle_white_1"
+				android:gravity="center"
+				android:text="03"
+				android:textColor="@color/clr_lotto_btn_text"
+				android:textSize="@dimen/txtSize14"/>
+
+			<TextView
+				android:id="@+id/tv_ball_3"
+				android:layout_width="@dimen/width30"
+				android:layout_height="@dimen/width30"
+				android:layout_marginRight="@dimen/margin10"
+				android:background="@drawable/style_circle_white_1"
+				android:gravity="center"
+				android:text="03"
+				android:textColor="@color/clr_lotto_btn_text"
+				android:textSize="@dimen/txtSize14"/>
+
+			<TextView
+				android:id="@+id/tv_ball_4"
+				android:layout_width="@dimen/width30"
+				android:layout_height="@dimen/width30"
+				android:layout_marginRight="@dimen/margin10"
+				android:background="@drawable/style_circle_white_1"
+				android:gravity="center"
+				android:text="04"
+				android:textColor="@color/clr_lotto_btn_text"
+				android:textSize="@dimen/txtSize14"/>
+
+			<TextView
+				android:id="@+id/tv_ball_5"
+				android:layout_width="@dimen/width30"
+				android:layout_height="@dimen/width30"
+				android:background="@drawable/style_circle_white_1"
+				android:gravity="center"
+				android:text="05"
+				android:textColor="@color/clr_lotto_btn_text"
+				android:textSize="@dimen/txtSize14"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_arrow_left"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="right|center_vertical"
+			android:orientation="horizontal"
+			android:paddingRight="@dimen/margin10">
+
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

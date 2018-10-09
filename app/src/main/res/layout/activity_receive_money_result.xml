@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+
+			<android.support.v7.widget.AppCompatImageView
+				android:layout_width="@dimen/width60"
+				android:layout_height="@dimen/height60"
+				android:layout_gravity="center_horizontal"
+				android:layout_margin="@dimen/margin20"
+				app:srcCompat="@drawable/ic_success"/>
+
+			<TextView
+				style="@style/tv_result_title"
+				android:text="@string/receive_money_success"/>
+
+			<View style="@style/v_horizontal_divider_line2"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/name"/>
+
+					<TextView
+						android:id="@+id/tv_name"
+						style="@style/tv_order_detail_content_right"
+						tools:text="ABCDEFG"/>
+
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/phone"/>
+
+					<TextView
+						android:id="@+id/tv_phone"
+						style="@style/tv_order_detail_content_right"
+						tools:text="+86-123456789"/>
+
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/currency"/>
+
+					<TextView
+						android:id="@+id/tv_currency"
+						style="@style/tv_order_detail_content_right"
+						tools:text="USD"/>
+
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/amount"/>
+
+					<TextView
+						android:id="@+id/tv_amount"
+						style="@style/tv_order_detail_content_right"
+						tools:text="10000"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_fee"
+					style="@style/ll_order_detail_content"
+					android:visibility="gone">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/fee"/>
+
+					<TextView
+						android:id="@+id/tv_fee"
+						style="@style/tv_order_detail_content_right"
+						tools:text="10000"/>
+
+				</LinearLayout>
+
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/time"/>
+
+					<TextView
+						android:id="@+id/tv_time"
+						style="@style/tv_order_detail_content_right"
+						tools:text="2017-07-13 12:33"/>
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<View
+				android:id="@+id/v_line2"
+				style="@style/v_horizontal_divider_line2"/>
+
+			<Button
+				android:id="@+id/btn_confirm"
+				style="@style/btn_common"
+				android:layout_marginTop="@dimen/margin40"
+				android:text="@string/done"/>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

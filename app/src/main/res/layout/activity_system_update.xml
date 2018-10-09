@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include
+		android:id="@+id/include"
+		layout="@layout/view_toolbar"/>
+
+	<com.og.utils.SlidingLayout
+		android:id="@+id/sl"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<ImageView
+					android:id="@+id/iv_app"
+					android:layout_width="@dimen/width60"
+					android:layout_height="@dimen/height60"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/margin20"
+					android:src="@mipmap/ic_launcher"/>
+
+				<TextView
+					android:id="@+id/tv_current_version"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/iv_app"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/margin10"
+					android:textColor="@color/clr_common_title"
+					android:textSize="@dimen/txtSize18"
+					tools:text="V 1.0.24"/>
+
+				<TextView
+					android:id="@+id/tv_update_log"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_current_version"
+					android:layout_marginTop="@dimen/margin5"
+					android:paddingLeft="@dimen/padding10"
+					android:paddingRight="@dimen/padding10"
+					android:textColor="@color/clr_common_content"
+					android:textSize="@dimen/txtSize16"/>
+			</RelativeLayout>
+		</ScrollView>
+	</com.og.utils.SlidingLayout>
+
+	<FrameLayout
+		android:id="@+id/fl_download"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#EDEDED">
+
+		<Button
+			android:id="@+id/btn_download"
+			style="@style/btn_submit"
+			android:text="@string/download"
+			android:enabled="false"/>
+	</FrameLayout>
+
+	<RelativeLayout
+		android:id="@+id/rl_progress"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone">
+
+		<ProgressBar
+			android:id="@+id/pb_download"
+			style="@android:style/Widget.ProgressBar.Horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height3"
+			android:layout_centerInParent="true"
+			android:layout_gravity="center"
+			android:layout_marginEnd="@dimen/margin30"
+			android:layout_marginStart="@dimen/margin30"
+			android:progressDrawable="@drawable/bg_progress_bar"
+			tools:progress="30"/>
+
+		<TextView
+			android:id="@+id/tv_progress"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/pb_download"
+			android:layout_marginTop="@dimen/margin5"
+			android:gravity="center"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize24"
+			android:textStyle="italic"
+			android:text="0%"/>
+	</RelativeLayout>
+
+</LinearLayout>

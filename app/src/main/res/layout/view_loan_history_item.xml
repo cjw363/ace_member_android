@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/padding15">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height50"
+		android:gravity="center_vertical"
+		android:paddingRight="@dimen/padding15">
+
+		<LinearLayout
+			android:id="@+id/ll_term"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_centerVertical="true"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv_term"
+				style="@style/tv_item_title"
+				android:layout_marginBottom="@dimen/margin2"
+				android:gravity="start"
+				android:textColor="@color/clr_common_title"/>
+
+			<TextView
+				android:id="@+id/tv_time"
+				style="@style/tv_item_title"
+				android:gravity="start"
+				android:textSize="@dimen/txtSize14"
+				android:visibility="visible"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentRight="true"
+			android:gravity="center_vertical|right"
+			android:orientation="vertical"
+			tools:ignore="RtlHardcoded">
+
+			<TextView
+				android:id="@+id/tv_status"
+				style="@style/tv_item_title"
+				android:layout_marginBottom="@dimen/margin2"
+				android:textColor="@color/clr_common_content"/>
+
+			<TextView
+				android:id="@+id/tv_amount"
+				style="@style/tv_item_title"
+				android:textColor="@color/clr_common_content"/>
+		</LinearLayout>
+
+
+	</RelativeLayout>
+
+	<View style="@style/v_horizontal_divider_line"/>
+</LinearLayout>

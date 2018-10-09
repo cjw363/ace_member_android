@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rfl_phone_company"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_rectangle_white"
+	android:padding="@dimen/padding10">
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rv_phone_company"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"/>
+
+	<TextView
+		android:id="@+id/tv_no_phone_company"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:text="@string/no_phone_company"
+		android:textColor="@color/clr_common_content"
+		android:textSize="@dimen/txtSize26"/>
+</FrameLayout>

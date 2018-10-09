@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:paddingTop="@dimen/padding10">
+
+	<android.support.v7.widget.AppCompatImageView
+		android:id="@+id/iv_icon"
+		android:layout_width="@dimen/width45"
+		android:layout_height="@dimen/height45"
+		tools:src="@mipmap/ic_launcher"/>
+
+	<TextView
+		android:id="@+id/tv_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textColor="@color/clr_add_bank_bg"
+		android:textSize="@dimen/txtSize12"
+		tools:text="@string/member"/>
+
+</LinearLayout>

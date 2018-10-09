@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<fragment
+		android:id="@+id/map"
+		android:name="com.google.android.gms.maps.SupportMapFragment"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context="com.ace.member.main.me.service_point.ServicePointActivity"/>
+
+	<LinearLayout
+		android:id="@+id/ll_info"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:layout_alignParentEnd="true"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:padding="@dimen/padding5">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:baselineAligned="true"
+			android:orientation="horizontal">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/ic_map_mark_yellow"/>
+
+			<CheckBox
+				android:id="@+id/cb_branch"
+				style="@style/checkbox_min"
+				android:layout_gravity="center"
+				android:checked="true"
+				android:maxLines="1"
+				android:text="@string/branch_count"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginTop="@dimen/margin5"
+			android:baselineAligned="true"
+			android:orientation="horizontal">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/ic_map_mark_blue"/>
+
+			<CheckBox
+				android:id="@+id/cb_agent"
+				style="@style/checkbox_min"
+				android:layout_gravity="center"
+				android:checked="true"
+				android:maxLines="1"
+				android:text="@string/agent_count"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</RelativeLayout>

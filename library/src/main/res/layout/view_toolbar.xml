@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tool="http://schemas.android.com/tools"
+	android:id="@+id/rl_toolbar"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/height45"
+	android:background="@color/colorPrimary">
+
+	<FrameLayout
+		android:id="@+id/fl_back"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:padding="@dimen/padding10">
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/iv_back"
+			android:layout_width="@dimen/width24"
+			android:layout_height="@dimen/height24"
+			app:srcCompat="@drawable/ic_back"/>
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:textColor="@color/white"
+		android:textSize="@dimen/txtSize20"
+		/>
+
+	<LinearLayout
+		android:id="@+id/ll_toolbar_menu"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="@dimen/padding10">
+
+		<TextView
+			android:id="@+id/tv_menu"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:textSize="@dimen/txtSize20"
+			android:textStyle="bold"
+			android:visibility="gone"
+			tool:text="Tool"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tool="http://schemas.android.com/tools"
+	android:id="@+id/rl_toolbar"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/height45"
+	android:background="@color/colorPrimary">
+
+	<FrameLayout
+		android:id="@+id/fl_back"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:padding="@dimen/padding10">
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/iv_back"
+			android:layout_width="@dimen/width18"
+			android:layout_height="@dimen/height18"
+			android:layout_gravity="center"
+			app:srcCompat="@drawable/ic_arrow_left"/>
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:textColor="@color/white"
+		android:textSize="@dimen/txtSize18"
+		android:gravity="center"
+		tool:text="@string/title"/>
+
+	<LinearLayout
+		android:id="@+id/ll_toolbar_menu"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_centerVertical="true"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="@dimen/padding10">
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/iv_menu_left"
+			android:layout_width="@dimen/width24"
+			android:layout_height="@dimen/height24"
+			android:visibility="gone"
+			app:srcCompat="@drawable/ic_setting"/>
+
+		<View
+			android:id="@+id/v_dot_left"
+			android:layout_width="@dimen/width6"
+			android:layout_height="@dimen/height6"
+			android:layout_marginEnd="@dimen/margin10"
+			android:layout_gravity="top"
+			android:background="@drawable/style_circle_red"
+			android:visibility="invisible"/>
+
+		<TextView
+			android:id="@+id/tv_menu"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:textSize="@dimen/txtSize20"
+			android:visibility="gone"
+			tool:text="Tool"/>
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/iv_menu"
+			android:layout_width="@dimen/width24"
+			android:layout_height="@dimen/height24"
+			android:visibility="gone"
+			app:srcCompat="@drawable/ic_setting"/>
+
+		<View
+			android:id="@+id/v_dot"
+			android:layout_width="@dimen/width6"
+			android:layout_height="@dimen/height6"
+			android:layout_gravity="top"
+			android:background="@drawable/style_circle_red"
+			android:visibility="invisible"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

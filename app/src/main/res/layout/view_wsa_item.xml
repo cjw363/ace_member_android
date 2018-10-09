@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/tv_date_title"
+		style="@style/tv_date_title"
+		tools:text="2017-09"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingTop="@dimen/padding10"
+		android:paddingBottom="@dimen/padding10"
+		android:paddingStart="@dimen/padding15"
+		android:paddingEnd="@dimen/padding15">
+
+		<TextView
+			android:id="@+id/tv_phone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/clr_common_content"
+			android:textSize="@dimen/txtSize18"
+			tools:text="+86-12345678"/>
+
+		<TextView
+			android:id="@+id/tv_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/tv_phone"
+			android:layout_marginTop="@dimen/margin5"
+			android:gravity="bottom"
+			android:textColor="@color/clr_list_time"
+			android:textSize="@dimen/txtSize14"
+			tools:text="2017-06-08"/>
+
+		<TextView
+			android:id="@+id/tv_status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:textSize="@dimen/txtSize16"
+			tools:text="Pending"/>
+
+		<TextView
+			android:id="@+id/tv_amount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/tv_time"
+			android:layout_alignParentEnd="true"
+			android:layout_below="@+id/tv_status"
+			android:gravity="bottom"
+			android:textColor="@color/clr_amount_red"
+			android:textSize="@dimen/txtSize20"
+			tools:text="-10000,99 USD"/>
+	</RelativeLayout>
+	<View
+		style="@style/v_horizontal_divider_line"/>
+</LinearLayout>
+

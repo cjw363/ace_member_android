@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="tv_common_base">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/clr_common_title</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+
+	<style name="tv_bill_payment_rule" parent="tv_common_base">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textSize">@dimen/txtSize14</item>
+		<item name="android:paddingTop">@dimen/padding5</item>
+		<item name="android:paddingBottom">@dimen/padding5</item>
+		<item name="android:textColor">@color/clr_tv_primary</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="tv_common_title">
+		<item name="android:layout_width">@dimen/width100</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">@dimen/margin15</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textColor">@color/clr_common_title</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+
+	<style name="tv_common_title_1" parent="tv_common_title">
+		<item name="android:layout_width">wrap_content</item>
+	</style>
+
+	<style name="tv_password_title">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">0dp</item>
+		<item name="android:layout_weight">2</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+		<item name="android:textColor">@color/clr_common_title</item>
+		<item name="android:paddingLeft">@dimen/padding10</item>
+	</style>
+
+
+	<style name="tv_common_content">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginRight">@dimen/margin10</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textColor">@color/clr_common_content</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+
+
+	<style name="tv_result_title">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/txtSize20</item>
+		<item name="android:textColor">@color/colorPrimary</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:layout_marginBottom">@dimen/margin30</item>
+	</style>
+
+	<!--order detail中标题-->
+	<style name="tv_order_detail_title">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginStart">@dimen/margin10</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/clr_common_title</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+
+	<!--order detail中total值-->
+	<style name="tv_order_detail_total">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/txtSize30</item>
+		<item name="android:textColor">@color/clr_tv_balance</item>
+		<item name="android:layout_marginBottom">@dimen/margin20</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_marginTop">@dimen/margin10</item>
+	</style>
+
+
+	<!--详细内容左边 单个单词 右边对tv_order_detail_content_right-->
+	<style name="tv_order_detail_content_left">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textColor">@color/clr_order_title</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+	<!--详细内容右边 左边对tv_order_detail_content_left-->
+	<style name="tv_order_detail_content_right">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center_vertical|end</item>
+		<item name="android:layout_weight">2</item>
+		<item name="android:textColor">@color/clr_order_content</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+	<!--详细内容左边 多个单词 右边对tv_order_detail_content_right_1-->
+	<style name="tv_order_detail_content_left_1">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">2</item>
+		<item name="android:textColor">@color/clr_order_title</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+	<!--详细内容右边 左边对tv_order_detail_content_left_1-->
+	<style name="tv_order_detail_content_right_1">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center_vertical|end</item>
+		<item name="android:textColor">@color/clr_order_content</item>
+		<item name="android:layout_weight">2</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+
+
+	<style name="tv_fee_title">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/txtSize14</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:enabled">false</item>
+		<item name="android:textColor">@drawable/bg_fee</item>
+	</style>
+
+	<style name="tv_fee_content" parent="tv_fee_title">
+	</style>
+
+
+	<style name="tv_item_title">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/clr_order_title</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="tv_note_title">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">@dimen/margin15</item>
+		<item name="android:layout_marginLeft">@dimen/margin10</item>
+		<item name="android:textColor">@color/clr_common_content</item>
+		<item name="android:textSize">@dimen/txtSize14</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="tv_note_content">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">@dimen/margin_10</item>
+		<item name="android:layout_marginLeft">@dimen/margin10</item>
+		<item name="android:layout_marginRight">@dimen/margin10</item>
+		<item name="android:textColor">@color/clr_common_content_1</item>
+		<item name="android:textSize">@dimen/txtSize13</item>
+		<item name="android:lineSpacingMultiplier">1.4</item>
+	</style>
+
+	<style name="tv_version">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/txtSize12</item>
+		<item name="android:textColor">@color/clr_version</item>
+		<item name="android:gravity">end|bottom</item>
+	</style>
+
+	<style name="tv_agreement_content">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/txtSize12</item>
+	</style>
+
+	<!--Password页面item-->
+	<style name="tv_password_item_content">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:minHeight">@dimen/height50</item>
+		<item name="android:padding">@dimen/padding15</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textColor">@color/clr_common_title</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+	</style>
+
+	<style name="tv_language_title">
+		<item name="android:layout_width">@dimen/width0</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minHeight">@dimen/height50</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+		<item name="android:paddingLeft">@dimen/padding5</item>
+		<item name="android:layout_marginLeft">@dimen/margin10</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="tv_chat_title">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+		<item name="android:textColor">@color/clr_chat_tv_title</item>
+	</style>
+
+	<style name="tv_chat_hint">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+		<item name="android:textColor">@color/clr_chat_tv_hint</item>
+	</style>
+
+	<style name="tv_date_title">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/height34</item>
+		<item name="android:background">@color/clr_primary_separator</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:paddingEnd">@dimen/padding15</item>
+		<item name="android:paddingStart">@dimen/margin15</item>
+		<item name="android:textColor">@color/clr_primary_separator_title2</item>
+		<item name="android:textSize">@dimen/txtSize12</item>
+		<item name="android:visibility">visible</item>
+	</style>
+
+</resources>

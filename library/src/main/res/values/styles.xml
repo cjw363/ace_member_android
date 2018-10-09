@@ -1,0 +1,81 @@
+<resources>
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimary</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:windowAnimationStyle">@style/animation_left_right</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+
+	<style name="animation_left_right" parent="@android:style/Animation">
+		<item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+		<item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+		<item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+		<item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+	</style>
+
+	<style name="dialog_custom" parent="android:style/Theme.Dialog">
+		<item name="android:background">#00000000</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsFloating">true</item>
+	</style>
+
+	<style name="dlg_title">
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="dlg_content_text">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+		<item name="android:textColor">@color/dlg_message_color</item>
+		<item name="android:minHeight">@dimen/height80</item>
+		<item name="android:minWidth">@dimen/width200</item>
+		<item name="android:paddingTop">@dimen/padding15</item>
+		<item name="android:paddingBottom">@dimen/padding15</item>
+		<item name="android:paddingLeft">@dimen/padding15</item>
+		<item name="android:paddingRight">@dimen/padding15</item>
+	</style>
+
+	<style name="horizontal_line1">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/height1</item>
+		<item name="android:background">@color/lib_color7</item>
+
+	</style>
+
+	<style name="horizontal_line2">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/height1</item>
+		<item name="android:background">@color/lib_color7</item>
+		<item name="android:layout_marginRight">@dimen/margin10</item>
+		<item name="android:layout_marginLeft">@dimen/margin10</item>
+	</style>
+
+	<style name="horizontal_line3">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/height0.5</item>
+		<item name="android:background">@color/lib_color12</item>
+	</style>
+
+	<style name="vertical_line1">
+		<item name="android:layout_width">@dimen/height1</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:background">@color/lib_color7</item>
+	</style>
+
+	<style name="vertical_line2">
+		<item name="android:layout_width">@dimen/width1</item>
+		<item name="android:layout_height">@dimen/height16</item>
+		<item name="android:background">@color/lib_color7</item>
+	</style>
+
+	<style name="AnimBottom" parent="@android:style/Animation">
+		<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+		<item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+	</style>
+</resources>

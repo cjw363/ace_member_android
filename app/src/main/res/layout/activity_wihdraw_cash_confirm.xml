@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white">
+
+		<RelativeLayout
+			android:id="@+id/rl_pwd"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:scrollbars="none">
+
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/pic"
+				android:layout_width="@dimen/width60"
+				android:layout_height="@dimen/height60"
+				android:layout_below="@+id/rl_toolbar"
+				android:layout_centerHorizontal="true"
+				android:layout_margin="@dimen/margin20"
+				app:srcCompat="@drawable/ic_success"/>
+
+			<TextView
+				android:id="@+id/title1"
+				style="@style/tv_result_title"
+				android:layout_below="@+id/pic"
+				android:text="@string/withdraw_cash_confirm"/>
+
+			<View
+				android:id="@+id/v_line1"
+				style="@style/v_horizontal_divider_line2"
+				android:layout_below="@+id/title1"/>
+
+			<LinearLayout
+				android:id="@+id/content"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/v_line1"
+				android:orientation="vertical"
+				>
+
+				<LinearLayout
+					android:id="@+id/ll_source_phone"
+					style="@style/ll_order_detail_content"
+					android:visibility="gone">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/source_phone"
+						/>
+
+					<TextView
+						android:id="@+id/tv_source_phone"
+						style="@style/tv_order_detail_content_right"
+						tools:text="+86-18826321312"
+						/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/currency"
+						/>
+
+					<TextView
+						android:id="@+id/tv_currency"
+						style="@style/tv_order_detail_content_right"
+						tools:text="USD"
+						/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/amount"/>
+
+					<TextView
+						android:id="@+id/tv_amount"
+						style="@style/tv_order_detail_content_right"
+						tools:text="10000"
+						/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/fee"/>
+
+					<TextView
+						android:id="@+id/tv_fee"
+						style="@style/tv_order_detail_content_right"
+						tools:text="10000"
+						/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/time"
+						/>
+
+					<TextView
+						android:id="@+id/time"
+						style="@style/tv_order_detail_content_right"
+						tools:text="2017-07-13 12:33"
+						/>
+
+				</LinearLayout>
+			</LinearLayout>
+
+				<View
+					android:id="@+id/ll_line2"
+					style="@style/v_horizontal_divider_line2"
+					android:layout_below="@+id/content"/>
+
+			<Button
+				android:id="@+id/btn_confirm"
+				style="@style/btn_submit"
+				android:layout_below="@+id/ll_line2"
+				android:layout_marginTop="@dimen/margin40"
+				android:text="@string/confirm"
+				/>
+
+		</RelativeLayout>
+	</ScrollView>
+</LinearLayout>

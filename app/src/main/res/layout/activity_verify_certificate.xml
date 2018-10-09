@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<LinearLayout
+		android:id="@+id/ll_status"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/iv_status"
+			android:layout_width="@dimen/width60"
+			android:layout_height="@dimen/height60"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/margin20"/>
+
+		<TextView
+			android:id="@+id/tv_status_des"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/margin10"
+			android:gravity="center"
+			android:textColor="@color/clr_common_title"
+			android:textSize="@dimen/txtSize18"
+			tools:text="@string/certification_is_accepted"/>
+
+
+		<LinearLayout
+			android:id="@+id/ll_detail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<View style="@style/v_horizontal_divider_line2"/>
+
+			<LinearLayout
+				style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/id_type"/>
+
+				<TextView
+					android:id="@+id/tv_id_type2"
+					style="@style/tv_order_detail_content_right"
+					tools:text="abce"/>
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/ll_order_detail_content"
+				android:layout_marginTop="@dimen/margin10">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/id_number"/>
+
+				<TextView
+					android:id="@+id/tv_id_number"
+					style="@style/tv_order_detail_content_right"
+					tools:text="abce"/>
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/name"/>
+
+				<TextView
+					android:id="@+id/tv_name"
+					style="@style/tv_order_detail_content_right"
+					tools:text="abce"/>
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/sex"/>
+
+				<TextView
+					android:id="@+id/tv_sex_2"
+					style="@style/tv_order_detail_content_right"
+					tools:text="@string/male"/>
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/nationality"/>
+
+				<TextView
+					android:id="@+id/tv_nationality_2"
+					style="@style/tv_order_detail_content_right"
+					tools:text="@string/china"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/ll_remark"
+				style="@style/ll_order_detail_content"
+				android:layout_marginTop="@dimen/margin10">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/remark"/>
+
+				<TextView
+					android:id="@+id/tv_remark"
+					style="@style/tv_order_detail_content_right"
+					tools:text="abce"/>
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/btn_recertify"
+				style="@style/btn_submit"
+				android:layout_marginTop="@dimen/margin100"
+				android:text="@string/recertify"
+				android:visibility="gone"/>
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+	<ScrollView
+		android:id="@+id/sv_verify"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="none"
+		android:visibility="gone">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:id="@+id/ll_id_type"
+				style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/id_type"/>
+
+				<TextView
+					android:id="@+id/tv_id_type"
+					style="@style/tv_common_content"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:hint="@string/id_type"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:layout_width="@dimen/width16"
+					android:layout_height="@dimen/height16"
+					android:layout_marginEnd="@dimen/margin10"
+					app:srcCompat="@drawable/ic_arrow_right"/>
+			</LinearLayout>
+
+			<View
+				style="@style/v_horizontal_divider_line"
+				android:layout_marginStart="@dimen/margin10"/>
+
+			<LinearLayout style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/id_number"/>
+
+				<EditText
+					android:id="@+id/et_id_number"
+					style="@style/et_common"
+					android:hint="@string/id_number"/>
+			</LinearLayout>
+
+			<View
+				style="@style/v_horizontal_divider_line"
+				android:layout_marginStart="@dimen/margin10"/>
+
+			<LinearLayout
+				android:id="@+id/ll_sex"
+				style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/sex"/>
+
+				<TextView
+					android:id="@+id/tv_sex"
+					style="@style/tv_common_content"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:hint="@string/sex"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_sex"
+					android:layout_width="@dimen/width16"
+					android:layout_height="@dimen/height16"
+					android:layout_marginEnd="@dimen/margin10"
+					app:srcCompat="@drawable/ic_arrow_right"/>
+			</LinearLayout>
+
+			<View
+				style="@style/v_horizontal_divider_line"
+				android:layout_marginStart="@dimen/margin10"/>
+
+			<LinearLayout
+				android:id="@+id/ll_nationality"
+				style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/nationality"/>
+
+				<TextView
+					android:id="@+id/tv_nationality"
+					style="@style/tv_common_content"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:hint="@string/nationality"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_nationality"
+					android:layout_width="@dimen/width16"
+					android:layout_height="@dimen/height16"
+					android:layout_marginEnd="@dimen/margin10"
+					app:srcCompat="@drawable/ic_arrow_right"/>
+			</LinearLayout>
+
+			<View
+				style="@style/v_horizontal_divider_line"
+				android:layout_marginStart="@dimen/margin10"/>
+
+			<LinearLayout
+				android:id="@+id/ll_birthday"
+				style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/birthday"/>
+
+				<TextView
+					android:id="@+id/tv_birthday"
+					style="@style/tv_common_content"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:hint="@string/birthday"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_birthday"
+					android:layout_width="@dimen/width16"
+					android:layout_height="@dimen/height16"
+					android:layout_marginEnd="@dimen/margin10"
+					app:srcCompat="@drawable/ic_arrow_right"/>
+			</LinearLayout>
+
+			<View
+				style="@style/v_horizontal_divider_line"
+				android:layout_marginStart="@dimen/margin10"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/margin20">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_photo_sample1"
+					android:layout_width="@dimen/width80"
+					android:layout_height="@dimen/height80"
+					android:layout_marginStart="@dimen/margin50"
+					app:srcCompat="@drawable/ic_id1"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_photo1"
+					android:layout_width="@dimen/width140"
+					android:layout_height="@dimen/height100"
+					android:layout_marginStart="@dimen/margin10"
+					android:scaleType="centerCrop"
+					android:visibility="gone"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_take_photo1"
+					android:layout_width="@dimen/width80"
+					android:layout_height="@dimen/height80"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:layout_marginEnd="@dimen/margin50"
+					app:srcCompat="@drawable/ic_photograph"/>
+			</RelativeLayout>
+
+			<View
+				style="@style/v_horizontal_divider_line"
+				android:layout_marginBottom="@dimen/margin20"
+				android:layout_marginStart="@dimen/margin10"
+				android:layout_marginTop="@dimen/margin20"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_photo_sample2"
+					android:layout_width="@dimen/width80"
+					android:layout_height="@dimen/height80"
+					android:layout_marginStart="@dimen/margin50"
+					app:srcCompat="@drawable/ic_id2"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_photo2"
+					android:layout_width="@dimen/width140"
+					android:layout_height="@dimen/height100"
+					android:layout_marginStart="@dimen/margin10"
+					android:scaleType="centerCrop"
+					android:visibility="gone"/>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_take_photo2"
+					android:layout_width="@dimen/width80"
+					android:layout_height="@dimen/height80"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:layout_marginEnd="@dimen/margin50"
+					app:srcCompat="@drawable/ic_photograph"/>
+			</RelativeLayout>
+
+			<View
+				style="@style/v_horizontal_divider_line"
+				android:layout_marginBottom="@dimen/margin10"
+				android:layout_marginStart="@dimen/margin10"
+				android:layout_marginTop="@dimen/margin20"/>
+
+			<Button
+				android:id="@+id/btn_submit"
+				style="@style/btn_submit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin10"
+				android:text="@string/submit"/>
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

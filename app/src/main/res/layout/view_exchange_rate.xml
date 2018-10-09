@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="@dimen/height60"
+		android:background="@color/white"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+
+		<TextView
+			android:id="@+id/tv_exchange_currency"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:paddingLeft="@dimen/padding10"
+			android:textSize="@dimen/txtSize14"/>
+
+
+		<TextView
+			android:id="@+id/tv_sell_price"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center|right"
+			android:paddingRight="@dimen/padding20"
+			android:textSize="@dimen/txtSize14"/>
+
+
+		<TextView
+			android:id="@+id/tv_buy_price"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical|right"
+			android:paddingRight="@dimen/padding10"
+			android:textSize="@dimen/txtSize14"/>
+
+	</LinearLayout>
+
+
+</LinearLayout>

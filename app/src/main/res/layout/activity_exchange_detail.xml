@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/margin20"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_icon"
+					android:layout_width="@dimen/width32"
+					android:layout_height="@dimen/height32"
+					app:srcCompat="@drawable/ic_exchange"/>
+
+				<TextView
+					android:id="@+id/tv_sub_type"
+					style="@style/tv_order_detail_title"
+					android:text="@string/exchange"/>
+
+			</LinearLayout>
+
+			<com.ace.member.view.MoneyTextView
+				android:id="@+id/tv_amount"
+				style="@style/tv_order_detail_total"
+				app:abs_amount="true"
+				app:currency_at_end="true"
+				app:show_currency="true"
+				tools:text="12.00"/>
+
+			<View style="@style/v_horizontal_divider_line2"/>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/exchange_rate"/>
+
+				<TextView
+					android:id="@+id/tv_exchange_rate"
+					style="@style/tv_order_detail_content_right"
+					tools:text="4037.0000"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/source_currency"/>
+
+				<TextView
+					android:id="@+id/tv_source_currency"
+					style="@style/tv_order_detail_content_right"
+					android:layout_weight="1.5"
+					tools:text="USD"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/source_amount"/>
+
+				<TextView
+					android:id="@+id/tv_source_amount"
+					style="@style/tv_order_detail_content_right"
+					android:layout_weight="1.5"
+					tools:text="100.00"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/target_currency"/>
+
+				<TextView
+					android:id="@+id/tv_target_currency"
+					style="@style/tv_order_detail_content_right"
+					android:layout_weight="1.5"
+					tools:text="KHR"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/target_amount"/>
+
+				<TextView
+					android:id="@+id/tv_target_amount"
+					style="@style/tv_order_detail_content_right"
+					android:layout_weight="1.5"
+					tools:text="403,700.00"/>
+			</LinearLayout>
+
+			<View style="@style/v_horizontal_divider_line2"/>
+
+			<LinearLayout style="@style/ll_order_detail_content">
+
+				<TextView
+					style="@style/tv_order_detail_content_left"
+					android:text="@string/time"/>
+
+				<TextView
+					android:id="@+id/tv_time"
+					style="@style/tv_order_detail_content_right"
+					tools:text="2017-01-01"/>
+			</LinearLayout>
+
+			<RelativeLayout
+				android:id="@+id/rl_remark"
+				style="@style/ll_order_detail_content">
+
+				<TextView
+					android:id="@+id/tv_remark_title"
+					style="@style/tv_order_detail_content_left"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/margin30"
+					android:gravity="center_vertical"
+					android:paddingTop="@dimen/padding10"
+					android:text="@string/remark"/>
+
+				<TextView
+					android:id="@+id/tv_remark"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_toEndOf="@id/tv_remark_title"
+					android:gravity="center_vertical|end"
+					android:minHeight="@dimen/height40"
+					android:paddingTop="@dimen/padding10"
+					android:textColor="@color/clr_common_content"
+					android:textSize="@dimen/txtSize16"
+					tools:text="2017-01-1231 1231221345 35324  324234 5 34"/>
+			</RelativeLayout>
+
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

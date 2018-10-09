@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ll_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_primary_body_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<View style="@style/v_horizontal_divider_section_1"/>
+
+		<LinearLayout
+			android:id="@+id/ll_user_name"
+			style="@style/ll_content1">
+
+			<TextView
+				style="@style/tv_password_title"
+				android:layout_weight="3"
+				android:text="@string/name"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height0"
+				android:layout_weight="3">
+
+				<EditText
+					android:id="@+id/et_user_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/margin50"
+					android:background="@null"
+					android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+					android:imeOptions="flagNoExtractUi"
+					android:inputType="textPassword"
+					android:minHeight="@dimen/height40"
+					android:paddingLeft="@dimen/padding10"
+					android:textColor="@color/clr_common_content"
+					android:textSize="@dimen/txtSize24"
+					android:typeface="monospace"/>
+
+			</RelativeLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+		</LinearLayout>
+
+
+		<LinearLayout style="@style/ll_content1">
+
+			<TextView
+				style="@style/tv_password_title"
+				android:layout_weight="3"
+				android:text="@string/password"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height0"
+				android:layout_weight="3">
+
+				<EditText
+					android:id="@+id/et_password"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/margin50"
+					android:background="@null"
+					android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^*()_+-="
+					android:imeOptions="flagNoExtractUi"
+					android:inputType="textPassword"
+					android:minHeight="@dimen/height40"
+					android:paddingLeft="@dimen/padding10"
+					android:textColor="@color/clr_common_content"
+					android:textSize="@dimen/txtSize24"
+					android:typeface="monospace"/>
+
+				<CheckBox
+					android:id="@+id/cb_password"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignBaseline="@+id/et_password"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="@dimen/margin10"
+					android:background="@drawable/login_password_checkbox"
+					android:button="@null"/>
+
+			</RelativeLayout>
+
+			<View style="@style/v_horizontal_divider_line"/>
+		</LinearLayout>
+
+
+		<LinearLayout style="@style/ll_content1">
+
+			<TextView
+				style="@style/tv_password_title"
+				android:layout_weight="3"
+				android:text="@string/confirm_password"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height0"
+				android:layout_weight="3">
+
+				<EditText
+					android:id="@+id/et_pwd_confirm"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/margin50"
+					android:background="@null"
+					android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^*()_+-="
+					android:imeOptions="flagNoExtractUi"
+					android:inputType="textPassword"
+					android:minHeight="@dimen/height40"
+					android:paddingLeft="@dimen/padding10"
+					android:textColor="@color/clr_common_content"
+					android:textSize="@dimen/txtSize24"
+					android:typeface="monospace"/>
+
+				<CheckBox
+					android:id="@+id/cb_pwd_confirm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignBaseline="@+id/et_pwd_confirm"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="@dimen/margin10"
+					android:background="@drawable/login_password_checkbox"
+					android:button="@null"/>
+
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<View style="@style/v_horizontal_divider_section_1"/>
+
+		<LinearLayout
+			android:id="@+id/ll_note"
+			style="@style/ll_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv_pwd_comment"
+				style="@style/tv_note_title"
+				android:text="@string/title_note"/>
+
+			<TextView
+				android:id="@+id/tv_pwd_note"
+				style="@style/tv_note_content"
+				android:text="@string/password_rules"/>
+
+		</LinearLayout>
+
+		<View style="@style/v_horizontal_divider_section_1"/>
+
+		<Button
+			android:id="@+id/btn_submit"
+			style="@style/btn_common"
+			android:text="@string/submit"/>
+
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<include
+		layout="@layout/view_toolbar"/>
+
+	<LinearLayout
+		android:id="@+id/btn_system_language"
+		style="@style/ll_content_container_select"
+		android:layout_below="@+id/rl_toolbar"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:visibility="visible">
+
+		<TextView
+			style="@style/tv_language_title"
+			android:text="@string/system_language"
+			/>
+
+		<ImageView
+			android:id="@+id/tv_system_language"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/width20"
+			android:gravity="end|center"
+			android:visibility="invisible"
+			app:srcCompat="@drawable/ic_right"
+			/>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/v_line"
+		style="@style/v_horizontal_divider_line"
+		android:layout_below="@+id/btn_system_language"
+		android:layout_marginLeft="@dimen/width15"/>
+
+	<LinearLayout
+		android:id="@+id/btn_language1"
+		style="@style/ll_content_container_select"
+		android:layout_below="@+id/v_line"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/tv_language_title"
+			android:text="@string/english"/>
+
+		<ImageView
+			android:id="@+id/tv_english"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/width20"
+			android:gravity="end|center"
+			android:visibility="invisible"
+			app:srcCompat="@drawable/ic_right"
+			/>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/v_line1"
+		style="@style/v_horizontal_divider_line"
+		android:layout_below="@+id/btn_language1"
+		android:layout_marginLeft="@dimen/width15"/>
+
+	<LinearLayout
+		android:id="@+id/btn_language2"
+		style="@style/ll_content_container_select"
+		android:layout_below="@+id/v_line1"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+
+			style="@style/tv_language_title"
+			android:text="@string/chinese"/>
+
+		<ImageView
+			android:id="@+id/tv_chinese"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/width20"
+			android:gravity="end|center"
+			android:visibility="invisible"
+			app:srcCompat="@drawable/ic_right"
+			/>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/v_line2"
+		style="@style/v_horizontal_divider_line"
+		android:layout_below="@+id/btn_language2"
+		android:layout_marginLeft="@dimen/width15"/>
+
+	<LinearLayout
+		android:id="@+id/btn_language3"
+		style="@style/ll_content_container_select"
+		android:layout_below="@+id/v_line2"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/tv_language_title"
+			android:text="@string/cambodian"/>
+
+		<ImageView
+			android:id="@+id/tv_cambodian"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/width20"
+			android:gravity="end|center"
+			android:visibility="invisible"
+			app:srcCompat="@drawable/ic_right"
+			/>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/v_line3"
+		style="@style/v_horizontal_divider_line"
+		android:layout_below="@+id/btn_language3"
+		android:layout_marginLeft="@dimen/width15"/>
+
+	<LinearLayout
+		android:id="@+id/btn_language4"
+		style="@style/ll_content_container_select"
+		android:layout_below="@+id/v_line3"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/tv_language_title"
+			android:text="@string/Vietnamese"/>
+
+		<ImageView
+			android:id="@+id/tv_vietnamese"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/width20"
+			android:gravity="end|center"
+			android:visibility="invisible"
+			app:srcCompat="@drawable/ic_right"
+			/>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/v_line4"
+		style="@style/v_horizontal_divider_line"
+		android:layout_below="@+id/btn_language4"
+		android:layout_marginLeft="@dimen/width15"/>
+
+</RelativeLayout>

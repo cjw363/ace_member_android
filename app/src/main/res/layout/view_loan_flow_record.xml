@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/height70"
+	android:background="@color/white"
+	android:paddingBottom="@dimen/padding10"
+	android:paddingEnd="@dimen/padding15"
+	android:paddingStart="@dimen/padding15"
+	android:paddingTop="@dimen/padding10">
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true">
+
+		<TextView
+			android:id="@+id/tv_type"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/clr_common_title"
+			android:textSize="@dimen/txtSize16"
+			tools:text="@string/loan"/>
+
+		<TextView
+			android:id="@+id/tv_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/tv_type"
+			android:layout_marginTop="@dimen/margin5"
+			android:textColor="@color/clr_tv_time"
+			android:textSize="@dimen/txtSize14"
+			tools:text="2017-01-01 12:00:00"/>
+
+	</RelativeLayout>
+
+	<android.support.v7.widget.AppCompatImageView
+		android:id="@+id/iv_more"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/height20"
+		android:layout_alignParentEnd="true"
+		android:layout_centerVertical="true"
+		app:srcCompat="@drawable/ic_arrow_right"/>
+
+	<com.ace.member.view.MoneyTextView
+		android:id="@+id/tv_amount"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginEnd="@dimen/margin5"
+		android:layout_toStartOf="@id/iv_more"
+		android:textColor="@color/clr_tv_balance"
+		android:textSize="@dimen/txtSize20"
+		app:currency_at_end="true"
+		app:no_decimal="true"
+		app:show_currency="true"/>
+
+</RelativeLayout>

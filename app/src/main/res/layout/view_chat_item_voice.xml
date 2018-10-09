@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_chat_item_date"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:descendantFocusability="blocksDescendants">
+
+		<com.ace.member.view.RoundRectImageView
+			android:id="@+id/iv_chat_me_item"
+			android:layout_width="@dimen/width40"
+			android:layout_height="@dimen/height40"
+			android:layout_alignParentEnd="true"
+			android:layout_marginBottom="@dimen/margin10"
+			android:layout_marginEnd="@dimen/margin12"
+			android:layout_marginTop="@dimen/margin10"
+			/>
+
+		<com.ace.member.view.BubbleView.BubbleTextView
+			android:id="@+id/tv_chat_me"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_marginBottom="@dimen/margin10"
+			android:layout_marginEnd="@dimen/margin60"
+			android:layout_marginTop="@dimen/margin10"
+			android:gravity="center_vertical"
+			android:padding="@dimen/padding8"
+			android:textColor="@color/white"
+			android:textSize="@dimen/txtSize16"
+			app:angle="@dimen/width5"
+			app:arrowHeight="@dimen/height10"
+			app:arrowLocation="right"
+			app:arrowPosition="@dimen/height12"
+			app:arrowWidth="@dimen/width8"
+			app:bubbleColor="@color/colorPrimary"/>
+
+		<TextView
+			android:id="@+id/tv_chat_me_voice_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/tv_chat_me"
+			android:layout_marginBottom="@dimen/margin10"
+			android:layout_marginEnd="@dimen/margin10"
+			android:layout_marginTop="@dimen/margin10"
+			android:layout_toStartOf="@+id/tv_chat_me"
+			android:textColor="@color/clr_chat_tv_title"
+			android:textSize="@dimen/txtSize12"/>
+
+		<com.ace.member.view.RoundRectImageView
+			android:id="@+id/iv_chat_friend_item"
+			android:layout_width="@dimen/width40"
+			android:layout_height="@dimen/height40"
+			android:layout_marginBottom="@dimen/margin10"
+			android:layout_marginStart="@dimen/margin12"
+			android:layout_marginTop="@dimen/margin10"
+			/>
+
+		<com.ace.member.view.BubbleView.BubbleTextView
+			android:id="@+id/tv_chat_friend"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:layout_marginBottom="@dimen/margin10"
+			android:layout_marginStart="@dimen/margin60"
+			android:layout_marginTop="@dimen/margin10"
+			android:gravity="center_vertical"
+			android:padding="@dimen/padding8"
+			android:textColor="@color/clr_chat_tv_title"
+			android:textSize="@dimen/txtSize16"
+			app:angle="@dimen/width5"
+			app:arrowHeight="@dimen/height10"
+			app:arrowLocation="left"
+			app:arrowPosition="@dimen/height12"
+			app:arrowWidth="@dimen/width8"
+			app:bubbleColor="@color/white"/>
+
+		<TextView
+			android:id="@+id/tv_chat_friend_voice_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/tv_chat_friend"
+			android:layout_marginBottom="@dimen/margin10"
+			android:layout_marginStart="@dimen/margin10"
+			android:layout_marginTop="@dimen/margin10"
+			android:layout_toEndOf="@+id/tv_chat_friend"
+			android:textColor="@color/clr_chat_tv_title"
+			android:textSize="@dimen/txtSize12"/>
+	</RelativeLayout>
+</LinearLayout>

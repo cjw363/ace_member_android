@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<include layout="@layout/view_toolbar"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height50"
+			android:background="@color/white"
+			android:orientation="horizontal"
+			>
+
+			<HorizontalScrollView
+				android:id="@+id/hsv_build_group"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/height50"
+				android:scrollbars="none"
+				>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/height50">
+
+					<com.og.utils.GridViewForScrollView
+						android:id="@+id/gv_build_group"
+						android:layout_width="wrap_content"
+						android:layout_height="@dimen/height50"
+						android:scrollbars="none"
+						>
+					</com.og.utils.GridViewForScrollView>
+				</LinearLayout>
+			</HorizontalScrollView>
+
+			<EditText
+				android:id="@+id/et_build_group"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@null"
+				android:drawablePadding="@dimen/padding10"
+				android:drawableStart="@drawable/ic_friends_search_small"
+				android:gravity="center_vertical"
+				android:hint="@string/search"
+				android:inputType="text"
+				android:labelFor="@+id/et_build_group"
+				android:minWidth="@dimen/width60"
+				android:padding="@dimen/padding5"
+				android:textColor="@color/clr_chat_tv_title"
+				android:textCursorDrawable="@drawable/bg_et_cursor"
+				android:textSize="@dimen/txtSize16"
+				/>
+		</LinearLayout>
+
+		<RelativeLayout
+			android:id="@+id/rl_contacts"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ListView
+				android:id="@+id/lv_contacts"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:divider="@null"
+				android:scrollbars="none">
+			</ListView>
+
+			<com.ace.member.view.SideBar
+				android:id="@+id/sb_contacts"
+				android:layout_width="@dimen/width22"
+				android:layout_height="@dimen/height440"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				/>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_search_contacts"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:visibility="gone">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height18"
+				android:paddingStart="@dimen/padding10"
+				android:background="@color/clr_divider_bg_gray"
+				android:gravity="center_vertical"
+				android:text="@string/friends"
+				android:textColor="@color/clr_divider_tv_title"
+				android:textSize="@dimen/txtSize13"/>
+
+			<ListView
+				android:id="@+id/lv_search_contacts"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:divider="@null"
+				android:scrollbars="none">
+			</ListView>
+		</LinearLayout>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/tv_contacts_letter"
+		android:layout_width="@dimen/width60"
+		android:layout_height="@dimen/height60"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:layout_gravity="center"
+		android:background="@drawable/bg_shape_gray_letter"
+		android:gravity="center"
+		android:textColor="@color/white"
+		android:textSize="@dimen/txtSize24"
+		android:visibility="invisible"/>
+</RelativeLayout>

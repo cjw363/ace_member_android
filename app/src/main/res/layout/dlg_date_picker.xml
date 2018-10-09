@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+	<RelativeLayout
+		android:id="@+id/rl_title"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height45">
+
+		<FrameLayout
+			android:id="@+id/fl_close"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_centerVertical="true"
+			android:paddingEnd="@dimen/padding15"
+			android:paddingStart="@dimen/padding15">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv_close"
+				android:layout_width="@dimen/width16"
+				android:layout_height="@dimen/height16"
+				android:layout_gravity="center"
+				app:srcCompat="@drawable/ic_fork_black"/>
+		</FrameLayout>
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:gravity="center"
+			android:text="@string/select_date"
+			android:textColor="#353535"
+			android:textSize="@dimen/txtSize20"/>
+
+		<FrameLayout
+			android:id="@+id/fl_confirm"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:paddingEnd="@dimen/padding15"
+			android:paddingStart="@dimen/padding15">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv_confirm"
+				android:layout_width="@dimen/width16"
+				android:layout_height="@dimen/height16"
+				android:layout_gravity="center"
+				app:srcCompat="@drawable/ic_confirm"/>
+		</FrameLayout>
+	</RelativeLayout>
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+	<LinearLayout
+		android:id="@+id/ll_date"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height160"
+		android:layout_marginBottom="@dimen/margin30"
+		android:layout_marginTop="@dimen/margin30"
+		android:layout_marginStart="@dimen/margin20"
+		android:layout_marginEnd="@dimen/margin20"
+		android:orientation="horizontal">
+
+		<com.ace.member.view.LoopView
+			android:id="@+id/picker_year"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			app:canLoop="false"
+			app:lineColor="#DEDEDE"
+			app:textSize="@dimen/txtSize20"/>
+
+		<com.ace.member.view.LoopView
+			android:id="@+id/picker_month"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			app:canLoop="true"
+			app:lineColor="#DEDEDE"
+			app:textSize="@dimen/txtSize20"/>
+
+		<com.ace.member.view.LoopView
+			android:id="@+id/picker_day"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			app:canLoop="true"
+			app:lineColor="#DEDEDE"
+			app:textSize="@dimen/txtSize20"/>
+	</LinearLayout>
+</LinearLayout>

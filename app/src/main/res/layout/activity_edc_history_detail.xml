@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<com.og.utils.SlidingLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin20"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/iv_edc"
+						android:layout_width="@dimen/width32"
+						android:layout_height="@dimen/height32"
+						app:srcCompat="@drawable/ic_electricity"/>
+
+					<TextView
+						android:id="@+id/tv_type_title"
+						style="@style/tv_order_detail_title"
+						android:text="@string/electricity"/>
+
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/tv_amount"
+					style="@style/tv_order_detail_total"
+					tools:text="12 KHR"/>
+
+
+				<View style="@style/v_horizontal_divider_line2"/>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/type"/>
+
+					<TextView
+						android:id="@+id/tv_type"
+						style="@style/tv_order_detail_content_right"
+						tools:text="@string/edc_type_1_phnom_penh_kandal"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/consumer1"/>
+
+					<TextView
+						android:id="@+id/tv_number"
+						style="@style/tv_order_detail_content_right"
+						tools:text="ABC1234l56"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/phone"/>
+
+					<TextView
+						android:id="@+id/tv_phone"
+						style="@style/tv_order_detail_content_right"
+						tools:text="+855-123456789"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/amount"/>
+
+					<TextView
+						android:id="@+id/tv_bill_amount"
+						style="@style/tv_order_detail_content_right"
+						tools:text="10.00 KHR"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/fee"/>
+
+					<TextView
+						android:id="@+id/tv_fee"
+						style="@style/tv_order_detail_content_right"
+						tools:text="2.00 KHR"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/remark"/>
+
+					<TextView
+						android:id="@+id/tv_remark"
+						style="@style/tv_order_detail_content_right"
+						android:maxLength="200"
+						tools:text="abce"/>
+				</LinearLayout>
+
+				<View style="@style/v_horizontal_divider_line2"/>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/time"/>
+
+					<TextView
+						android:id="@+id/tv_time"
+						style="@style/tv_order_detail_content_right"
+						tools:text="2017-01-01"/>
+				</LinearLayout>
+
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/status"/>
+
+					<TextView
+						android:id="@+id/tv_status"
+						style="@style/tv_order_detail_content_right"
+						tools:text="Complete"/>
+				</LinearLayout>
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_image"
+					android:layout_width="@dimen/width100"
+					android:layout_height="@dimen/height100"
+					android:layout_marginTop="@dimen/margin10"
+					android:layout_marginStart="@dimen/margin15"
+					android:scaleType="centerCrop"/>
+
+				<Button
+					android:id="@+id/btn_done"
+					style="@style/btn_common"
+					android:layout_marginEnd="@dimen/margin15"
+					android:layout_marginStart="@dimen/margin15"
+					android:layout_marginTop="@dimen/margin10"
+					android:text="@string/done"
+					android:visibility="gone"/>
+			</LinearLayout>
+		</ScrollView>
+	</com.og.utils.SlidingLayout>
+
+</LinearLayout>

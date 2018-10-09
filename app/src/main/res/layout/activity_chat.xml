@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/layout_chat_parent"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_chat_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_chat_toolbar"/>
+
+	<LinearLayout
+		android:id="@+id/bar_chat"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+
+			<LinearLayout
+				android:id="@+id/layout_chat_input"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:orientation="vertical"
+				>
+
+				<View style="@style/v_horizontal_divider_line"/>
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin10"
+					android:layout_marginTop="@dimen/margin2"
+					>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/iv_chat_switching"
+						android:layout_width="@dimen/width30"
+						android:layout_height="@dimen/height30"
+						android:layout_alignBottom="@+id/et_chat"
+						android:layout_marginStart="@dimen/margin10"
+						app:srcCompat="@drawable/ic_chat_voice_switching"
+						/>
+
+					<EditText
+						android:id="@+id/et_chat"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="100dp"
+						android:layout_marginStart="@dimen/margin50"
+						android:layout_marginTop="@dimen/margin8"
+						android:paddingStart="@dimen/padding8"
+						android:background="@drawable/bg_chat_et"
+						android:cursorVisible="false"
+						android:maxLines="4"
+						android:minHeight="@dimen/height30"
+						android:textCursorDrawable="@drawable/bg_et_cursor"
+						android:textSize="@dimen/txtSize18"
+						/>
+
+					<TextView
+						android:id="@+id/tv_chat_voice"
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/height30"
+						android:layout_alignBottom="@+id/iv_chat_switching"
+						android:layout_marginLeft="@dimen/margin10"
+						android:layout_marginRight="@dimen/margin10"
+						android:layout_marginTop="@dimen/margin8"
+						android:layout_toEndOf="@+id/iv_chat_switching"
+						android:layout_toStartOf="@+id/iv_chat_emoticon"
+						android:background="@drawable/bg_chat_speak_default"
+						android:clickable="true"
+						android:focusable="true"
+						android:gravity="center"
+						android:text="@string/hold_to_talk"
+						android:textColor="@color/black"
+						android:textSize="@dimen/txtSize16"
+						android:visibility="gone"/>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/iv_chat_add"
+						android:layout_width="@dimen/width30"
+						android:layout_height="@dimen/height30"
+						android:layout_alignBottom="@+id/et_chat"
+						android:layout_alignParentEnd="true"
+						android:layout_marginEnd="@dimen/margin15"
+						app:srcCompat="@drawable/ic_chat_add_more"
+						/>
+
+					<Button
+						android:id="@+id/btn_chat_send"
+						android:layout_width="@dimen/width50"
+						android:layout_height="@dimen/height30"
+						android:layout_alignBottom="@+id/et_chat"
+						android:layout_alignParentEnd="true"
+						android:layout_marginEnd="@dimen/margin8"
+						android:background="@drawable/btn_common"
+						android:text="@string/send"
+						android:textAllCaps="false"
+						android:textColor="@color/white"
+						android:textSize="@dimen/txtSize14"
+						android:gravity="center"
+						android:visibility="gone"
+						/>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/iv_chat_emoticon"
+						android:layout_width="@dimen/width30"
+						android:layout_height="@dimen/height30"
+						android:layout_alignBottom="@+id/et_chat"
+						android:layout_alignParentEnd="true"
+						android:layout_marginEnd="@dimen/margin60"
+						app:srcCompat="@drawable/ic_chat_emoticon"
+						/>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/iv_chat_keyboard"
+						android:layout_width="@dimen/width30"
+						android:layout_height="@dimen/height30"
+						android:layout_alignBottom="@+id/et_chat"
+						android:layout_marginStart="@dimen/margin10"
+						android:visibility="gone"
+						app:srcCompat="@drawable/ic_chat_keyboard"
+						/>
+
+				</RelativeLayout>
+
+				<View style="@style/v_horizontal_divider_line"/>
+
+			</LinearLayout>
+
+			<com.ace.member.view.ChatListView
+				android:id="@+id/lv_friends_chat"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_above="@+id/layout_chat_input"
+				android:layout_alignParentTop="true"
+				android:divider="@color/transparent"
+				android:listSelector="@color/transparent"
+				android:transcriptMode="alwaysScroll"
+				/>
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/emotion_layout_chat"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height150"
+		android:background="@color/clr_tv_primary"
+		android:visibility="gone">
+
+		<com.ace.member.view.NoScrollViewPager
+			android:id="@+id/vp_chat"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		</com.ace.member.view.NoScrollViewPager>
+	</FrameLayout>
+
+</LinearLayout>

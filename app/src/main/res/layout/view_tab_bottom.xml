@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/clr_bottom_menu_bg"
+	android:orientation="vertical">
+
+	<RadioGroup
+		android:id="@+id/rg_tab_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingBottom="@dimen/padding4"
+		android:paddingTop="@dimen/padding4"
+		tools:ignore="UselessParent">
+
+		<RadioButton
+			android:id="@+id/rb_home"
+			style="@style/main_tab_bottom"
+			android:layout_width="match_parent"
+			android:checked="true"
+			android:drawablePadding="@dimen/padding4"
+			android:drawableTop="@drawable/sel_home"
+			android:text="@string/home"/>
+
+		<RadioButton
+			android:id="@+id/rb_friends"
+			style="@style/main_tab_bottom"
+			android:layout_width="match_parent"
+			android:drawablePadding="@dimen/padding4"
+			android:drawableTop="@drawable/sel_friends"
+			android:text="@string/friends"/>
+
+		<RadioButton
+			android:id="@+id/rb_party"
+			style="@style/main_tab_bottom"
+			android:layout_width="match_parent"
+			android:drawablePadding="@dimen/padding4"
+			android:drawableTop="@drawable/sel_service"
+			android:text="Party"/>
+
+		<RadioButton
+			android:id="@+id/rb_me"
+			style="@style/main_tab_bottom"
+			android:layout_width="match_parent"
+			android:drawablePadding="@dimen/padding4"
+			android:drawableTop="@drawable/sel_me"
+			android:text="Me"/>
+
+
+	</RadioGroup>
+
+
+</LinearLayout>

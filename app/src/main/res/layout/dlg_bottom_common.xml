@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/rl_title"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height45"
+		android:layout_marginEnd="@dimen/margin5"
+		android:layout_marginStart="@dimen/margin5">
+
+		<FrameLayout
+			android:id="@+id/fl_close"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_centerVertical="true"
+			android:paddingEnd="@dimen/padding16"
+			android:paddingStart="@dimen/padding10">
+
+			<android.support.v7.widget.AppCompatImageView
+				android:id="@+id/iv_close"
+				android:layout_width="@dimen/width16"
+				android:layout_height="@dimen/height16"
+				android:layout_gravity="center"
+				app:srcCompat="@drawable/ic_fork_black"/>
+		</FrameLayout>
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:gravity="center"
+			android:textColor="#353535"
+			android:textSize="@dimen/txtSize20"
+			tools:text="标题"/>
+	</RelativeLayout>
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rv_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,163 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+String APK_NAME = "ace-member"
+
+int VER = 334
+String part1 = ((VER / 1000) + 1).toString().substring(0, 1)
+String part2 = ((((Double) VER / 100) % 10)).toString().substring(0, 1)
+String part3 = (VER % 100)
+String VER_NAME = part1 + "." + part2 + "." + part3 //"1.0.${VER}" //版本号格式99.9.99
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        applicationId "ace.member"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode VER
+        versionName VER_NAME
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix ".dev"
+            minifyEnabled true
+            useProguard false
+//            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def newName = output.outputFile.name
+                    newName = newName.replace("app-debug", "${APK_NAME}")
+                    //noinspection GroovyAssignabilityCheck
+                    output.outputFile = new File(output.outputFile.parent, newName)
+                }
+            }
+
+            buildConfigField "String", "PREFERENCES_GESTURE", '"pref_gesture_dev"'
+            buildConfigField "String", "PREFERENCES_USER", '"pref_user_dev"'
+            buildConfigField "String", "UPGRADE_URL", '"http://175.100.203.243:8762/apk/dev/"'
+            buildConfigField "String", "SERVICE_URL", '"http://175.100.203.243:8762/web/"'
+            buildConfigField "String", "FILE_BASE_URL", '"http://175.100.203.243:8797/"'
+            buildConfigField "String", "UPGRADE_URL", '"http://cjw2529275344.free.ngrok.cc/ace/source/ace_member_service/apk/dev/"'
+//            //for local test
+            buildConfigField "String", "SERVICE_URL", '"http://cjw2529275344.free.ngrok.cc/ace/source/ace_member_service/web/"'
+            //for local test        }
+            release {
+                applicationIdSuffix ".prod"
+                minifyEnabled true
+                useProguard true
+//            shrinkResources true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                applicationVariants.all { variant ->
+                    variant.outputs.each { output ->
+                        def newName = output.outputFile.name
+//                    newName = newName.replace("app-release", "${APK_NAME}-${VER_NAME}")
+                        newName = newName.replace("app-release", "${APK_NAME}")
+                        //noinspection GroovyAssignabilityCheck
+                        output.outputFile = new File(output.outputFile.parent, newName)
+                    }
+                }
+
+                buildConfigField "String", "PREFERENCES_GESTURE", '"pref_gesture_prod"'
+                buildConfigField "String", "PREFERENCES_USER", '"pref_user_prod"'
+                buildConfigField "String", "UPGRADE_URL", '"http://203.90.246.210:9762/apk/prod/"'
+                buildConfigField "String", "SERVICE_URL", '"http://203.90.246.210:9762/web/"'
+            }
+//        mock {
+//            applicationIdSuffix = ".mock"
+//        }
+        }
+
+        packagingOptions {
+            exclude 'META-INF/services/javax.annotation.processing.Processor'
+        }
+
+        //If you need to add more flavors, consider using flavor dimensions.
+//    productFlavors {
+//        mock {
+//            applicationIdSuffix = ".mock"
+//        }
+//        prod {
+//
+//        }
+//    }
+
+        //Remove mockRelease as it's not needed.
+//    android.variantFilter { variant ->
+//        if(variant.buildType.sName.equals('release')
+//                && variant.getFlavors().get(0).sName.equals('mock')) {
+//            variant.setIgnore(true);
+//        }
+//    }
+
+// Always show the result of every unit test, even if it passes.
+        testOptions.unitTests.all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            }
+        }
+
+    }
+
+/*
+ Dependency versions are defined in the top level build.gradle file. This helps keeping track of
+ all versions in a single place. This improves readability and helps managing project complexity.
+ */
+    dependencies {
+        //    compile fileTree(include: ['*.jar'], dir: 'libs')
+        //    testCompile 'junit:junit:4.12'
+        //    compile 'com.android.support:appcompat-v7:24.1.0'
+        //        compile 'com.android.support:design:25.3.0'
+        // App's dependencies, including test
+        // Dagger dependencies
+        //与butterknife同时使用时，使用apt会报错，故改为provided
+        //butterknife
+        //    // Dependencies for local unit tests
+        //    testCompile 'junit:junit:4.12'
+        //    testCompile 'org.mockito:mockito-all:1.10.19'
+        //    testCompile 'org.hamcrest:hamcrest-all:1.3'
+        //
+        //    // Android Testing Support Library's runner and rules
+        //    androidTestCompile 'com.android.support.test:runner:0.5'
+        //    androidTestCompile 'com.android.support.test:rules:0.5'
+        //    // Dependencies for Android unit tests
+        //    androidTestCompile 'junit:junit:4.12'
+        //    androidTestCompile 'org.mockito:mockito-core:1.10.19'
+        //    androidTestCompile 'com.google.dexmaker:dexmaker:1.2'
+        //    androidTestCompile 'com.google.dexmaker:dexmaker-mockito:1.2'
+        //    // Espresso UI Testing
+        //    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+        //    androidTestCompile 'com.android.support.test.espresso:espresso-contrib:2.2.2'
+        //    //若需要使用espresso-contrib,可把androidTestCompile 改为 compile
+        //    androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.2'
+        //    // Resolve conflicts between main and test APK:
+        //    androidTestCompile 'com.android.support:support-annotations:25.3.0'
+        //    androidTestCompile 'com.android.support:support-v4:25.3.0'
+        //    androidTestCompile 'com.android.support:recyclerview-v7:25.3.0'
+        compile project(':library')
+        compile 'com.android.support:appcompat-v7:25.3.1'
+        compile 'com.android.support:cardview-v7:25.3.1'
+        compile 'com.android.support:recyclerview-v7:25.3.1'
+        compile 'com.android.support.test.espresso:espresso-idling-resource:2.2.2'
+        compile 'com.google.guava:guava:20.0'
+        compile 'org.greenrobot:eventbus:3.0.0'
+        compile 'com.google.dagger:dagger:2.6'
+        compile 'com.jakewharton:butterknife:8.2.1'
+        compile 'com.android.support.constraint:constraint-layout:1.0.2'
+        apt 'com.jakewharton:butterknife-compiler:8.2.1'
+        apt 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+        provided 'com.google.dagger:dagger-compiler:2.6'
+        provided 'org.glassfish:javax.annotation:10.0-b28'
+        compile files('libs/autobahn-0.5.0.jar')
+    }
+
+    apt {
+        arguments {
+            eventBusIndex "com.study.sangerzhong.studyapp.MyEventBusIndex"
+        }
+    }
+}

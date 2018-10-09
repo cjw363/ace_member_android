@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+
+	<TextView
+		android:id="@+id/tv_date"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height35"
+		tools:text = "2017-01"
+		android:textSize="@dimen/txtSize18"
+		android:gravity="center_vertical"
+		android:paddingLeft="@dimen/padding15"
+		android:textColor="@color/clr_primary_separator_title"
+		android:background="@color/clr_primary_separator"
+	/>
+
+	<LinearLayout
+		android:id="@+id/ll_content"
+		android:paddingTop="@dimen/padding15"
+		android:paddingLeft="@dimen/padding15"
+		android:paddingRight="@dimen/padding15"
+		android:layout_below="@+id/tv_date"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/tv_name"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			tools:text="[Member] YGHdfafs"
+			android:layout_weight="1"
+			android:textSize="@dimen/txtSize16"
+			android:layout_gravity="start"
+			android:textColor="@color/clr_common_content" />
+
+		<TextView
+			android:id="@+id/tv_amount"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="end"
+			android:textColor="@color/clr_common_content"
+			android:textSize="@dimen/txtSize18"
+			tools:text="USD 88888,888.00"
+		/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_content2"
+		android:paddingLeft="@dimen/padding15"
+		android:paddingRight="@dimen/padding15"
+		android:layout_below="@+id/ll_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/tv_phone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/txtSize16"
+			tools:text="+855-18823182344"
+			android:paddingBottom="@dimen/padding15"
+			android:textColor="@color/colorPrimary"
+		/>
+
+		<TextView
+			android:id="@+id/tv_time"
+			android:layout_width="0sp"
+			android:gravity="end"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textColor="@color/clr_tv_time"
+			android:textSize="@dimen/txtSize14"
+			tools:text="06-23 12:23" />
+	</LinearLayout>
+
+	<View
+		android:id="@+id/v_line2"
+		style="@style/v_horizontal_divider_line"
+		android:layout_below="@+id/ll_content2"
+		android:padding="@dimen/padding15"
+	/>
+
+</RelativeLayout>

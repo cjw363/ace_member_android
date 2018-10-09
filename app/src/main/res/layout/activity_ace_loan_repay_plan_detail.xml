@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/clr_app_bg"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/height150"
+				android:background="@color/white"
+				android:gravity="center">
+
+				<TextView
+					android:id="@+id/tv_title"
+					style="@style/tv_item_title"
+					android:layout_centerHorizontal="true"
+					android:text="@string/repay_total"
+					android:textColor="@color/clr_about_tv"/>
+
+				<TextView
+					android:id="@+id/tv_amount"
+					style="@style/tv_item_title"
+					android:layout_below="@+id/tv_title"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/margin10"
+					android:text="@string/zero_with_usd"
+					android:textColor="@color/clr_round_progress"
+					android:textSize="@dimen/txtSize30"/>
+			</RelativeLayout>
+
+			<View style="@style/v_horizontal_divider_section"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="vertical">
+
+				<LinearLayout
+					style="@style/ll_order_detail_content"
+					android:layout_marginTop="@dimen/margin5">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/loan_date"/>
+
+					<TextView
+						android:id="@+id/tv_loan_date"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/term"/>
+
+					<TextView
+						android:id="@+id/tv_term" style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<!--<LinearLayout style="@style/ll_order_detail_content">-->
+
+					<!--<TextView-->
+						<!--style="@style/tv_order_detail_content_left"-->
+						<!--android:text="@string/currency"/>-->
+
+					<!--<TextView-->
+						<!--android:id="@+id/tv_currency"-->
+						<!--style="@style/tv_order_detail_content_right"/>-->
+				<!--</LinearLayout>-->
+
+				<LinearLayout style="@style/ll_order_detail_content">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/amount"/>
+
+					<TextView
+						android:id="@+id/tv_loan"
+						style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/ll_order_detail_content"
+					android:layout_marginBottom="@dimen/margin10">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/interest"/>
+
+					<TextView
+						android:id="@+id/tv_interest" style="@style/tv_order_detail_content_right"/>
+				</LinearLayout>
+
+				<View style="@style/v_horizontal_divider_line1"/>
+
+				<LinearLayout
+					android:id="@+id/ll_repay_plan"
+					style="@style/ll_order_detail_content"
+					android:layout_height="@dimen/height40">
+
+					<TextView
+						style="@style/tv_order_detail_content_left"
+						android:text="@string/repay_plan"
+						android:textColor="@color/colorPrimary"/>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="@dimen/width16"
+						android:layout_height="@dimen/height16"
+						app:srcCompat="@drawable/ic_arrow_right"/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/btn_prepay"
+				style="@style/btn_common"
+				android:layout_marginBottom="@dimen/margin15"
+				android:layout_marginTop="@dimen/margin30"
+				android:text="@string/repay_now"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

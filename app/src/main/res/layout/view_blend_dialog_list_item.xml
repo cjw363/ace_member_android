@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/blend_view_bg_default"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/tv_blend_dialog_list_item"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:minHeight="@dimen/height48"
+		android:paddingBottom="@dimen/padding8"
+		android:paddingLeft="@dimen/padding16"
+		android:paddingRight="@dimen/padding16"
+		android:paddingTop="@dimen/padding8"
+		android:textColor="@color/clr_light_black"
+		android:textSize="@dimen/txtSize16"/>
+
+</LinearLayout>

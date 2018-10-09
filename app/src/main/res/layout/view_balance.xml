@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/padding10">
+
+	<TextView
+		android:id="@+id/tv_balance"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:drawableLeft="@drawable/currency_usd"
+		android:drawablePadding="@dimen/padding10"
+		android:gravity="center_vertical"
+		android:text="@string/balance"
+		android:textColor="@color/clr_common_title"/>
+
+	<TextView
+		android:id="@+id/tv_balance_info"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical"
+		android:textColor="@color/clr_common_title"
+		tools:text="12345"/>
+</RelativeLayout>

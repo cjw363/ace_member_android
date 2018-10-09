@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/ll_head"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<View style="@style/v_horizontal_divider_section_2"/>
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_vertical"
+		android:minHeight="@dimen/height45"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/tv_common_title"
+			android:layout_marginStart="@dimen/margin15"
+			android:layout_weight="1"
+			android:gravity="start"
+			android:text="@string/beginning"/>
+
+		<com.ace.member.view.MoneyTextView
+			android:id="@+id/tv_beginning"
+			style="@style/tv_common_title"
+			android:layout_marginEnd="@dimen/margin15"
+			android:layout_weight="1"
+			android:gravity="end"
+			app:show_currency="true"/>
+
+	</LinearLayout>
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+</LinearLayout>

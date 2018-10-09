@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="et_common">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginEnd">@dimen/margin15</item>
+		<item name="android:textSize">@dimen/txtSize16</item>
+		<item name="android:imeOptions">flagNoExtractUi</item>
+		<item name="android:background">@null</item>
+		<item name="android:textCursorDrawable">@drawable/bg_et_cursor</item>
+		<item name="android:textColor">@color/clr_common_content</item>
+		<item name="android:textColorHint">@color/clr_common_content_hint</item>
+		<item name="android:minHeight">@dimen/height32</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+
+
+	<style name="et_common1" parent="et_common">
+		<item name="android:layout_marginStart">@dimen/margin5</item>
+	</style>
+
+	<style name="et_common1_for_amount" parent="et_common">
+		<item name="android:textSize">@dimen/txtSize20</item>
+	</style>
+
+
+	<style name="et_phone_content">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/height50</item>
+		<item name="android:gravity">left|center</item>
+		<item name="android:textSize">@dimen/txtSize20</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:imeOptions">flagNoExtractUi</item>
+		<item name="android:padding">@dimen/padding10</item>
+		<item name="android:height">@dimen/height60</item>
+		<item name="android:maxLength">12</item>
+		<item name="android:textColor">@color/clr_login_text</item>
+		<item name="android:inputType">number</item>
+		<item name="android:digits">0123456789</item>
+		<item name="android:background">@color/white</item>
+		<item name="android:hint">@string/phone</item>
+		<item name="android:textColorHint">@color/clr_login_text_invalid</item>
+	</style>
+
+
+	<style name="et_login_password">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">@dimen/height50</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">@dimen/txtSize20</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:imeOptions">flagNoExtractUi</item>
+		<item name="android:background">@color/white</item>
+		<item name="android:padding">@dimen/padding10</item>
+		<item name="android:maxLength">20</item>
+		<item name="android:inputType">textPassword</item>
+		<item name="android:digits">
+			0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^*()_+-=
+		</item>
+		<item name="android:hint">@string/password</item>
+		<item name="android:textColorHint">@color/clr_login_text_invalid</item>
+		<item name="android:textColor">@color/clr_login_text</item>
+		<item name="android:layout_weight">1</item>
+
+	</style>
+
+
+</resources>

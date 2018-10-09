@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:id="@+id/srl_ace_loan"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/clr_app_bg">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<ScrollView
+				android:id="@+id/sv_loan"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_above="@+id/ll_button">
+
+				<LinearLayout
+					android:id="@+id/ll_loan"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/white"
+					android:gravity="center_horizontal"
+					android:orientation="vertical">
+
+					<FrameLayout
+						android:layout_width="@dimen/width200"
+						android:layout_height="@dimen/height200"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginTop="@dimen/margin30">
+
+						<com.roundProgress.RoundProgressBar
+							android:id="@+id/v_round"
+							android:layout_width="@dimen/width200"
+							android:layout_height="@dimen/height200"
+							android:layout_gravity="center"
+							app:roundColor="@color/clr_round"
+							app:roundProgressColor="@color/clr_round_progress"
+							app:roundWidth="@dimen/width8"
+							app:textIsDisplayable="true"
+							app:textColor="@color/clr_round_progress"
+							app:textSize="@dimen/txtSize26"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:gravity="center"
+							android:orientation="vertical">
+
+							<TextView
+								style="@style/tv_item_title"
+								android:layout_marginBottom="@dimen/margin15"
+								android:gravity="center"
+								android:text="@string/available_credit"
+								android:textColor="@color/clr_loan_title"
+								android:textSize="@dimen/txtSize18"/>
+
+							<TextView
+								android:id="@+id/tv_loan"
+								style="@style/tv_item_title"
+								android:gravity="center"
+								android:textSize="@dimen/txtSize30"
+								android:visibility="invisible"/>
+
+							<TextView
+								android:id="@+id/tv_currency"
+								style="@style/tv_item_title"
+								android:layout_marginTop="@dimen/margin20"
+								android:gravity="center"
+								android:focusable="true"
+								android:focusableInTouchMode="true"
+								android:text="@string/usd"
+								android:textColor="@color/clr_tv_currency"
+								android:textSize="@dimen/txtSize18"/>
+						</LinearLayout>
+					</FrameLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="@dimen/margin10"
+						android:layout_marginTop="@dimen/margin30"
+						android:gravity="center_horizontal"
+						android:orientation="horizontal">
+
+						<TextView
+							style="@style/tv_item_title"
+							android:text="@string/credit"
+							android:textSize="@dimen/txtSize18"/>
+
+						<TextView
+							android:id="@+id/tv_credit"
+							style="@style/tv_item_title"
+							android:layout_marginLeft="@dimen/margin10"
+							android:text="@string/zero_with_decimal"
+							android:textColor="@color/clr_money_gb"
+							android:textSize="@dimen/txtSize18"/>
+
+						<TextView
+							android:id="@+id/tv_credit_currency"
+							style="@style/tv_item_title"
+							android:layout_marginLeft="@dimen/margin10"
+							android:text="@string/usd"
+							android:textSize="@dimen/txtSize18"/>
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/tv_rate"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="@dimen/margin20"
+						android:textSize="@dimen/txtSize14"
+						android:text="@string/day_service_charge_rate"
+						android:textColor="@color/clr_money_gb"/>
+
+					<LinearLayout
+						android:id="@+id/ll_current_loan"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:visibility="visible">
+
+						<View style="@style/v_horizontal_divider_section"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingBottom="@dimen/padding10"
+							android:paddingTop="@dimen/padding10"
+							android:paddingLeft="@dimen/padding15"
+							android:text="@string/recent"
+							android:textColor="@color/clr_order_title"
+							android:textSize="@dimen/txtSize14"/>
+
+						<View style="@style/v_horizontal_divider_line"/>
+
+						<com.og.utils.ListViewForScrollView
+							android:id="@+id/lv_loan"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:background="@color/white"
+							android:divider="@null"
+							android:scrollbars="none"
+							android:visibility="visible"
+							tools:ignore="NestedScrolling"/>
+					</LinearLayout>
+
+				</LinearLayout>
+			</ScrollView>
+
+			<LinearLayout
+				android:id="@+id/ll_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="@dimen/margin15"
+				android:layout_marginTop="@dimen/margin15">
+
+				<Button
+					android:id="@+id/btn_loan"
+					style="@style/btn_common"
+					android:layout_weight="1"
+					android:layout_marginStart="@dimen/margin16"
+					android:layout_marginEnd="@dimen/margin8"
+					android:enabled="false"
+					android:text="@string/loan"/>
+
+				<Button
+					android:id="@+id/btn_return_loan"
+					style="@style/btn_common"
+					android:layout_marginStart="@dimen/margin8"
+					android:layout_marginEnd="@dimen/margin16"
+					android:layout_weight="1"
+					android:enabled="false"
+					android:text="@string/return_loan"/>
+			</LinearLayout>
+		</RelativeLayout>
+
+	</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

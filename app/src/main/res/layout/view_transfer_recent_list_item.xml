@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/ll_recent"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="horizontal">
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/iv_head"
+			android:layout_width="@dimen/width45"
+			android:layout_height="@dimen/height45"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="@dimen/margin5"
+			android:layout_marginEnd="@dimen/margin15"
+			android:layout_marginStart="@dimen/margin10"
+			android:layout_marginTop="@dimen/margin5"
+			/>
+
+		<RelativeLayout
+			android:id="@+id/rl_content"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center">
+
+			<TextView
+				android:id="@+id/tv_member_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/name"
+				android:textColor="@color/clr_common_title"
+				android:textSize="@dimen/txtSize14"/>
+
+			<TextView
+				android:id="@+id/tv_phone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/tv_member_name"
+				android:text="@string/phone"
+				android:textColor="@color/clr_common_title"
+				android:textSize="@dimen/txtSize14"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<View style="@style/v_horizontal_divider_line"/>
+
+</LinearLayout>

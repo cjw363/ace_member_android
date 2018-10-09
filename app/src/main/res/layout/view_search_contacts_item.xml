@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/rl_search_contacts_item"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/height50"
+	android:background="@color/white">
+
+	<CheckBox
+		android:id="@+id/cb_search_contacts"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginStart="@dimen/margin10"
+		android:background="@drawable/bg_checkbox_circle"
+		android:button="@null"
+		android:clickable="false"
+		android:focusable="false"/>
+
+	<com.ace.member.view.RoundRectImageView
+		android:id="@+id/iv_search_contacts_head"
+		android:layout_width="@dimen/width40"
+		android:layout_height="@dimen/height40"
+		android:layout_centerVertical="true"
+		android:layout_marginStart="@dimen/margin10"
+		android:layout_toEndOf="@id/cb_search_contacts"
+		android:scaleType="fitXY"
+		/>
+
+	<TextView
+		android:id="@+id/tv_search_contacts_name"
+		style="@style/tv_chat_title"
+		android:layout_centerVertical="true"
+		android:layout_marginStart="@dimen/margin20"
+		android:layout_toEndOf="@id/iv_search_contacts_head"
+		android:ellipsize="end"
+		android:maxEms="10"
+		android:maxLines="1"
+		android:textStyle="normal"/>
+
+	<View
+		style="@style/v_horizontal_divider_line"
+		android:layout_alignParentBottom="true"
+		android:layout_marginEnd="@dimen/margin20"
+		android:layout_marginStart="@dimen/margin10"
+		/>
+</RelativeLayout>

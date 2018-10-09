@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/padding50"
+		android:paddingTop="@dimen/padding30">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/scan_failed"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize30"/>
+
+		<android.support.v7.widget.AppCompatImageView
+			android:layout_width="@dimen/width50"
+			android:layout_height="@dimen/height50"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/margin20"
+			app:srcCompat="@drawable/ic_error"/>
+	</LinearLayout>
+
+
+	<Button
+		android:id="@+id/btn_back"
+		style="@style/btn_submit"
+		android:layout_marginTop="@dimen/margin50"
+		android:text="@string/back"/>
+
+</LinearLayout>

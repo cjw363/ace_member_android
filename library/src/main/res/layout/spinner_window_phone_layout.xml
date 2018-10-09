@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/height150"
+              android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"/>
+
+	<LinearLayout
+		android:id="@+id/llPopupWindow"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height150"
+		android:background="@color/white"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/title"
+			style="@style/dlg_title"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height50"
+			android:background="@color/white"
+			android:gravity="start|center"
+			android:paddingLeft="@dimen/padding10"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txtSize16"
+			android:visibility="gone"/>
+
+		<ListView
+			android:id="@+id/lvContents"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:divider="@null"
+			android:paddingLeft="@dimen/padding10"
+			android:paddingRight="@dimen/padding10"
+			android:scrollbars="none">
+		</ListView>
+
+	</LinearLayout>
+
+
+</LinearLayout>

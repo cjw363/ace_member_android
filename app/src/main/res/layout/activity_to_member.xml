@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true">
+
+		<LinearLayout
+			android:id="@+id/rl_info"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:id="@+id/ll_source_phone"
+				style="@style/ll_content"
+				android:gravity="center">
+
+				<TextView
+					android:id="@+id/tv_source"
+					style="@style/tv_common_title"
+					android:text="@string/sender"/>
+
+				<TextView
+					android:id="@+id/tv_source_phone"
+					style="@style/et_common"
+					android:layout_marginStart="@dimen/margin10"
+					android:textColor="@color/black"/>
+
+			</LinearLayout>
+
+			<View
+				android:id="@+id/tv_line1"
+				style="@style/v_horizontal_divider_line1"/>
+
+
+			<LinearLayout
+				android:id="@+id/rl_target_phone"
+				style="@style/ll_content"
+				android:gravity="center">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/receiver"/>
+
+				<FrameLayout
+					android:id="@+id/fl_target_phone"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_marginLeft="@dimen/margin10"
+					android:layout_marginRight="@dimen/margin10"
+					android:layout_weight="1">
+
+					<LinearLayout
+						android:id="@+id/ll_target_phone"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:orientation="horizontal"
+						android:visibility="gone">
+
+						<LinearLayout
+							android:id="@+id/ll_target_country_code"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:layout_marginEnd="@dimen/margin5"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<TextView
+								android:id="@+id/tv_target_country_code"
+								android:layout_width="@dimen/width45"
+								android:layout_height="match_parent"
+								android:background="@color/white"
+								android:gravity="center_vertical"
+								android:text="@string/country_code_855"
+								android:textColor="@color/clr_common_title"
+								android:textSize="@dimen/txtSize16"/>
+
+							<android.support.v7.widget.AppCompatImageView
+								android:layout_width="@dimen/width10"
+								android:layout_height="@dimen/height10"
+								android:layout_gravity="center_vertical"
+								app:srcCompat="@drawable/ic_triangle_black"/>
+
+						</LinearLayout>
+
+						<View
+							style="@style/vertical_line1"
+							android:layout_width="@dimen/width1"
+							android:layout_height="@dimen/height16"/>
+
+						<EditText
+							android:id="@+id/et_phone_no"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginStart="@dimen/margin5"
+							android:layout_weight="1"
+							android:background="@null"
+							android:digits="0123456789"
+							android:hint="@string/phone_number"
+							android:inputType="phone"
+							android:maxLength="15"
+							android:maxLines="1"
+							android:textColorHint="@color/clr_common_content_hint"
+							android:textSize="@dimen/txtSize16"/>
+
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/tv_target_phone_hint"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginEnd="@dimen/padding25"
+						android:gravity="center_vertical"
+						android:text="@string/phone_number"
+						android:textColor="@color/clr_common_content_hint"
+						android:textSize="@dimen/txtSize16"/>
+
+				</FrameLayout>
+
+				<TextView
+					android:id="@+id/tv_target_phone"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginStart="@dimen/margin10"
+					android:gravity="center_vertical"
+					android:textColor="@color/clr_common_title"
+					android:textSize="@dimen/txtSize16"
+					android:visibility="gone"/>
+
+
+			</LinearLayout>
+
+			<View
+				android:id="@+id/tv_line_4"
+				style="@style/v_horizontal_divider_line1"
+				android:visibility="gone"/>
+
+			<LinearLayout
+				android:id="@+id/ll_receiver_name"
+				style="@style/ll_content"
+				android:gravity="center"
+				android:visibility="gone">
+
+				<TextView
+					android:id="@+id/tv_receiver_name"
+					style="@style/tv_common_title"
+					android:text="@string/member"/>
+
+				<TextView
+					android:id="@+id/tv_member_name"
+					style="@style/et_common"
+					android:layout_marginStart="@dimen/margin10"
+					android:textColor="@color/black"/>
+
+
+			</LinearLayout>
+
+
+			<View
+				android:id="@+id/tv_line2"
+				style="@style/v_horizontal_divider_line1"/>
+
+
+			<LinearLayout
+				android:id="@+id/rl_currency"
+				style="@style/ll_content"
+				android:gravity="center">
+
+				<TextView
+					android:id="@+id/tv_currency"
+					style="@style/tv_common_title"
+					android:text="@string/currency"/>
+
+
+				<LinearLayout
+					android:id="@+id/ll_currency"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginEnd="@dimen/margin10"
+					android:layout_marginStart="@dimen/margin5"
+					android:gravity="center_vertical|end"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/tv_select"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:background="@color/white"
+						android:gravity="center_vertical"
+						android:paddingLeft="@dimen/padding5"
+						android:paddingRight="@dimen/padding5"
+						android:text="@string/select"
+						android:textColor="@color/clr_common_content_hint"
+						android:textSize="@dimen/txtSize16"/>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/tv_po"
+
+						android:layout_width="@dimen/width16"
+						android:layout_height="@dimen/height16"
+						android:layout_gravity="center_vertical"
+						app:srcCompat="@drawable/ic_arrow_right"/>
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+			<View
+				android:id="@+id/tv_line3"
+				style="@style/v_horizontal_divider_line1"/>
+
+			<LinearLayout
+				android:id="@+id/ll_balance"
+				style="@style/ll_content">
+
+				<TextView
+					android:id="@+id/tv_bal"
+					style="@style/tv_common_title"
+					android:text="@string/balance"
+					android:textColor="@color/clr_common_content_hint"/>
+
+				<TextView
+					android:id="@+id/tv_balance"
+					style="@style/tv_common_content"
+					android:layout_marginStart="@dimen/margin10"
+					android:textSize="@dimen/primary_money_text_size"/>
+
+			</LinearLayout>
+
+			<View
+				android:id="@+id/v_separator1"
+				style="@style/v_horizontal_divider_section"/>
+
+			<LinearLayout
+				android:id="@+id/ll_amount"
+				style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/amount"/>
+
+				<EditText
+					android:id="@+id/et_amount"
+					style="@style/et_common"
+					android:layout_marginStart="@dimen/margin10"
+					android:hint="@string/input_amount"
+					android:inputType="numberDecimal"
+					android:textSize="@dimen/primary_money_text_size"/>
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:id="@+id/ll_fee"
+				style="@style/ll_fee_content">
+
+				<TextView
+					android:id="@+id/tv_fee_title"
+					style="@style/tv_fee_title"
+					android:layout_marginStart="@dimen/margin15"
+					android:text="@string/fee"/>
+
+				<TextView
+					android:id="@+id/tv_fee"
+					style="@style/tv_fee_content"
+					android:layout_marginStart="@dimen/margin10"
+					android:textSize="@dimen/primary_money_text_size"/>
+
+			</LinearLayout>
+
+			<View
+				android:id="@+id/tv_line4"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin1"
+				android:background="@color/color49"/>
+
+			<View
+				android:id="@+id/v_separator2"
+				style="@style/v_horizontal_divider_section"/>
+
+			<LinearLayout
+				android:id="@+id/ll_remark"
+				style="@style/ll_content">
+
+				<TextView
+					style="@style/tv_common_title"
+					android:text="@string/remark"/>
+
+				<EditText
+					android:id="@+id/et_remark"
+					style="@style/et_common"
+					android:layout_marginStart="@dimen/margin10"
+					android:hint="@string/input_remark"
+					android:inputType="text"
+					android:maxLength="200"/>
+
+			</LinearLayout>
+
+
+			<Button
+				android:id="@+id/btn_submit"
+				style="@style/btn_submit"
+				android:layout_marginTop="@dimen/height20"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+
+</LinearLayout>

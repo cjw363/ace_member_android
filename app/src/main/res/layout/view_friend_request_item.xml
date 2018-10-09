@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height60"
+                android:background="@color/white"
+                android:descendantFocusability="blocksDescendants">
+
+	<com.ace.member.view.RoundRectImageView
+		android:id="@+id/iv_friend_request_head"
+		android:layout_width="@dimen/width50"
+		android:layout_height="@dimen/height50"
+		android:layout_marginBottom="@dimen/margin5"
+		android:layout_marginStart="@dimen/margin15"
+		android:layout_marginTop="@dimen/margin5"
+		/>
+
+	<TextView
+		android:id="@+id/tv_friend_request_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/margin10"
+		android:layout_marginTop="@dimen/margin10"
+		android:layout_toEndOf="@+id/iv_friend_request_head"
+		android:textColor="@color/clr_chat_tv_title"
+		android:textSize="@dimen/txtSize16"
+		/>
+
+	<TextView
+		android:id="@+id/tv_friend_request_content"
+		android:layout_width="@dimen/width220"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tv_friend_request_name"
+		android:layout_marginStart="@dimen/margin10"
+		android:layout_marginTop="@dimen/margin3"
+		android:layout_toEndOf="@+id/iv_friend_request_head"
+		android:ellipsize="end"
+		android:maxLines="1"
+		android:textColor="@color/clr_chat_tv_hint"
+		android:textSize="@dimen/txtSize14"
+		/>
+
+	<Button
+		android:id="@+id/btn_friend_request_status"
+		android:layout_width="@dimen/width50"
+		android:layout_height="@dimen/height30"
+		android:layout_alignParentEnd="true"
+		android:layout_centerVertical="true"
+		android:layout_marginEnd="@dimen/margin15"
+		android:background="@drawable/bg_btn_friend_lv"
+		android:textAllCaps="false"
+		android:textColor="@color/white"
+		android:textSize="@dimen/txtSize12"
+		/>
+
+	<View
+		style="@style/v_horizontal_divider_line"
+		android:layout_alignParentBottom="true"
+		/>
+
+</RelativeLayout>

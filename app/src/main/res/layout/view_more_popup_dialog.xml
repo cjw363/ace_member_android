@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<LinearLayout
+		style="@style/ll_content"
+		android:background="@color/black">
+
+		<LinearLayout
+			android:id="@+id/history_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="@dimen/margin10"
+				android:gravity="center"
+				android:text="history"
+				android:textColor="@color/white"
+				android:textSize="@dimen/txtSize14"/>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

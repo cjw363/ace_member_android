@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+	<include layout="@layout/view_toolbar"/>
+
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:id="@+id/srl"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ScrollView
+			android:id="@+id/lv_recent_transaction"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/clr_primary_body_bg"
+			android:cacheColorHint="@color/transparent"
+			android:listSelector="@color/transparent"
+			android:paddingTop="@dimen/padding10"
+			android:paddingBottom="@dimen/padding10"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:id="@+id/ll_exchange_rate"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="vertical"
+				android:paddingLeft="@dimen/padding10"
+				android:paddingRight="@dimen/padding10">
+
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin10"
+					android:layout_marginTop="@dimen/margin10"
+					android:background="@color/colorPrimary"
+					android:gravity="center"
+					android:minHeight="@dimen/height60"
+					android:orientation="horizontal">
+
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center_vertical"
+						android:paddingLeft="@dimen/padding10"
+						android:text="@string/currency"
+						android:textColor="@color/white"
+						android:textSize="@dimen/txtSize16"/>
+
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center|right"
+						android:paddingRight="@dimen/padding20"
+						android:text="@string/sell_price"
+						android:textColor="@color/white"
+						android:textSize="@dimen/txtSize16"/>
+
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center_vertical|right"
+						android:paddingRight="@dimen/padding10"
+						android:text="@string/buy_price"
+						android:textColor="@color/white"
+						android:textSize="@dimen/txtSize16"/>
+
+				</LinearLayout>
+
+
+				<LinearLayout
+					android:id="@+id/ll_exchange_rate_data"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:minHeight="@dimen/height25"
+					android:orientation="vertical">
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+
+	</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

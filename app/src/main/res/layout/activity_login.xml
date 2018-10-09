@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/login_background"
+              android:orientation="vertical"
+              tools:context=".login.LoginActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height0"
+		android:layout_weight="1"
+		android:gravity="center">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/padding50"
+			android:src="@drawable/logo"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_main_login"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height0"
+		android:layout_weight="1.1"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:id="@+id/ll_login"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin5"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin5"
+				android:layout_marginTop="@dimen/margin5"
+				android:background="@drawable/shape_corner"
+				android:orientation="horizontal">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_phone"
+					android:layout_width="@dimen/width30"
+					android:layout_height="@dimen/height30"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/margin15"
+					app:srcCompat="@drawable/ic_phone_login_normal"/>
+
+				<LinearLayout
+					android:id="@+id/ll_country_code"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_marginRight="@dimen/margin5"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/tv_country_code"
+						android:layout_width="@dimen/width60"
+						android:layout_height="match_parent"
+						android:background="@color/white"
+						android:gravity="center"
+						android:textColor="@color/clr_login_text"
+						android:textSize="@dimen/txtSize20"/>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:layout_width="@dimen/width10"
+						android:layout_height="@dimen/height10"
+						android:layout_gravity="center_vertical"
+						app:srcCompat="@drawable/ic_triangle_select"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_line"
+					android:layout_width="@dimen/width1"
+					android:layout_height="match_parent"
+					android:layout_marginBottom="@dimen/padding15"
+					android:layout_marginTop="@dimen/padding15"
+					android:background="@color/clr_login_text"
+					android:orientation="horizontal"/>
+
+				<EditText
+					android:id="@+id/et_phone"
+					style="@style/et_phone_content"
+					android:layout_width="@dimen/width0"
+					android:layout_weight="8"
+					android:digits="0123456789"
+					android:hint="@string/phone"/>
+
+				<RelativeLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:layout_marginRight="@dimen/margin18"
+					android:layout_weight="1">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/iv_delete"
+						android:layout_width="@dimen/width30"
+						android:layout_height="@dimen/height30"
+						android:layout_centerInParent="true"
+						android:gravity="center"
+						app:srcCompat="@drawable/ic_delete"/>
+				</RelativeLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin5"
+				android:layout_marginTop="@dimen/margin5"
+				android:background="@drawable/shape_corner"
+				android:orientation="horizontal">
+
+				<android.support.v7.widget.AppCompatImageView
+					android:id="@+id/iv_password"
+					android:layout_width="@dimen/width30"
+					android:layout_height="@dimen/height30"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/margin15"
+					app:srcCompat="@drawable/ic_password_login_normal"/>
+
+				<EditText
+					android:id="@+id/et_password"
+					style="@style/et_login_password"/>
+
+				<CheckBox
+					android:id="@+id/cb_password_change"
+					android:layout_width="@dimen/width30"
+					android:layout_height="@dimen/height30"
+					android:layout_gravity="center_vertical"
+					android:layout_marginRight="@dimen/margin15"
+					android:background="@drawable/login_password_checkbox"
+					android:button="@null"/>
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tv_login_register"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/padding10"
+				android:text="@string/register"
+				android:textColor="@color/clr_login_text_1"
+				android:textSize="@dimen/txtSize18"/>
+
+
+			<TextView
+				android:id="@+id/tv_forgot_password"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:gravity="center"
+				android:padding="@dimen/padding10"
+				android:text="@string/forgot_password"
+				android:textColor="@color/clr_login_text_1"
+				android:textSize="@dimen/txtSize18"/>
+		</RelativeLayout>
+
+		<Button
+			android:id="@+id/btn_submit"
+			style="@style/btn_common"
+			android:layout_width="match_parent"
+			android:layout_marginLeft="@dimen/margin50"
+			android:layout_marginRight="@dimen/margin50"
+			android:layout_marginTop="@dimen/margin40"
+			android:background="@drawable/btn_login"
+			android:gravity="center"
+			android:text="@string/login"
+			android:textColor="@color/sel_btn_text"
+			android:enabled="false"
+			android:textSize="@dimen/txtSize30"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/tv_version"
+		style="@style/tv_version"
+		android:layout_gravity="center"/>
+
+</LinearLayout>
