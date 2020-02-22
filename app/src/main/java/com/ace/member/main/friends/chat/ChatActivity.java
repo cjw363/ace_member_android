@@ -244,10 +244,11 @@ public class ChatActivity extends BaseActivity implements ChatContract.ChatView 
 	@Override
 	public void onBackPressed() {
 		boolean isShowOn = mEmotionInputDetector.interceptBackPress();
-		if (!isShowOn) {
-			mChatPresenter.updateChatMsg(mChatId);
-			finish();
-		}
+		super.onBackPressed();
+//		if (!isShowOn) {////todo cjw
+//			mChatPresenter.updateChatMsg(mChatId);
+//			finish();
+//		}
 	}
 
 	private void initEmotionKeyboard() {

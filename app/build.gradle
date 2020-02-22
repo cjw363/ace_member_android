@@ -42,9 +42,9 @@ android {
             buildConfigField "String", "UPGRADE_URL", '"http://175.100.203.243:8762/apk/dev/"'
             buildConfigField "String", "SERVICE_URL", '"http://175.100.203.243:8762/web/"'
             buildConfigField "String", "FILE_BASE_URL", '"http://175.100.203.243:8797/"'
-            buildConfigField "String", "UPGRADE_URL", '"http://cjw2529275344.free.ngrok.cc/ace/source/ace_member_service/apk/dev/"'
+            buildConfigField "String", "UPGRADE_URL", '"http://cjw.free.idcfengye.com/ace/source/ace_member_service/apk/dev/"'
 //            //for local test
-            buildConfigField "String", "SERVICE_URL", '"http://cjw2529275344.free.ngrok.cc/ace/source/ace_member_service/web/"'
+            buildConfigField "String", "SERVICE_URL", '"http://cjw.free.idcfengye.com/ace/source/ace_member_service/web/"'
             //for local test        }
             release {
                 applicationIdSuffix ".prod"

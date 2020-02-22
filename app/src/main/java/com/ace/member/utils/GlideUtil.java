@@ -35,12 +35,12 @@ public class GlideUtil {
 	public static void loadThumbnailImage(Context context, String portrait, ImageView view, int defaultResource) {
 		//		view.setTag(null);//需要清空tag，否则报错
 		view.setTag(R.id.image_url, portrait);
-		if (TextUtils.isEmpty(portrait)) {
+//		if (TextUtils.isEmpty(portrait)) {////todo cjw
 			Glide.with(context).load(defaultResource).asBitmap().centerCrop().diskCacheStrategy(DiskCacheStrategy.SOURCE).into(view);
-		} else {
-			if ((view.getTag(R.id.image_url)).equals(portrait))
-				Glide.with(context).load(getRealThumbnailPortrait(portrait)).asBitmap().diskCacheStrategy(DiskCacheStrategy.SOURCE).centerCrop().into(view);
-		}
+//		} else {
+//			if ((view.getTag(R.id.image_url)).equals(portrait))
+//				Glide.with(context).load(getRealThumbnailPortrait(portrait)).asBitmap().diskCacheStrategy(DiskCacheStrategy.SOURCE).centerCrop().into(view);
+//		}
 	}
 
 	/**
