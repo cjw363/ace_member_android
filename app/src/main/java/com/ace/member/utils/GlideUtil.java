@@ -2,7 +2,6 @@ package com.ace.member.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.text.TextUtils;
 import android.widget.ImageView;
 
 import com.ace.member.BuildConfig;
@@ -24,12 +23,12 @@ public class GlideUtil {
 	public static void loadNormalImage(Context context, String portrait, ImageView view, int defaultResource) {
 		//		view.setTag(null);//需要清空tag，否则报错
 		view.setTag(R.id.image_url, portrait);
-		if (TextUtils.isEmpty(portrait)) {
+//		if (TextUtils.isEmpty(portrait)) {////todo cjw
 			Glide.with(context).load(defaultResource).asBitmap().diskCacheStrategy(DiskCacheStrategy.SOURCE).centerCrop().into(view);
-		} else {
-			if ((view.getTag(R.id.image_url)).equals(portrait))
-				Glide.with(context).load(getRealNormalPortrait(portrait)).asBitmap().diskCacheStrategy(DiskCacheStrategy.SOURCE).centerCrop().into(view);
-		}
+//		} else {
+//			if ((view.getTag(R.id.image_url)).equals(portrait))
+//				Glide.with(context).load(getRealNormalPortrait(portrait)).asBitmap().diskCacheStrategy(DiskCacheStrategy.SOURCE).centerCrop().into(view);
+//		}
 	}
 
 	public static void loadThumbnailImage(Context context, String portrait, ImageView view, int defaultResource) {
@@ -52,11 +51,11 @@ public class GlideUtil {
 	 * @param defaultResource
 	 */
 	public static void loadBitmap(Context context, String portrait, int defaultResource, SimpleTarget<Bitmap> target) {
-		if (TextUtils.isEmpty(portrait)) {
+//		if (TextUtils.isEmpty(portrait)) {////todo
 			Glide.with(context).load(defaultResource).asBitmap().diskCacheStrategy(DiskCacheStrategy.SOURCE).centerCrop().into(target);
-		} else {
-			Glide.with(context).load(getRealNormalPortrait(portrait)).asBitmap().diskCacheStrategy(DiskCacheStrategy.SOURCE).centerCrop().into(target);
-		}
+//		} else {
+//			Glide.with(context).load(getRealNormalPortrait(portrait)).asBitmap().diskCacheStrategy(DiskCacheStrategy.SOURCE).centerCrop().into(target);
+//		}
 	}
 
 	/**
